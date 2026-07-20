@@ -17,6 +17,6 @@
 \contentsline {subsection}{\numberline {6.3}Comparatives tables}{1}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Line chart of score function for folding trajectory}{1}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Internet platform for RNA folding}{1}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Discussion}{1}{section.7}%
+\contentsline {section}{\numberline {7}Discussion and Perspectives}{1}{section.7}%
 \contentsline {section}{\numberline {8}Conclusion}{1}{section.8}%
 \contentsline {section}{Glossary}{2}{section*.1}%
