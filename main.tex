@@ -1,0 +1,220 @@
+\documentclass[11pt,a4paper]{article}
+\input{glossary}
+
+% --- Packages de Base ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+% biblio 
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{biblio.bib}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% --- Graphismes et Couleurs ---
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black,
+    pdftitle={ErwannGallois},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage{svg}
+
+% --- En-têtes et Listes ---
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{booktabs}
+
+% --- Définition de Couleurs ---
+\definecolor{darkblue}{RGB}{92, 48, 110}
+\definecolor{lightgray}{rgb}{0.95, 0.95, 0.95}
+
+% --- Mise en page des titres ---
+\titleformat{\section}{\large\bfseries\color{darkblue}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{darkblue}}{\thesubsection}{1em}{}
+
+% --- Configuration En-tête / Pied de page ---
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\lhead{\color{gray}Internship Report}
+\rhead{\color{gray} GALLOIS Erwann}
+\cfoot{\thepage / \pageref{LastPage}}
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \setlength{\headheight}{14pt}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \lhead{\color{gray}Internship Report}
+    \rhead{\color{gray} GALLOIS Erwann}
+}
+
+% --- Informations du Document ---
+% \title{
+%     \vspace{2cm}
+%     \HRule \\[0.4cm]
+%     \huge \bfseries \color{darkblue} Title of the Internship \\
+%     \large M2 Internship Report \\
+%     \HRule \\[1.5cm]
+% }
+% \author{\textbf{GALLOIS Erwann} \\[0.5cm]
+% \small { \textbf{Internship tutors :} M. POSTIC Guillaume} \\
+% \small { \textbf{Referent teacher :} Ms. BOURDACHE Nadjet}
+% }
+% \date{ }
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% ==========================================
+% DEBUT DU DOCUMENT
+% ==========================================
+\begin{document}
+
+\begin{titlepage}
+   \begin{center}
+        \vspace*{2cm} % Adjust spacings to ensure the title page is generally filled with text
+        %% input logos
+        % {\includegraphics[width=0.22\textwidth]{images/logo/univ-rouen.jpg} \quad \quad}{\includegraphics[width=0.2\textwidth]{images/logo/lmrs.png} \quad \quad}
+        % {\includegraphics[width=0.11\textwidth]{images/logo/cnrs.png}}\\
+        {\includegraphics[width=0.3\textwidth]{img/LOGO-UNICAEN_V-2.1-N.png} \quad}
+        \noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+        
+        \vspace{0.5 cm} 
+
+        \Huge{\textbf{Internship Report}}\\ 
+
+        \vspace{0.5cm}
+        \LARGE{Title / subject of the internship}
+          
+        \vspace{2 cm}
+        % \Large{\GroupName}
+        \vspace{0.25cm}
+        \large{\textbf{GALLOIS Erwann}}\\
+        \large{Internship carried out from 02/03/2026  to  04/09/2026}\\
+        % \vfill
+        \vspace{4 cm}
+         
+        \leftline{ \small { \textbf{Internship tutors :} M. POSTIC Guillaume}}
+        \leftline{ \small { \textbf{Referent teacher :} Ms. BOURDACHE Nadjet}}
+        \vspace{1 cm}
+        \leftline{\small { \textbf{\'Educational institution :} Université Caen-Normandie / M2 IA, Santé et Sciences des Données}}
+        \leftline{\small { \textbf{Internship host company :} IBISC (AROBAS) - Bâtiment IBGBI, 23 Bd de France 91034 Evry}}
+        
+        \noindent\rule[0.25\baselineskip]{\textwidth}{1pt}\\
+        
+        {\includegraphics[width=0.4\textwidth]{img/logo_ibiscsaclay_bleu_324ptx89pt.png}\quad}
+        % {\includegraphics[width=0.23\textwidth]{images/logo/saclay.png}\quad}\\
+      
+    \end{center}
+\setcounter{page}{0}
+\end{titlepage}
+\thispagestyle{empty}
+\newpage
+
+% ==========================================
+% Abstract
+% ==========================================
+\begin{abstract}
+\thispagestyle{plain}
+\noindent
+Write an abstract here. \\  \\
+\textit{Key words}: financial models, machine learning...
+\end{abstract}
+
+\newpage
+\setcounter{page}{0}
+\thispagestyle{plain}
+\tableofcontents
+\newpage
+
+\setcounter{page}{1}
+% ==========================================
+% Présentation Entreprise
+% ==========================================
+\section{Presentation of the company}
+
+
+% ==========================================
+% Notion Préliminaires
+% ==========================================
+\section{Preliminary notions}
+\subsection{Central Dogma}
+The Desoxyribose Nucléic Acid (DNA) is a fundamental moleculs in genomics. This molecule contains the genetics informations of each people. The flow of genetics informations  
+
+
+% ==========================================
+% Introduction
+% ==========================================
+\section{Introduction}
+% ==========================================
+% Data and Dataset
+% ==========================================
+\section{Data and Dataset}
+\subsection{PDB file structure}
+\subsection{PDB database}
+
+% ==========================================
+% Materials and Methods
+% ==========================================
+\section{Materials and Methods}
+\subsection{Knowledge based score function}
+\subsection{Objective function}
+\subsection{Optimization algorithm}
+\subsection{Complete Pipeline}
+\subsection{Different Applications}
+
+
+% ==========================================
+% Results
+% ==========================================
+\section{Results}
+\subsection{Interpolation results}
+\subsection{Comparaison between original and predicted structures}
+\subsection{Comparatives tables}
+\subsection{Line chart of score function for folding trajectory}
+\subsection{Internet platform for RNA folding}
+% ==========================================
+% Discussion
+% ==========================================
+\section{Discussion}
+
+
+% ==========================================
+% Conclusion
+% ==========================================
+\section{Conclusion}
+
+
+% ==========================================
+% Annexe/Glossary
+% ==========================================
+
+\newpage
+
+\label{glossaire}
+%  vocabulaire technique, avec définition et page où est utilisé le mot la première fois
+\thispagestyle{plain}
+\setglossarystyle{listhypergroup}
+% \setglossarystyle{index} % not combine by group
+\glsaddallunused % change line
+\printnoidxglossaries
+
+% ==========================================
+% References
+% ==========================================
+\newpage
+\printbibliography[title={References}]
+
+\end{document}
