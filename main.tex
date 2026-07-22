@@ -1,42 +1,47 @@
 \documentclass[11pt,a4paper]{article}
-\input{glossary}
 
 % --- Packages de Base ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
-% biblio 
-\usepackage[backend=bibtex]{biblatex}
-\addbibresource{biblio.bib}
-\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
-
-% --- Graphismes et Couleurs ---
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    citecolor=black,
-    filecolor=black,
-    urlcolor=black,
-    pdftitle={ErwannGallois},
-    pdfpagemode=FullScreen,
-}
-
-\usepackage{svg}
-
 % --- En-têtes et Listes ---
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{booktabs}
+\usepackage{svg}
 
+% biblio 
+\usepackage[backend=bibtex]{biblatex}
+
+\addbibresource{biblio.bib}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
 % --- Définition de Couleurs ---
 \definecolor{darkblue}{RGB}{92, 48, 110}
 \definecolor{lightgray}{rgb}{0.95, 0.95, 0.95}
+\definecolor{linkrose}{RGB}{175, 106, 140}
+% --- Graphismes et Couleurs ---
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkrose,
+    citecolor=linkrose,
+    filecolor=black,
+    urlcolor=black,
+    pdftitle={ErwannGallois},
+    pdfpagemode=FullScreen,
+}
+
+\input{glossary}
+
+\renewcommand{\glstextformat}[1]{\textcolor{linkrose}{#1}}
+
+
 
 % --- Mise en page des titres ---
 \titleformat{\section}{\large\bfseries\color{darkblue}}{\thesection}{1em}{}[\titlerule]
@@ -50,7 +55,7 @@
 \renewcommand{\footrulewidth}{0.4pt}
 \lhead{\color{gray}Internship Report}
 \rhead{\color{gray} GALLOIS Erwann}
-\cfoot{\thepage / \pageref{LastPage}}
+\cfoot{\thepage / {\hypersetup{linkcolor=black}\pageref{LastPage}}}
 
 \fancypagestyle{plain}{%
     \fancyhf{}
@@ -96,7 +101,7 @@
         \Huge{\textbf{Internship Report}}\\ 
 
         \vspace{0.5cm}
-        \LARGE{Title / subject of the internship}
+        \LARGE{Prediction of RNA 3D structure using gradient-descending and knowledge-based scoring function}
           
         \vspace{2 cm}
         % \Large{\GroupName}
@@ -136,7 +141,8 @@ Write an abstract here. \\  \\
 \newpage
 \setcounter{page}{0}
 \thispagestyle{plain}
-\tableofcontents
+{\hypersetup{linkcolor=black}
+\tableofcontents}
 \newpage
 
 \setcounter{page}{1}
@@ -151,8 +157,32 @@ Write an abstract here. \\  \\
 % ==========================================
 \section{Preliminary notions}
 \subsection{Central Dogma}
-The Desoxyribose Nucléic Acid (DNA) is a fundamental moleculs in genomics. This molecule contains the genetics informations of each people. The flow of genetics informations  
 
+Every cells of every living being, excluding virus and a few exceptions, has \acrfull{dna}. This molecule contains the genetic information. It holds all information for an organism. However the DNA alone cannot do anything, it needs to be express in proteins. This process is called the central dogma of molecular biology.
+For that, the cell perform two steps : 
+\begin{enumerate}
+    \item Transcription : This steps copy a part of DNA and transcribes it into a intermediate molecule called \acrfull{rna}, or more precisely messenger RNA (mRNA). The transcription is performed inside the nucleus.
+    \item Translation : The RNA obtained in the previous step are now used to make a protein. The translation is performed outside of the nucleus.
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/protein-synthesis.jpg}
+    \caption{A diagram illustrating the processes of DNA transcription into RNA and RNA translation into proteins. Source : \cite{duke_apep_dna}}
+    \label{fig:protein-synthesis}
+\end{figure}
+
+Recently, researchers have discovered that RNA serves more than just an intermediate role. Indeed, many RNAs, known as non-coding RNAs, are never translated into proteins. Instead, they have a regulation role inside the cell.
+
+\subsection{RNA molecule}
+
+The RNA is composed composed of nucleotids. The linear arrangement of these nucletides defines the 1D strcuture or the raw sequence. 
+A nucleotid have three parts : 
+\begin{itemize}
+    \item Nitrogenous base or nucleobase : There are four type of nucleobase : Adenosine (A), Cytosine (C), Guanine (G), Uracile (U)
+    \item Ribose
+    \item Phosphate group
+\end{itemize}
 
 % ==========================================
 % Introduction
@@ -162,10 +192,56 @@ The Desoxyribose Nucléic Acid (DNA) is a fundamental moleculs in genomics. This
 % Data and Dataset
 % ==========================================
 \section{Data and Dataset}
-\subsection{PDB file structure}
-THE PDB file is a file to represent each atom from a molecule, especially for protein and RNA. Each line have a keywords to explicite 
 \subsection{PDB database}
 
+The \acrfull{pdb} \cite{berman2000pdb,rcsb2025pdb} is the principal worldwide archive for three-dimensional structures of biological macromolecule such as proteins and nucleic acids. This database centralize all structure determined by experimental methods such as X-ray crystallography, nuclear magnetic resonance spectroscopy and cryo-electron microscopy. It can be accessed through its website and an API. Each structure has an identifier composed of four letters or numbers (e.g. 1J8G) and they can be download in two format : PDB file and \acrfull{cif} files. A format change happen in 2014, with the advent of cryo-electron microscopy, researchers had the tools to see larger molecules like RNA polymerase. These types of molecules have a lot of atoms but PDB file are restricted to only 99 999 atoms, with mmCIF files, there is no limit on the molecule's scale. As a result, every new molecule added to the database is now in this format. These two format will be describe in the next section. 
+
+\subsection{PDB file structure}
+The PDB file is a file to represent each atom from a molecule, especially for protein and RNA. Each line have a keywords to explicite the line content. The file can be split in 3 parts. 
+
+The first one contains header and metadata. This part have all information about the molecule and the experimentation.
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c | c||} 
+\hline
+Keywords & Description                            \\ \hline \hline
+HEADER   & Molecule Type, PDB Id, deposition date \\
+TITLE    & Title of the experiment                \\
+COMPND   & Description of the molecule compenent  \\ 
+SOURCE   & Biological origin or Synthetic \\
+KEYWDS & Descriptive keywords for the structure \\
+EXPDTA & Experimental Methods \\
+AUTHOR & Author of the deposit \\
+REVDAT & Revision history \\
+JRNL & Publication reference \\
+REMARK & Comments numbered from most important to least important \\
+\hline
+\end{tabular}%
+\caption{All keywords founded in a first part of a PDB files}
+\label{tab:pdb-first-part}
+\end{table}
+
+The table \ref{tab:pdb-first-part} present all keywords and his signification. REMARK contains useful information such as the resolution of the molecule. The resolution is the difference between the atoms found experimentally and the actual atoms. More the resolution is low, more the experimental molecules can be accurate. 
+
+The second part are about the sequence and the crystallography parameters. These keywords are all in the table \ref{tab:pdb-second-part} 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c | c||} 
+\hline
+Keywords & Description                            \\ \hline \hline
+HEADER   & Molecule Type, PDB Id, deposition date \\
+TITLE    & Title of the experiment                \\
+COMPND   & Description of the molecule compenent  \\ 
+\hline
+\end{tabular}%
+\caption{All keywords founded in a second part of a PDB files}
+\label{tab:pdb-second-part}
+\end{table}
+
+SEQRES can be used to find the acid nucleics sequence that can be retrieved and put inside a algorithm to predict the three-dimensional structure. 
+
+The last part is the 
 % ==========================================
 % Materials and Methods
 % ==========================================
