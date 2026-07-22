@@ -15,6 +15,9 @@
 \usepackage{titlesec}
 \usepackage{booktabs}
 \usepackage{svg}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{subcaption}
 
 % biblio 
 \usepackage[backend=bibtex]{biblatex}
@@ -156,6 +159,9 @@ Write an abstract here. \\  \\
 % Notion Préliminaires
 % ==========================================
 \section{Preliminary notions}
+
+The goal of this chapter is to give insights on preliminary notions that are important to comprehend my report. 
+
 \subsection{Central Dogma}
 
 Every cells of every living being, excluding virus and a few exceptions, has \acrfull{dna}. This molecule contains the genetic information. It holds all information for an organism. However the DNA alone cannot do anything, it needs to be express in proteins. This process is called the central dogma of molecular biology.
@@ -174,23 +180,72 @@ For that, the cell perform two steps :
 
 Recently, researchers have discovered that RNA serves more than just an intermediate role. Indeed, many RNAs, known as non-coding RNAs, are never translated into proteins. Instead, they have a regulation role inside the cell.
 
+\newpage
 \subsection{RNA molecule}
 
-The RNA is composed composed of nucleotids. The linear arrangement of these nucletides defines the 1D strcuture or the raw sequence. 
-A nucleotid have three parts : 
-\begin{itemize}
-    \item Nitrogenous base or nucleobase : There are four type of nucleobase : Adenosine (A), Cytosine (C), Guanine (G), Uracile (U)
-    \item Ribose
-    \item Phosphate group
-\end{itemize}
+The RNA is single-stranded, unlike DNA which is double-stranded, and it's a polymer of nucleotids. The linear arrangement of these nucleotides defines it's primary structure (1D structure) or it's raw sequence. 
+A nucleotide is composed by three components (Fig. \ref{fig:1d-structure}) : a nucleobase, a ribose sugar and a phosphate group. Unlike phosphate group and ribose sugar who is common for all nucleotides, the nucleobase determine the type of nucleotide. For the RNA, there are four types of nucleobases : Guanine (G), Adenine (A), Cytosine (C) and Uracil (U). 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/1d-structure.jpg}
+    \caption{A diagram illustrating the 1D-structure of RNA and nucleotid composition. Source : \cite{bocsci_rna_bases}}
+    \label{fig:1d-structure}
+\end{figure}
+
+There is two form of nucleobase : pyrimidines for uracil and cytosine, purines for adenine and guanine. Purines have a second ring, so they have more atoms and are bigger than pyrimidines. These nucleobase can assemblate by stacking on top of each other trought van der Walls interactions. There is also structural constraint influences by ribose sugar chain, this chain is called the backbone \cite{Montemayor:tb5151}. And finally, the phosphate group, carry negative energy so to neutralize this charges, RNA needs heteroatoms like ions or ligand to regulate it's energy. So the conformation of RNA it's very dependant of the environnement condition, it's surronding solvant and ions has a strong influences on it's stability and it's folding \cite{draper_rna_2008}.  
+
+\subsection{RNA secondary structure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/2d-structure.png}
+    \caption{A diagram illustrating different structural motifs . Source : \cite{eclipse-strucure}}
+    \label{fig:2d-structure}
+\end{figure}
+
+The secondary or 2D structure is dictated by the primary structure. The 2D structure define the canonical interactions, such as Watson-Crick base pairing (A paring with U and G paring with C) and Wobble pair (G with U). The secondary structure alone can't define the folding of a RNA. Indeed, many pair can give multiple possible arrangement in 3D space (see Fig. \ref{fig:2d-structure}). 2D structure can also be driven by the RNA functions and interactions with proteins or other molecules. Like for 1D structure, the secondary structure influence completely the 3D structure, so knowing the RNA secondary structure for make a prediction can be effective and having a better accuracy. 
+
+\subsection{RNA tertiary structure}
+
+The transition from the secondary structure to the tertiary structure, or 3D structure, is determined by the geometric and topological properties of the motifs formed in the previous step. These motifs such as loops or bulges act as flexible hinges and anchor points.
+
+Thanks to the flexibility of these nodes, the strand continues to fold. Long-range interactions then arise between 2D motifs that may be very far apart along the 1D structure but are geometrically close to one another in space. For example, a loop located at one end may interlock with the cavity of another region.
+
+It is this dense network of interactions between the different motifs that forces the RNA to fold in a highly specific manner to adopt its final three-dimensional structure. In biology, a fundamental principle dictates that structure determines function. The tertiary structure allow the RNA molecule to interact with other element from the cell. 
+
+So to know the folding and the function of a RNA we need to know the 1D structure (\ref{fig:1d-struc-3DIQ}). This will be used to determine the secondary structure (\ref{fig:2d-struc-3DIQ}), to finally predict the 3D structure (\ref{fig:3d-struc-3DIQ}). 
+
+\begin{figure}[h!]
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/3DIQ-1D.png} 
+\caption{1D structure}
+\label{fig:1d-struc-3DIQ}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/3DIQ-2D.jpg}
+\caption{2D structure}
+\label{fig:2d-struc-3DIQ}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/3DIQ-3D.png}
+\caption{3D structure (Cartoon representation)}
+\label{fig:3d-struc-3DIQ}
+\end{subfigure}
+
+\caption{The three different level of representation for the same RNA (PDB ID : 3DIQ)}
+\label{fig:image2}
+\end{figure}
 
 % ==========================================
 % Introduction
 % ==========================================
+\newpage 
 \section{Introduction}
 % ==========================================
 % Data and Dataset
 % ==========================================
+\newpage
 \section{Data and Dataset}
 \subsection{PDB database}
 
@@ -202,7 +257,9 @@ The PDB file is a file to represent each atom from a molecule, especially for pr
 The first one contains header and metadata. This part have all information about the molecule and the experimentation.
 \begin{table}[h!]
 \centering
-\begin{tabular}{||c | c||} 
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}X|}
 \hline
 Keywords & Description                            \\ \hline \hline
 HEADER   & Molecule Type, PDB Id, deposition date \\
@@ -216,7 +273,7 @@ REVDAT & Revision history \\
 JRNL & Publication reference \\
 REMARK & Comments numbered from most important to least important \\
 \hline
-\end{tabular}%
+\end{tabularx}%
 \caption{All keywords founded in a first part of a PDB files}
 \label{tab:pdb-first-part}
 \end{table}
@@ -227,21 +284,64 @@ The second part are about the sequence and the crystallography parameters. These
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{||c | c||} 
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}X|}
 \hline
 Keywords & Description                            \\ \hline \hline
-HEADER   & Molecule Type, PDB Id, deposition date \\
-TITLE    & Title of the experiment                \\
-COMPND   & Description of the molecule compenent  \\ 
+SEQRES   & Primary Sequence by chain \\
+CRYST1    & Crystal lattice parameters                \\
+SCAL1/2/3   & Orthogonal coordinate conversion matrices  \\ 
 \hline
-\end{tabular}%
+\end{tabularx}%
 \caption{All keywords founded in a second part of a PDB files}
 \label{tab:pdb-second-part}
 \end{table}
 
-SEQRES can be used to find the acid nucleics sequence that can be retrieved and put inside a algorithm to predict the three-dimensional structure. 
+A chain in an alternative conformation for the same molecule, sometimes by adding some ligand or other molecules to induce the change of conformation. SEQRES can be used to find the acid nucleics sequence that can be retrieved and put inside a algorithm to predict the three-dimensional structure. 
 
-The last part is the 
+The last part is the goal of this file, the coordinates of every atoms from the molecule. This section is formatted in fixed columns. It's not just generic space between columns, the position is important. The information for every line is resume in the table \ref{tab:pdb-third-part}. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{img/example-pdb.png}    
+    \caption{Line 808 from the pdb file from the pdb id 1J8G \cite{deng_x-ray_2001}}
+    \label{fig:ex-pdb}
+\end{figure}
+
+
+\begin{table}[h!]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{1.5cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}X|}
+        \hline
+        Columns & Fields & Value (from Fig. \ref{fig:ex-pdb}) & Description\\ \hline \hline
+        1-6   & Record Name & \verb|ATOM| & Two types: \texttt{ATOM} for standard residues and \texttt{HETATM} for heteroatoms \\
+        7-11  & Serial Number & \verb|1| & Sequential atom number \\
+        13-16 & Atom Name & \verb|O5'| & Atom name per IUPAC nomenclature \\
+        17    & AltLoc & blank & Alternate location indicator, used when an atom has more than one modeled conformation (A/B) \\
+        18-20 & Residue Name & \verb|U| & Residue type (e.g. uracil for RNA) \\
+        22    & Chain ID & \verb|A| & Chain identifier \\
+        23-26 & Residue Sequence Number & \verb|1| & Residue position within the chain \\
+        31-38 & x & \verb|12.967| & Cartesian X coordinate (\AA) \\
+        39-46 & y & \verb|20.885| & Cartesian Y coordinate (\AA) \\
+        47-54 & z & \texttt{19.962} & Cartesian Z coordinate (\AA) \\
+        55-60 & Occupancy & \texttt{1.00} & Fraction of the unit cell in which this atom occupies this position (1.00 = always present) \\
+        61-66 & Temperature Factor & \texttt{5.19} & Thermal displacement / positional uncertainty (B-factor); lower = sharper, more ordered atom \\
+        77-78 & Element & \texttt{O} & Chemical element symbol \\
+        \hline
+    \end{tabularx}
+    \caption{All keywords found in the coordinate section of a PDB file}
+    \label{tab:pdb-third-part}
+\end{table}
+
+\subsection{Difference between PDB file and mmCIF file}
+
+PDB files and mmCIF files have the same goal: describe the structural content. They have the same type of information, coordinates, experimental metadata. For the same PDB id, these two files must describe exactly the same molecule. The difference between them is not about the information but about the structure file.
+
+A PDB file uses fixed-width columns, so a parser needs to know exactly the specification. On the contrary, mmCIF is a key-value format, where each value is explicitly named. This format is more general and can be used by more tools and more easily. Because each value is a free token instead of a fixed-width column, mmCIF has no limit on chain ID length or residue number, which is why it can scale to every molecule, even massive assemblies like ribosomes or cryo-EM structures that a PDB file cannot represent. On the other hand, a mmCIF file is less user-friendly when you want to read information without a parser. These differences between these file types explain why both extensions are usually available inside the PDB database, except for very large structures where only mmCIF can be provided.
+
+
 % ==========================================
 % Materials and Methods
 % ==========================================
@@ -292,6 +392,18 @@ The last part is the
 % References
 % ==========================================
 \newpage
+\addcontentsline{toc}{section}{References}
 \printbibliography[title={References}]
+
+% ==========================================
+% List figures Tables
+% ==========================================
+\newpage
+
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{List of figures}
+\listoffigures
+\addcontentsline{toc}{section}{List of tables}
+\listoftables
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.15)  21 JUL 2026 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.15)  22 JUL 2026 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,73 +472,116 @@ Package: transparent 2025-06-23 v1.6 Transparency with color stacks
 Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color stack (HO)
  (/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+))) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen289
+\ar@mcellbox=\box76
+\extrarowheight=\dimen290
+\NC@list=\toks39
+\extratabsurround=\skip69
+\backup@length=\skip70
+\ar@cellbox=\box77
+)
+\TX@col@width=\dimen291
+\TX@old@table=\dimen292
+\TX@old@col=\dimen293
+\TX@target=\dimen294
+\TX@delta=\dimen295
+\TX@cols=\count331
+\TX@ftn=\toks40
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen296
+\captionmargin=\dimen297
+\caption@leftmargin=\dimen298
+\caption@rightmargin=\dimen299
+\caption@width=\dimen300
+\caption@indent=\dimen301
+\caption@parindent=\dimen302
+\caption@hangindent=\dimen303
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count332
+\c@continuedfloat=\count333
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count334
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count335
+) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count331
+\lrq@indent=\count336
  (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count332
-\c@listtotal=\count333
-\c@listcount=\count334
-\c@liststart=\count335
-\c@liststop=\count336
-\c@citecount=\count337
-\c@citetotal=\count338
-\c@multicitecount=\count339
-\c@multicitetotal=\count340
-\c@instcount=\count341
-\c@maxnames=\count342
-\c@minnames=\count343
-\c@maxitems=\count344
-\c@minitems=\count345
-\c@citecounter=\count346
-\c@maxcitecounter=\count347
-\c@savedcitecounter=\count348
-\c@uniquelist=\count349
-\c@uniquename=\count350
-\c@refsection=\count351
-\c@refsegment=\count352
-\c@maxextratitle=\count353
-\c@maxextratitleyear=\count354
-\c@maxextraname=\count355
-\c@maxextradate=\count356
-\c@maxextraalpha=\count357
-\c@abbrvpenalty=\count358
-\c@highnamepenalty=\count359
-\c@lownamepenalty=\count360
-\c@maxparens=\count361
-\c@parenlevel=\count362
-\blx@tempcnta=\count363
-\blx@tempcntb=\count364
-\blx@tempcntc=\count365
-\c@blx@maxsection=\count366
-\blx@maxsegment@0=\count367
-\blx@notetype=\count368
-\blx@parenlevel@text=\count369
-\blx@parenlevel@foot=\count370
-\blx@sectionciteorder@0=\count371
-\blx@sectionciteorderinternal@0=\count372
-\blx@entrysetcounter=\count373
-\blx@biblioinstance=\count374
-\labelnumberwidth=\skip69
-\labelalphawidth=\skip70
-\biblabelsep=\skip71
-\bibitemsep=\skip72
-\bibnamesep=\skip73
-\bibinitsep=\skip74
-\bibparsep=\skip75
-\bibhang=\skip76
+\c@tabx@nest=\count337
+\c@listtotal=\count338
+\c@listcount=\count339
+\c@liststart=\count340
+\c@liststop=\count341
+\c@citecount=\count342
+\c@citetotal=\count343
+\c@multicitecount=\count344
+\c@multicitetotal=\count345
+\c@instcount=\count346
+\c@maxnames=\count347
+\c@minnames=\count348
+\c@maxitems=\count349
+\c@minitems=\count350
+\c@citecounter=\count351
+\c@maxcitecounter=\count352
+\c@savedcitecounter=\count353
+\c@uniquelist=\count354
+\c@uniquename=\count355
+\c@refsection=\count356
+\c@refsegment=\count357
+\c@maxextratitle=\count358
+\c@maxextratitleyear=\count359
+\c@maxextraname=\count360
+\c@maxextradate=\count361
+\c@maxextraalpha=\count362
+\c@abbrvpenalty=\count363
+\c@highnamepenalty=\count364
+\c@lownamepenalty=\count365
+\c@maxparens=\count366
+\c@parenlevel=\count367
+\blx@tempcnta=\count368
+\blx@tempcntb=\count369
+\blx@tempcntc=\count370
+\c@blx@maxsection=\count371
+\blx@maxsegment@0=\count372
+\blx@notetype=\count373
+\blx@parenlevel@text=\count374
+\blx@parenlevel@foot=\count375
+\blx@sectionciteorder@0=\count376
+\blx@sectionciteorderinternal@0=\count377
+\blx@entrysetcounter=\count378
+\blx@biblioinstance=\count379
+\labelnumberwidth=\skip71
+\labelalphawidth=\skip72
+\biblabelsep=\skip73
+\bibitemsep=\skip74
+\bibnamesep=\skip75
+\bibinitsep=\skip76
+\bibparsep=\skip77
+\bibhang=\skip78
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language28
-\c@mincomprange=\count375
-\c@maxcomprange=\count376
-\c@mincompwidth=\count377
+\c@mincomprange=\count380
+\c@maxcomprange=\count381
+\c@mincompwidth=\count382
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -546,88 +589,88 @@ File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count378
-\c@savedafterword=\count379
-\c@annotator=\count380
-\c@savedannotator=\count381
-\c@author=\count382
-\c@savedauthor=\count383
-\c@bookauthor=\count384
-\c@savedbookauthor=\count385
-\c@commentator=\count386
-\c@savedcommentator=\count387
-\c@editor=\count388
-\c@savededitor=\count389
-\c@editora=\count390
-\c@savededitora=\count391
-\c@editorb=\count392
-\c@savededitorb=\count393
-\c@editorc=\count394
-\c@savededitorc=\count395
-\c@foreword=\count396
-\c@savedforeword=\count397
-\c@holder=\count398
-\c@savedholder=\count399
-\c@introduction=\count400
-\c@savedintroduction=\count401
-\c@namea=\count402
-\c@savednamea=\count403
-\c@nameb=\count404
-\c@savednameb=\count405
-\c@namec=\count406
-\c@savednamec=\count407
-\c@translator=\count408
-\c@savedtranslator=\count409
-\c@shortauthor=\count410
-\c@savedshortauthor=\count411
-\c@shorteditor=\count412
-\c@savedshorteditor=\count413
-\c@labelname=\count414
-\c@savedlabelname=\count415
-\c@institution=\count416
-\c@savedinstitution=\count417
-\c@lista=\count418
-\c@savedlista=\count419
-\c@listb=\count420
-\c@savedlistb=\count421
-\c@listc=\count422
-\c@savedlistc=\count423
-\c@listd=\count424
-\c@savedlistd=\count425
-\c@liste=\count426
-\c@savedliste=\count427
-\c@listf=\count428
-\c@savedlistf=\count429
-\c@location=\count430
-\c@savedlocation=\count431
-\c@organization=\count432
-\c@savedorganization=\count433
-\c@origlocation=\count434
-\c@savedoriglocation=\count435
-\c@origpublisher=\count436
-\c@savedorigpublisher=\count437
-\c@publisher=\count438
-\c@savedpublisher=\count439
-\c@language=\count440
-\c@savedlanguage=\count441
-\c@origlanguage=\count442
-\c@savedoriglanguage=\count443
-\c@pageref=\count444
-\c@savedpageref=\count445
-\shorthandwidth=\skip77
-\shortjournalwidth=\skip78
-\shortserieswidth=\skip79
-\shorttitlewidth=\skip80
-\shortauthorwidth=\skip81
-\shorteditorwidth=\skip82
-\locallabelnumberwidth=\skip83
-\locallabelalphawidth=\skip84
-\localshorthandwidth=\skip85
-\localshortjournalwidth=\skip86
-\localshortserieswidth=\skip87
-\localshorttitlewidth=\skip88
-\localshortauthorwidth=\skip89
-\localshorteditorwidth=\skip90
+\c@afterword=\count383
+\c@savedafterword=\count384
+\c@annotator=\count385
+\c@savedannotator=\count386
+\c@author=\count387
+\c@savedauthor=\count388
+\c@bookauthor=\count389
+\c@savedbookauthor=\count390
+\c@commentator=\count391
+\c@savedcommentator=\count392
+\c@editor=\count393
+\c@savededitor=\count394
+\c@editora=\count395
+\c@savededitora=\count396
+\c@editorb=\count397
+\c@savededitorb=\count398
+\c@editorc=\count399
+\c@savededitorc=\count400
+\c@foreword=\count401
+\c@savedforeword=\count402
+\c@holder=\count403
+\c@savedholder=\count404
+\c@introduction=\count405
+\c@savedintroduction=\count406
+\c@namea=\count407
+\c@savednamea=\count408
+\c@nameb=\count409
+\c@savednameb=\count410
+\c@namec=\count411
+\c@savednamec=\count412
+\c@translator=\count413
+\c@savedtranslator=\count414
+\c@shortauthor=\count415
+\c@savedshortauthor=\count416
+\c@shorteditor=\count417
+\c@savedshorteditor=\count418
+\c@labelname=\count419
+\c@savedlabelname=\count420
+\c@institution=\count421
+\c@savedinstitution=\count422
+\c@lista=\count423
+\c@savedlista=\count424
+\c@listb=\count425
+\c@savedlistb=\count426
+\c@listc=\count427
+\c@savedlistc=\count428
+\c@listd=\count429
+\c@savedlistd=\count430
+\c@liste=\count431
+\c@savedliste=\count432
+\c@listf=\count433
+\c@savedlistf=\count434
+\c@location=\count435
+\c@savedlocation=\count436
+\c@organization=\count437
+\c@savedorganization=\count438
+\c@origlocation=\count439
+\c@savedoriglocation=\count440
+\c@origpublisher=\count441
+\c@savedorigpublisher=\count442
+\c@publisher=\count443
+\c@savedpublisher=\count444
+\c@language=\count445
+\c@savedlanguage=\count446
+\c@origlanguage=\count447
+\c@savedoriglanguage=\count448
+\c@pageref=\count449
+\c@savedpageref=\count450
+\shorthandwidth=\skip79
+\shortjournalwidth=\skip80
+\shortserieswidth=\skip81
+\shorttitlewidth=\skip82
+\shortauthorwidth=\skip83
+\shorteditorwidth=\skip84
+\locallabelnumberwidth=\skip85
+\locallabelalphawidth=\skip86
+\localshorthandwidth=\skip87
+\localshortjournalwidth=\skip88
+\localshortserieswidth=\skip89
+\localshorttitlewidth=\skip90
+\localshortauthorwidth=\skip91
+\localshorteditorwidth=\skip92
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -647,19 +690,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count446
-\c@textcitetotal=\count447
-\c@textcitemaxnames=\count448
-\c@biburlbigbreakpenalty=\count449
-\c@biburlbreakpenalty=\count450
-\c@biburlnumpenalty=\count451
-\c@biburlucpenalty=\count452
-\c@biburllcpenalty=\count453
+\c@textcitecount=\count451
+\c@textcitetotal=\count452
+\c@textcitemaxnames=\count453
+\c@biburlbigbreakpenalty=\count454
+\c@biburlbreakpenalty=\count455
+\c@biburlnumpenalty=\count456
+\c@biburlucpenalty=\count457
+\c@biburllcpenalty=\count458
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count454
+\c@smartand=\count459
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -669,8 +712,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count455
-\c@bbx:relatedtotal=\count456
+\c@bbx:relatedcount=\count460
+\c@bbx:relatedtotal=\count461
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -699,7 +742,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2026-01-19 L3 programming layer (loader) 
  (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count457
+\l__color_backend_stack_int=\count462
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2026-01-19 L3 programming layer (loader) 
@@ -710,226 +753,226 @@ Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 38.
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
  (./glossary.tex (/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2025/11/09 v4.9 (NLCT)
  (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
  (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks39
-\XKV@tempa@toks=\toks40
-\XKV@tempb@toks=\toks41
+\XKV@toks=\toks41
+\XKV@tempa@toks=\toks42
+\XKV@tempb@toks=\toks43
 )
-\XKV@depth=\count458
+\XKV@depth=\count463
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks42
-\@glsmrest=\toks43
+\@glsmfirst=\toks44
+\@glsmrest=\toks45
 ) (/usr/share/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks44
-\ex@=\dimen289
+\@emptytoks=\toks46
+\ex@=\dimen304
 ) (/usr/share/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
  (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip91
+\@mathmargin=\skip93
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen290
+\pmbraise@=\dimen305
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count459
+\inf@bad=\count464
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count460
-\leftroot@=\count461
+\uproot@=\count465
+\leftroot@=\count466
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count462
-\DOTSCASE@=\count463
+\classnum@=\count467
+\DOTSCASE@=\count468
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box76
-\strutbox@=\box77
+\Mathstrutbox@=\box78
+\strutbox@=\box79
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen291
+\big@size=\dimen306
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count464
+\macc@depth=\count469
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count465
+\c@MaxMatrixCols=\count470
 \dotsspace@=\muskip22
-\c@parentequation=\count466
-\dspbrk@lvl=\count467
-\tag@help=\toks45
-\row@=\count468
-\column@=\count469
-\maxfields@=\count470
-\andhelp@=\toks46
-\eqnshift@=\dimen292
-\alignsep@=\dimen293
-\tagshift@=\dimen294
-\tagwidth@=\dimen295
-\totwidth@=\dimen296
-\lineht@=\dimen297
-\@envbody=\toks47
-\multlinegap=\skip92
-\multlinetaggap=\skip93
-\mathdisplay@stack=\toks48
+\c@parentequation=\count471
+\dspbrk@lvl=\count472
+\tag@help=\toks47
+\row@=\count473
+\column@=\count474
+\maxfields@=\count475
+\andhelp@=\toks48
+\eqnshift@=\dimen307
+\alignsep@=\dimen308
+\tagshift@=\dimen309
+\tagwidth@=\dimen310
+\totwidth@=\dimen311
+\lineht@=\dimen312
+\@envbody=\toks49
+\multlinegap=\skip94
+\multlinetaggap=\skip95
+\mathdisplay@stack=\toks50
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 ) (/usr/share/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
  (/usr/share/texmf-dist/tex/generic/tracklang/tracklang.tex))
-\l__datatool_tmpa_int=\count471
-\l__datatool_tmpb_int=\count472
-\l__datatool_tmpc_int=\count473
-\l__datatool_tmpd_int=\count474
-\l__datatool_count_int=\count475
-\l__datatool_tmp_datatype_int=\count476
-\l__datatool_tmpa_dim=\dimen298
-\l__datatool_tmpb_dim=\dimen299
+\l__datatool_tmpa_int=\count476
+\l__datatool_tmpb_int=\count477
+\l__datatool_tmpc_int=\count478
+\l__datatool_tmpd_int=\count479
+\l__datatool_count_int=\count480
+\l__datatool_tmp_datatype_int=\count481
+\l__datatool_tmpa_dim=\dimen313
+\l__datatool_tmpb_dim=\dimen314
  (/usr/share/texmf-dist/tex/latex/datatool/datatool-l3fp.def
 File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@toks=\toks49
-\@dtl@tmpcount=\count477
-\dtl@tmplength=\skip94
-\l__datatool_measure_box=\box78
-\dtl@sortresult=\count478
+\@dtl@toks=\toks51
+\@dtl@tmpcount=\count482
+\dtl@tmplength=\skip96
+\l__datatool_measure_box=\box80
+\dtl@sortresult=\count483
  (/usr/share/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count479
-\c_datatool_unknown_int=\count480
-\l__datatool_year_int=\count481
-\l__datatool_month_int=\count482
-\l__datatool_day_int=\count483
-\l__datatool_hour_int=\count484
-\l__datatool_minute_int=\count485
-\l__datatool_second_int=\count486
-\l__datatool_tzhour_int=\count487
-\l__datatool_tzminute_int=\count488
-\l__datatool_julian_int=\count489
-\l__datatool_local_julian_int=\count490
-\l__datatool_prefix_int=\count491
-\l__datatool_suffix_int=\count492
-\@dtl@foreach@level=\count493
-\dtl@codeA=\count494
-\dtl@codeB=\count495
+\@dtl@datatype=\count484
+\c_datatool_unknown_int=\count485
+\l__datatool_year_int=\count486
+\l__datatool_month_int=\count487
+\l__datatool_day_int=\count488
+\l__datatool_hour_int=\count489
+\l__datatool_minute_int=\count490
+\l__datatool_second_int=\count491
+\l__datatool_tzhour_int=\count492
+\l__datatool_tzminute_int=\count493
+\l__datatool_julian_int=\count494
+\l__datatool_local_julian_int=\count495
+\l__datatool_prefix_int=\count496
+\l__datatool_suffix_int=\count497
+\@dtl@foreach@level=\count498
+\dtl@codeA=\count499
+\dtl@codeB=\count500
 )
-\gls@level=\count496
-\@gls@tmpb=\toks50
-\gls@tmplen=\skip95
-\l__glossaries_tmpa_dim=\dimen300
-\l__glossaries_tmpb_dim=\dimen301
-\glskeylisttok=\toks51
-\glslabeltok=\toks52
-\glsshorttok=\toks53
-\glslongtok=\toks54
+\gls@level=\count501
+\@gls@tmpb=\toks52
+\gls@tmplen=\skip97
+\l__glossaries_tmpa_dim=\dimen315
+\l__glossaries_tmpb_dim=\dimen316
+\glskeylisttok=\toks53
+\glslabeltok=\toks54
+\glsshorttok=\toks55
+\glslongtok=\toks56
  (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2025/11/09 v4.9 (NLCT)
 ) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2025/11/09 v4.9 (NLCT)
-\glslistdottedwidth=\skip96
+\glslistdottedwidth=\skip98
 ) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2025/11/09 v4.9 (NLCT)
  (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip97
-\LTright=\skip98
-\LTpre=\skip99
-\LTpost=\skip100
-\LTchunksize=\count497
-\LTcapwidth=\dimen302
-\LT@head=\box79
-\LT@firsthead=\box80
-\LT@foot=\box81
-\LT@lastfoot=\box82
-\LT@gbox=\box83
-\LT@cols=\count498
-\LT@rows=\count499
-\c@LT@tables=\count500
-\c@LT@chunks=\count501
-\LT@p@ftn=\toks55
+\LTleft=\skip99
+\LTright=\skip100
+\LTpre=\skip101
+\LTpost=\skip102
+\LTchunksize=\count502
+\LTcapwidth=\dimen317
+\LT@head=\box81
+\LT@firsthead=\box82
+\LT@foot=\box83
+\LT@lastfoot=\box84
+\LT@gbox=\box85
+\LT@cols=\count503
+\LT@rows=\count504
+\c@LT@tables=\count505
+\c@LT@chunks=\count506
+\LT@p@ftn=\toks57
 )
-\glsdescwidth=\skip101
-\glspagelistwidth=\skip102
+\glsdescwidth=\skip103
+\glspagelistwidth=\skip104
 ) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2025/11/09 v4.9 (NLCT)
  (/usr/share/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count502
-\ST@wd=\dimen303
-\ST@rightskip=\skip103
-\ST@leftskip=\skip104
-\ST@parfillskip=\skip105
-\ST@pageleft=\dimen304
-\ST@headht=\dimen305
-\ST@tailht=\dimen306
-\ST@pagesofar=\dimen307
-\ST@pboxht=\dimen308
-\ST@rowht=\dimen309
-\ST@prevht=\dimen310
-\ST@toadd=\dimen311
-\ST@dimen=\dimen312
-\ST@pbox=\box84
+\c@tracingst=\count507
+\ST@wd=\dimen318
+\ST@rightskip=\skip105
+\ST@leftskip=\skip106
+\ST@parfillskip=\skip107
+\ST@pageleft=\dimen319
+\ST@headht=\dimen320
+\ST@tailht=\dimen321
+\ST@pagesofar=\dimen322
+\ST@pboxht=\dimen323
+\ST@rowht=\dimen324
+\ST@prevht=\dimen325
+\ST@toadd=\dimen326
+\ST@dimen=\dimen327
+\ST@pbox=\box86
 )) (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2025/11/09 v4.9 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count503
-\l__glossaries_tree_offset_dim=\dimen313
-\l__glossaries_tree_namewidth_dim=\dimen314
-\l__glossaries_tree_symbolwidth_dim=\dimen315
-\l__glossaries_tree_prenamesym_width_dim=\dimen316
-\l__glossaries_tree_presubnamesym_width_dim=\dimen317
-\l__glossaries_tree_namewidth_padding_dim=\dimen318
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen319
-\l__glossaries_tree_namesymbolwidth_dim=\dimen320
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen321
-\l__glossaries_tree_level_int=\count504
-\glstreeindent=\skip106
+\l__glossaries_tree_max_known_level_int=\count508
+\l__glossaries_tree_offset_dim=\dimen328
+\l__glossaries_tree_namewidth_dim=\dimen329
+\l__glossaries_tree_symbolwidth_dim=\dimen330
+\l__glossaries_tree_prenamesym_width_dim=\dimen331
+\l__glossaries_tree_presubnamesym_width_dim=\dimen332
+\l__glossaries_tree_namewidth_padding_dim=\dimen333
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen334
+\l__glossaries_tree_namesymbolwidth_dim=\dimen335
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen336
+\l__glossaries_tree_level_int=\count509
+\glstreeindent=\skip108
 )))
-\@quotelevel=\count505
-\@quotereset=\count506
+\@quotelevel=\count510
+\@quotereset=\count511
  (./main.aux
-\g__glossaries_gls_ref_main_int=\count507
+\g__glossaries_gls_ref_main_int=\count512
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -967,28 +1010,35 @@ LaTeX Font Info:    ... okay on input line 88.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count508
-\scratchdimen=\dimen322
-\scratchbox=\box85
-\nofMPsegments=\count509
-\nofMParguments=\count510
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count511
-\MPscratchDim=\dimen323
-\MPnumerator=\count512
-\makeMPintoPDFobject=\count513
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count513
+\scratchdimen=\dimen337
+\scratchbox=\box87
+\nofMPsegments=\count514
+\nofMParguments=\count515
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count516
+\MPscratchDim=\dimen338
+\MPnumerator=\count517
+\makeMPintoPDFobject=\count518
+\everyMPtoPDFconversion=\toks59
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 88.
+Package hyperref Info: Link coloring ON on input line 91.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1004,23 +1054,29 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
-<img/LOGO-UNICAEN_V-2.1-N.png, id=99, 259.2084pt x 146.2263pt>
+ (./main.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Montemayor:tb5151':
+(biblatex)                - Invalid format of field 'month'.
+
+)
+Package biblatex Info: Reference section=0 on input line 91.
+Package biblatex Info: Reference segment=0 on input line 91.
+<img/LOGO-UNICAEN_V-2.1-N.png, id=120, 259.2084pt x 146.2263pt>
 File: img/LOGO-UNICAEN_V-2.1-N.png Graphic file (type png)
 <use img/LOGO-UNICAEN_V-2.1-N.png>
-Package pdftex.def Info: img/LOGO-UNICAEN_V-2.1-N.png  used on input line 96.
+Package pdftex.def Info: img/LOGO-UNICAEN_V-2.1-N.png  used on input line 99.
 (pdftex.def)             Requested size: 136.57462pt x 77.04662pt.
-<img/logo_ibiscsaclay_bleu_324ptx89pt.png, id=101, 306.14375pt x 89.33376pt>
+<img/logo_ibiscsaclay_bleu_324ptx89pt.png, id=122, 306.14375pt x 89.33376pt>
 File: img/logo_ibiscsaclay_bleu_324ptx89pt.png Graphic file (type png)
 <use img/logo_ibiscsaclay_bleu_324ptx89pt.png>
-Package pdftex.def Info: img/logo_ibiscsaclay_bleu_324ptx89pt.png  used on input line 122.
+Package pdftex.def Info: img/logo_ibiscsaclay_bleu_324ptx89pt.png  used on input line 125.
 (pdftex.def)             Requested size: 182.09486pt x 53.13583pt.
  [0
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./img/LOGO-UNICAEN_V-2.1-N.png> <./img/logo_ibiscsaclay_bleu_324ptx89pt.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
@@ -1032,24 +1088,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--139
 pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 \newpage
+l.149 \newpage
                [0]
-<img/protein-synthesis.jpg, id=150, 449.68pt x 421.575pt>
+<img/protein-synthesis.jpg, id=177, 449.68pt x 421.575pt>
 File: img/protein-synthesis.jpg Graphic file (type jpg)
 <use img/protein-synthesis.jpg>
-Package pdftex.def Info: img/protein-synthesis.jpg  used on input line 170.
+Package pdftex.def Info: img/protein-synthesis.jpg  used on input line 176.
 (pdftex.def)             Requested size: 182.09486pt x 170.7112pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198 
-       [1{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./img/protein-synthesis.jpg>] [2] [3]
+l.183 \newpage
+               [1 <./img/protein-synthesis.jpg>]
+<img/1d-structure.jpg, id=194, 869.2475pt x 867.24pt>
+File: img/1d-structure.jpg Graphic file (type jpg)
+<use img/1d-structure.jpg>
+Package pdftex.def Info: img/1d-structure.jpg  used on input line 191.
+(pdftex.def)             Requested size: 273.14923pt x 272.5204pt.
+<img/2d-structure.png, id=199, 1027.84pt x 578.16pt>
+File: img/2d-structure.png Graphic file (type png)
+<use img/2d-structure.png>
+Package pdftex.def Info: img/2d-structure.png  used on input line 202.
+(pdftex.def)             Requested size: 182.09486pt x 102.42342pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./img/1d-structure.jpg>]
+<img/3DIQ-1D.png, id=216, 1086.0575pt x 287.0725pt>
+File: img/3DIQ-1D.png Graphic file (type png)
+<use img/3DIQ-1D.png>
+Package pdftex.def Info: img/3DIQ-1D.png  used on input line 221.
+(pdftex.def)             Requested size: 204.85846pt x 54.14572pt.
+<img/3DIQ-2D.jpg, id=217, 1059.83955pt x 667.41345pt>
+File: img/3DIQ-2D.jpg Graphic file (type jpg)
+<use img/3DIQ-2D.jpg>
+Package pdftex.def Info: img/3DIQ-2D.jpg  used on input line 226.
+(pdftex.def)             Requested size: 204.85846pt x 128.9994pt.
+<img/3DIQ-3D.png, id=218, 892.33376pt x 507.8975pt>
+File: img/3DIQ-3D.png Graphic file (type png)
+<use img/3DIQ-3D.png>
+Package pdftex.def Info: img/3DIQ-3D.png  used on input line 231.
+(pdftex.def)             Requested size: 204.85846pt x 116.59697pt.
+
+Overfull \hbox (2.42162pt too wide) in paragraph at lines 220--235
+[][] []
+ []
+
+[3 <./img/2d-structure.png> <./img/3DIQ-1D.png> <./img/3DIQ-2D.jpg> <./img/3DIQ-3D.png>] [4] [5]
+<img/example-pdb.png, id=254, 1660.2025pt x 142.5325pt>
+File: img/example-pdb.png Graphic file (type png)
+<use img/example-pdb.png>
+Package pdftex.def Info: img/example-pdb.png  used on input line 306.
+(pdftex.def)             Requested size: 455.24411pt x 39.08237pt.
+
+
+LaTeX Warning: \verb may be unreliable inside tabularx on input line 333.
+
+[6 <./img/example-pdb.png>] [7]
 
 Package glossaries Info: Preparing to sort glossary `main' (total number of
 (glossaries)             referenced entries: 5)
 
-[4] [5] 
+[8] [9] (./main.lof
+Overfull \hbox (0.21132pt too wide) in paragraph at lines 2--2
+ [][] [][][]\T1/cmr/m/n/10.95 A di-a-gram il-lus-trat-ing the 1D-structure of RNA and nu-cleotid com-po-si-tion. Source 
+ []
+
+)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ (./main.lot)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+ [10] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1057,24 +1172,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6DD05B82261C0447A3312E22C464527F;3760.
+(rerunfilecheck)             Checksum: 95ECCD64B22ED80BEC282A2235203785;4741.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39041 strings out of 468995
- 785322 string characters out of 5460435
- 1636464 words of memory out of 5000000
- 67285 multiletter control sequences out of 15000+600000
- 640785 words of font info for 66 fonts, out of 8000000 for 9000
+ 40745 strings out of 468995
+ 818440 string characters out of 5460435
+ 1663871 words of memory out of 5000000
+ 68950 multiletter control sequences out of 15000+600000
+ 641211 words of font info for 68 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 98i,12n,108p,2532b,1440s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (8 pages, 347020 bytes).
+ 98i,12n,108p,2532b,1640s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on main.pdf (13 pages, 1144850 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 212 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

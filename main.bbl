@@ -113,6 +113,192 @@
     \field{year}{2000}
   \endentry
 
+  \entry{bocsci_rna_bases}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{BOC Sciences}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Standard RNA Bases}
+    \verb{url}
+    \verb https://rna.bocsci.com/upload/image/1-2-Standard-RNA-Bases.jpg
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{deng_x-ray_2001}{misc}{}{}
+    \name{author}{3}{}{%
+      {{hash=DJ}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XY}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sundaralingam},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{DJXYSM1}
+    \strng{fullhash}{DJXYSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    x-ray diffraction structure%
+    }
+    \verb{doi}
+    \verb 10.2210/pdb1j8g/pdb
+    \endverb
+    \field{note}{Institution: Worldwide Protein Data Bank}
+    \field{shorttitle}{X-ray {Analysis} of a {RNA} {Tetraplex} r(uggggu)4 at {Ultra}-{High} {Resolution}}
+    \field{title}{X-ray {Analysis} of a {RNA} {Tetraplex} r(uggggu)4 at {Ultra}-{High} {Resolution}: 1j8g}
+    \verb{url}
+    \verb https://www.wwpdb.org/pdb?id=pdb_00001j8g
+    \endverb
+    \field{month}{11}
+    \field{year}{2001}
+  \endentry
+
+  \entry{draper_rna_2008}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=DDE}{%
+         family={Draper},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima E.},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DDE1}
+    \strng{fullhash}{DDE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    The stability of a compact RNA tertiary structure is exquisitely sensitive to the concentrations and types of ions that are present. This review discusses the progress that has been made in developing a quantitative understanding of the thermodynamic parameters and molecular detail that underlie this sensitivity, including the nature of the ion atmosphere, the occurrence of specific ion binding sites, and the importance of the ensemble of partially unfolded states from which folding to the native structure occurs.%
+    }
+    \verb{doi}
+    \verb 10.1529/biophysj.108.131813
+    \endverb
+    \field{issn}{0006-3495}
+    \field{number}{12}
+    \field{pages}{5489\bibrangedash 5495}
+    \field{title}{{RNA} {Folding}: {Thermodynamic} and {Molecular} {Descriptions} of the {Roles} of {Ions}}
+    \verb{url}
+    \verb https://doi.org/10.1529/biophysj.108.131813
+    \endverb
+    \field{volume}{95}
+    \field{journaltitle}{Biophysical Journal}
+    \field{month}{12}
+    \field{year}{2008}
+  \endentry
+
+  \entry{eclipse-strucure}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={{Eclipse Bio}},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{structure figure}
+    \verb{url}
+    \verb https://eclipsebio.com/wp-content/uploads/2024/09/structure_figure-10
+    \verb 24x576.png
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Montemayor:tb5151}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=MEJ}{%
+         family={Montemayor},
+         familyi={M\bibinitperiod},
+         given={Eric\bibnamedelima J.},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VJM}{%
+         family={Virta},
+         familyi={V\bibinitperiod},
+         given={Johanna\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HLD}{%
+         family={Hagler},
+         familyi={H\bibinitperiod},
+         given={Lauren\bibnamedelima D.},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=ZSC}{%
+         family={Zimmerman},
+         familyi={Z\bibinitperiod},
+         given={Steven\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BSE}{%
+         family={Butcher},
+         familyi={B\bibinitperiod},
+         given={Samuel\bibnamedelima E.},
+         giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{RNA, myotonic dystrophy type 1, pyrimidine mismatches}
+    \strng{namehash}{MEJ+1}
+    \strng{fullhash}{MEJVJMHLDZSCBSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The structure of a 22-base-pair RNA helix with mismatched pyrimidine base pairs is reported. The helix contains two symmetry-related CUG sequences: a triplet-repeat motif implicated in myotonic dystrophy type 1. The CUG repeat contains a U{--}U mismatch sandwiched between Watson{--}Crick pairs. Additionally, the center of the helix contains a dimerized UUCG motif with tandem pyrimidine (U{--}C/C{--}U) mismatches flanked by U{--}G wobble pairs. This region of the structure is significantly different from previously observed structures that share the same sequence and neighboring base pairs. The tandem pyrimidine mismatches are unusual and display sheared, cross-strand stacking geometries that locally constrict the helical width, a type of stacking previously associated with purines in internal loops. Thus, pyrimidine-rich regions of RNA have a high degree of structural diversity.%
+    }
+    \verb{doi}
+    \verb 10.1107/S2053230X19012172
+    \endverb
+    \field{number}{10}
+    \field{pages}{652\bibrangedash 656}
+    \field{title}{{Structure of an RNA helix with pyrimidine mismatches and cross-strand stacking}}
+    \verb{url}
+    \verb https://doi.org/10.1107/S2053230X19012172
+    \endverb
+    \field{volume}{75}
+    \field{journaltitle}{Acta Crystallographica Section F}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{rcsb2025pdb}{article}{}{}
     \name{author}{1}{}{%
       {{hash=R}{%
