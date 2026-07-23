@@ -16,7 +16,7 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global/global}
+\datalist[entry]{nyt/global//global/global/global}
   \entry{duke_apep_dna}{online}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -30,6 +30,7 @@
     \strng{namehash}{A1}
     \strng{fullhash}{A1}
     \field{labelnamesource}{author}
+    \field{labeldatesource}{nodate}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \verb{url}
@@ -97,6 +98,8 @@
     \strng{fullhash}{BHMWJFZGGBTNWHSINBPE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \verb{doi}
@@ -124,6 +127,7 @@
     \strng{fullhash}{B1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{title}{Standard RNA Bases}
@@ -133,6 +137,42 @@
     \field{urlday}{22}
     \field{urlmonth}{07}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{crick_central_1970}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={CRICK},
+         familyi={C\bibinitperiod},
+         given={FRANCIS},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The central dogma of molecular biology deals with the detailed residue-by-residue transfer of sequential information. It states that such information cannot be transferred from protein to either protein or nucleic acid.%
+    }
+    \verb{doi}
+    \verb 10.1038/227561a0
+    \endverb
+    \field{issn}{1476-4687}
+    \field{number}{5258}
+    \field{pages}{561\bibrangedash 563}
+    \field{title}{Central {Dogma} of {Molecular} {Biology}}
+    \verb{url}
+    \verb https://doi.org/10.1038/227561a0
+    \endverb
+    \field{volume}{227}
+    \field{journaltitle}{Nature}
+    \field{month}{08}
+    \field{year}{1970}
   \endentry
 
   \entry{deng_x-ray_2001}{misc}{}{}
@@ -163,6 +203,8 @@
     \strng{fullhash}{DJXYSM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{abstract}{%
@@ -197,6 +239,8 @@
     \strng{fullhash}{DDE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{abstract}{%
@@ -229,6 +273,7 @@
     \strng{fullhash}{E1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
     \field{sortinit}{E}
     \field{sortinithash}{E}
     \field{title}{structure figure}
@@ -279,6 +324,8 @@
     \strng{fullhash}{MEJVJMHLDZSCBSE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{abstract}{%
@@ -310,6 +357,8 @@
     \strng{fullhash}{R1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \verb{doi}
