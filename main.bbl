@@ -16,7 +16,7 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global/global}
+\datalist[entry]{nty/global//global/global/global}
   \entry{duke_apep_dna}{online}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -30,7 +30,6 @@
     \strng{namehash}{A1}
     \strng{fullhash}{A1}
     \field{labelnamesource}{author}
-    \field{labeldatesource}{nodate}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \verb{url}
@@ -98,8 +97,6 @@
     \strng{fullhash}{BHMWJFZGGBTNWHSINBPE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2000}
-    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \verb{doi}
@@ -127,7 +124,6 @@
     \strng{fullhash}{B1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labeldatesource}{nodate}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{title}{Standard RNA Bases}
@@ -137,6 +133,344 @@
     \field{urlday}{22}
     \field{urlmonth}{07}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{rcsb2025pdb}{article}{}{}
+    \name{author}{51}{}{%
+      {{hash=BS}{%
+         family={Burley},
+         familyi={B\bibinitperiod},
+         given={Stephen K},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bhatt},
+         familyi={B\bibinitperiod},
+         given={Rusham},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bhikadiya},
+         familyi={B\bibinitperiod},
+         given={Charmi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bi},
+         familyi={B\bibinitperiod},
+         given={Chunxiao},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Biester},
+         familyi={B\bibinitperiod},
+         given={Alison},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Biswas},
+         familyi={B\bibinitperiod},
+         given={Pratyoy},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bittrich},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Blaumann},
+         familyi={B\bibinitperiod},
+         given={Santiago},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Ronald},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chao},
+         familyi={C\bibinitperiod},
+         given={Henry},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CVR}{%
+         family={Chithari},
+         familyi={C\bibinitperiod},
+         given={Vivek\bibnamedelima Reddy},
+         giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Craig},
+         familyi={C\bibinitperiod},
+         given={Paul A},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Crichlow},
+         familyi={C\bibinitperiod},
+         given={Gregg V},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Duarte},
+         familyi={D\bibinitperiod},
+         given={Jose M},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dutta},
+         familyi={D\bibinitperiod},
+         given={Shuchismita},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FZ}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Zukang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Flatt},
+         familyi={F\bibinitperiod},
+         given={Justin W},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Sutapa},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Goodsell},
+         familyi={G\bibinitperiod},
+         given={David S},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GRK}{%
+         family={Green},
+         familyi={G\bibinitperiod},
+         given={Rachel\bibnamedelima Kramer},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Guranovic},
+         familyi={G\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Henry},
+         familyi={H\bibinitperiod},
+         given={Jeremy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hudson},
+         familyi={H\bibinitperiod},
+         given={Brian P},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Joy},
+         familyi={J\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kaelber},
+         familyi={K\bibinitperiod},
+         given={Jason T},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Khokhriakov},
+         familyi={K\bibinitperiod},
+         given={Igor},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Jhih-Siang},
+         giveni={J\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lawson},
+         familyi={L\bibinitperiod},
+         given={Catherine L},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Yuhe},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MTD}{%
+         family={Myers-Turnbull},
+         familyi={M\bibinithyphendelim T\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Peisach},
+         familyi={P\bibinitperiod},
+         given={Ezra},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Persikova},
+         familyi={P\bibinitperiod},
+         given={Irina},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Piehl},
+         familyi={P\bibinitperiod},
+         given={Dennis W},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pingale},
+         familyi={P\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RY}{%
+         family={Rose},
+         familyi={R\bibinitperiod},
+         given={Yana},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sagendorf},
+         familyi={S\bibinitperiod},
+         given={Jared},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sali},
+         familyi={S\bibinitperiod},
+         given={Andrej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Segura},
+         familyi={S\bibinitperiod},
+         given={Joan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sekharan},
+         familyi={S\bibinitperiod},
+         given={Monica},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Chenghua},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Trumbull},
+         familyi={T\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VB}{%
+         family={Vallat},
+         familyi={V\bibinitperiod},
+         given={Brinda},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Voigt},
+         familyi={V\bibinitperiod},
+         given={Maria},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Webb},
+         familyi={W\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Whetstone},
+         familyi={W\bibinitperiod},
+         given={Shamara},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WWA}{%
+         family={Wu-Wu},
+         familyi={W\bibinithyphendelim W\bibinitperiod},
+         given={Amy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=XT}{%
+         family={Xing},
+         familyi={X\bibinitperiod},
+         given={Tongji},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Jasmine Y},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zalevsky},
+         familyi={Z\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zardecki},
+         familyi={Z\bibinitperiod},
+         given={Christine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSBRBCBCBABPBSBSBRCHCVRCPCGDJDSFZFJGSGDGRKGVHJHBJMKJKILJSLCLYMTDPEPIPDPARYSJSASJSMSCSJTMVBVMWBWSWWAXTYJZAZC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The Research Collaboratory for Structural Bioinformatics Protein Data Bank (RCSB PDB, RCSB.org), the US Worldwide Protein Data Bank (wwPDB, wwPDB.org) data center for the global PDB archive, provides access to the PDB data via its RCSB.org research-focused web portal. We report substantial additions to the tools and visualization features available at RCSB.org, which now delivers more than 227000 experimentally determined atomic-level three-dimensional (3D) biostructures stored in the global PDB archive alongside more than 1 million Computed Structure Models (CSMs) of proteins (including models for human, model organisms, select human pathogens, crop plants and organisms important for addressing climate change). In addition to providing support for 3D structure motif searches with user-provided coordinates, new features highlighted herein include query results organized by redundancy-reduced Groups and summary pages that facilitate exploration of groups of similar proteins. Newly released programmatic tools are also described, as are enhanced training opportunities.%
+    }
+    \verb{doi}
+    \verb 10.1093/nar/gkae1091
+    \endverb
+    \verb{eprint}
+    \verb https://academic.oup.com/nar/article-pdf/53/D1/D564/60882789/gkae1091
+    \verb .pdf
+    \endverb
+    \field{issn}{1362-4962}
+    \field{number}{D1}
+    \field{pages}{D564\bibrangedash D574}
+    \field{title}{Updated resources for exploring experimentally-determined PDB structures and Computed Structure Models at the RCSB Protein Data Bank}
+    \verb{url}
+    \verb https://doi.org/10.1093/nar/gkae1091
+    \endverb
+    \field{volume}{53}
+    \field{journaltitle}{Nucleic Acids Research}
+    \field{month}{01}
+    \field{year}{2025}
   \endentry
 
   \entry{crick_central_1970}{article}{}{}
@@ -152,8 +486,6 @@
     \strng{fullhash}{CF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1970}
-    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{abstract}{%
@@ -175,7 +507,7 @@
     \field{year}{1970}
   \endentry
 
-  \entry{deng_x-ray_2001}{misc}{}{}
+  \entry{deng_x-ray_2001}{article}{}{}
     \name{author}{3}{}{%
       {{hash=DJ}{%
          family={Deng},
@@ -203,8 +535,6 @@
     \strng{fullhash}{DJXYSM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2001}
-    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{abstract}{%
@@ -239,8 +569,6 @@
     \strng{fullhash}{DDE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2008}
-    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{abstract}{%
@@ -273,7 +601,6 @@
     \strng{fullhash}{E1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labeldatesource}{nodate}
     \field{sortinit}{E}
     \field{sortinithash}{E}
     \field{title}{structure figure}
@@ -324,8 +651,6 @@
     \strng{fullhash}{MEJVJMHLDZSCBSE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{abstract}{%
@@ -344,31 +669,6 @@
     \field{journaltitle}{Acta Crystallographica Section F}
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{rcsb2025pdb}{article}{}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{RCSB Protein Data Bank}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R1}
-    \strng{fullhash}{R1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2025}
-    \field{labeldatesource}{}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.1093/nar/gkae1091
-    \endverb
-    \field{pages}{D564\bibrangedash D574}
-    \field{title}{Updated resources for exploring experimentally-determined PDB structures and Computed Structure Models at the RCSB Protein Data Bank}
-    \field{volume}{53}
-    \field{journaltitle}{Nucleic Acids Research}
-    \field{year}{2025}
   \endentry
 \enddatalist
 \endinput

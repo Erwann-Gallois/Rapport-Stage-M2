@@ -20,7 +20,11 @@
 \usepackage{subcaption}
 
 % biblio 
-\usepackage[backend=bibtex, style=authoryear]{biblatex}
+\usepackage[
+backend=bibtex,
+style=numeric,
+sorting=nty
+]{biblatex}
 
 \addbibresource{biblio.bib}
 \geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
@@ -347,6 +351,9 @@ A PDB file uses fixed-width columns, so a parser needs to know exactly the speci
 % ==========================================
 \section{Materials and Methods}
 \subsection{Knowledge based score function}
+
+
+
 \subsection{Objective function}
 \subsection{Optimization algorithm}
 \subsection{Complete Pipeline}
@@ -393,7 +400,10 @@ A PDB file uses fixed-width columns, so a parser needs to know exactly the speci
 % ==========================================
 \newpage
 \addcontentsline{toc}{section}{References}
-\printbibliography[title={References}]
+\printbibliography[type=article,title={Articles}]
+
+\addcontentsline{toc}{section}{Websites}
+\printbibliography[nottype=article,title={Websites}]
 
 % ==========================================
 % List figures Tables
