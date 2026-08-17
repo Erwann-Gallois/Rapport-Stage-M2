@@ -14,6 +14,196 @@
 	pages = {lqad016},
 	}
 
+
+@article{tan_rsrnasp_2022,
+	title = {{rsRNASP}: {A} residue-separation-based statistical potential for {RNA} {3D} structure evaluation},
+	volume = {121},
+	issn = {0006-3495},
+	shorttitle = {{rsRNASP}},
+	url = {https://www.sciencedirect.com/science/article/pii/S0006349521009851},
+	doi = {10.1016/j.bpj.2021.11.016},
+	abstract = {Knowledge-based statistical potentials have been shown to be rather effective in protein 3-dimensional (3D) structure evaluation and prediction. Recently, several statistical potentials have been developed for RNA 3D structure evaluation, while their performances are either still at a low level for the test datasets from structure prediction models or dependent on the “black-box” process through neural networks. In this work, we have developed an all-atom distance-dependent statistical potential based on residue separation for RNA 3D structure evaluation, namely rsRNASP, which is composed of short- and long-ranged potentials distinguished by residue separation. The extensive examinations against available RNA test datasets show that rsRNASP has apparently higher performance than the existing statistical potentials for the realistic test datasets with large RNAs from structure prediction models, including the newly released RNA-Puzzles dataset, and is comparable to the existing top statistical potentials for the test datasets with small RNAs or near-native decoys. In addition, rsRNASP is superior to RNA3DCNN, a recently developed scoring function through 3D convolutional neural networks. rsRNASP and the relevant databases are available to the public.},
+	number = {1},
+	journal = {Biophysical Journal},
+	author = {Tan, Ya-Lan and Wang, Xunxun and Shi, Ya-Zhou and Zhang, Wenbing and Tan, Zhi-Jie},
+	month = jan,
+	year = {2022},
+	pages = {142--156},
+	file = {ScienceDirect Full Text PDF:/home/erwann/Zotero/storage/V9BTUNPQ/Tan et al. - 2022 - rsRNASP A residue-separation-based statistical potential for RNA 3D structure evaluation.pdf:application/pdf;ScienceDirect Snapshot:/home/erwann/Zotero/storage/NXKZYJFT/S0006349521009851.html:text/html},
+}
+
+
+@article{zhang_all-atom_2020,
+	title = {All-{Atom} {Knowledge}-{Based} {Potential} for {RNA} {Structure} {Discrimination} {Based} on the {Distance}-{Scaled} {Finite} {Ideal}-{Gas} {Reference} {State}},
+	volume = {27},
+	issn = {1066-5277},
+	url = {https://journals.sagepub.com/action/showAbstract},
+	doi = {10.1089/cmb.2019.0251},
+	abstract = {Noncoding RNAs are increasingly found to play a wide variety of roles in living organisms. Yet, their functional mechanisms are poorly understood because their structures are difficult to determine experimentally. As a result, developing more effective computational techniques to predict RNA structures becomes increasingly an urgent task. One key challenge in RNA structure prediction is the lack of an accurate free energy function to guide RNA folding and discriminate native and near-native structures from decoy conformations. In this study, we developed an all-atom distance-dependent knowledge-based energy function for RNA that is based on a reference state (distance-scaled finite ideal-gas reference state, DFIRE) proven successful for protein structure discrimination. Using four separate benchmarks including RNA puzzles, we found that this DFIRE-based RNA statistical energy function is able to discriminate native and near-native structures against decoys with performance comparable with or better than several existing scoring functions compared. The energy function is expected to be useful for improving the detection of RNA near-native structures.},
+	language = {EN},
+	number = {6},
+	urldate = {2026-03-09},
+	journal = {Journal of Computational Biology},
+	publisher = {SAGE Publications},
+	author = {Zhang, Tongchuan and Hu, Guodong and Yang, Yuedong and Wang, Jihua and Zhou, Yaoqi},
+	month = jun,
+	year = {2020},
+	pages = {856--867},
+	annote = {Fonction de scoring DFIRE-RNA
+},
+	file = {SAGE PDF Full Text:/home/erwann/Zotero/storage/FNGBTUHW/Zhang et al. - 2020 - All-Atom Knowledge-Based Potential for RNA Structure Discrimination Based on the Distance-Scaled Fin.pdf:application/pdf},
+}
+
+
+@article{capriotti_all-atom_2011,
+	address = {Oxford, England},
+	title = {All-atom knowledge-based potential for {RNA} structure prediction and assessment},
+	volume = {27},
+	issn = {1367-4811},
+	doi = {10.1093/bioinformatics/btr093},
+	abstract = {MOTIVATION: Over the recent years, the vision that RNA simply serves as information transfer molecule has dramatically changed. The study of the sequence/structure/function relationships in RNA is becoming more important. As a direct consequence, the total number of experimentally solved RNA structures has dramatically increased and new computer tools for predicting RNA structure from sequence are rapidly emerging. Therefore, new and accurate methods for assessing the accuracy of RNA structure models are clearly needed.
+RESULTS: Here, we introduce an all-atom knowledge-based potential for the assessment of RNA three-dimensional (3D) structures. We have benchmarked our new potential, called Ribonucleic Acids Statistical Potential (RASP), with two different decoy datasets composed of near-native RNA structures. In one of the benchmark sets, RASP was able to rank the closest model to the X-ray structure as the best and within the top 10 models for ∼93 and ∼95\% of decoys, respectively. The average correlation coefficient between model accuracy, calculated as the root mean square deviation and global distance test-total score (GDT-TS) measures of C3' atoms, and the RASP score was 0.85 and 0.89, respectively. Based on a recently released benchmark dataset that contains hundreds of 3D models for 32 RNA motifs with non-canonical base pairs, RASP scoring function compared favorably to ROSETTA FARFAR force field in the selection of accurate models. Finally, using the self-splicing group I intron and the stem-loop IIIc from hepatitis C virus internal ribosome entry site as test cases, we show that RASP is able to discriminate between known structure-destabilizing mutations and compensatory mutations.
+AVAILABILITY: RASP can be readily applied to assess all-atom or coarse-grained RNA structures and thus should be of interest to both developers and end-users of RNA structure prediction methods. The computer software and knowledge-based potentials are freely available at http://melolab.org/supmat.html.
+CONTACT: fmelo@bio.puc.cl; mmarti@cipf.es
+SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.},
+	language = {eng},
+	number = {8},
+	journal = {Bioinformatics},
+	author = {Capriotti, Emidio and Norambuena, Tomas and Marti-Renom, Marc A. and Melo, Francisco},
+	month = apr,
+	year = {2011},
+	keywords = {RNA, Data Interpretation, Statistical, Knowledge Bases, Models, Molecular, Nucleic Acid Conformation, Software},
+	pages = {1086--1093},
+	annote = {Fonction de scoring RASP
+},
+}
+
+
+@article{sippl_calculation_1990,
+	title = {Calculation of conformational ensembles from potentials of mean force. {An} approach to the knowledge-based prediction of local structures in globular proteins},
+	volume = {213},
+	issn = {0022-2836},
+	doi = {10.1016/s0022-2836(05)80269-4},
+	abstract = {We present a prototype of a new approach to the folding problem of polypeptide chains. This approach is based on the analysis of known protein structures. It derives the energy potentials for the atomic interactions of all amino acid residue pairs as a function of the distance between the involved atoms. These potentials are then used to calculate the energies of all conformations that exist in the data base with respect to a given sequence. Then, by using only the most stable conformations, clusters of the most probable conformations for the given sequence are obtained. To discuss the results properly we introduce a new classification of segments based on their conformational stability. Special care is taken to allow for sparse data sets. The use of the method is demonstrated in the discussion of the identical oligopeptide sequences found in different conformations in unrelated proteins. VNTFV, for example, adopts a beta-strand in ribonuclease but it is found in an alpha-helical conformation in erythrocruorin. In the case of VNTFV the ensemble obtained consists of a single cluster of beta-strand conformations, indicating that this may be the preferred conformation for the pentapeptide. When the flanking residues are included in the calculation the hepapeptide P-VNTFV-H (ribonuclease) again yields an ensemble of beta-strands. However, in the ensemble of D-VNTFV-A (erythrocruorin) the major cluster is of alpha-helical type. In the present study we concentrate on the local aspects of protein conformations. However, the theory presented is quite general and not restricted to oligopeptides. We indicate extensions of the approach to the calculation of global conformations of proteins as well as conceivable applications to a number of molecular systems.},
+	language = {eng},
+	number = {4},
+	journal = {Journal of Molecular Biology},
+	author = {Sippl, M. J.},
+	month = jun,
+	year = {1990},
+	keywords = {Amino Acid Sequence, Chemical Phenomena, Chemistry, Physical, Computer Simulation, Hemoglobins, Insect Hormones, Molecular Sequence Data, Oligopeptides, Peptides, Protein Conformation, Ribonucleases},
+	pages = {859--883},
+}
+
+@article{Miyazawa1985EstimationOE,
+  title={Estimation of effective interresidue contact energies from protein crystal structures: quasi-chemical approximation},
+  author={Sanzo Miyazawa and Robert L. Jernigan},
+  journal={Macromolecules},
+  year={1985},
+  volume={18},
+  pages={534-552},
+  url={https://api.semanticscholar.org/CorpusID:11439972}
+}
+
+
+@article{lennard-jones_cohesion_1931,
+	title = {Cohesion},
+	volume = {43},
+	url = {https://doi.org/10.1088/0959-5309/43/5/301},
+	doi = {10.1088/0959-5309/43/5/301},
+	number = {5},
+	journal = {Proceedings of the Physical Society},
+	author = {Lennard-Jones, J. E.},
+	month = sep,
+	year = {1931},
+	pages = {461},
+}
+
+
+@article{pincus_dilute_2023,
+	title = {Dilute polymer solutions under shear flow: comprehensive qualitative analysis using a bead-spring chain model with a {FENE}-{Fraenkel} spring},
+	volume = {67},
+	issn = {0148-6055, 1520-8516},
+	shorttitle = {Dilute polymer solutions under shear flow},
+	url = {http://arxiv.org/abs/2206.01870},
+	doi = {10.1122/8.0000517},
+	abstract = {Although the non-equilibrium behaviour of polymer solutions is generally well understood, particularly in extensional flow, there remain several unanswered questions for dilute solutions in simple shear flow, and full quantitative agreement with experiments has not been achieved. For example, experimental viscosity data exhibit qualitative differences in shear-thinning exponents, shear rate for onset of shear-thinning and high-shear Newtonian plateaus depending on polymer semiflexibility, contour length and solvent quality. While polymer models are able to incorporate all of these effects through various spring force laws, bending potentials, excluded volume (EV) potentials, and hydrodynamic interaction (HI), the inclusion of each piece of physics has not been systematically matched to experimentally observed behaviour. Furthermore, attempts to develop multiscale models (in the sense of representing an arbitrarily small or large polymer chain) which can make quantitative predictions are hindered by the lack of ability to fully match the results of bead-rod models, often used to represent a polymer chain at the Kuhn step level, with bead-spring models, which take into account the entropic elasticity.In light of these difficulties, this work aims to develop a general model based on the so-called FENE-Fraenkel spring, originally formulated by Larson and coworkers [J. Chem. Phys. 124 (2006), 10.1063/1.2161210], which can span the range from rigid rod to traditional entropic spring, as well as include a bending potential, EV and HI. As we show, this model can reproduce, and smoothly move between, a wide range of previously observed polymer solution rheology in shear flow.},
+	language = {en},
+	number = {2},
+	urldate = {2026-03-24},
+	journal = {Journal of Rheology},
+	author = {Pincus, I. and Rodger, A. and Prakash, J. Ravi},
+	month = mar,
+	year = {2023},
+	note = {arXiv:2206.01870 [cond-mat]},
+	keywords = {Condensed Matter - Soft Condensed Matter},
+	pages = {373--402},
+	file = {PDF:/home/erwann/Zotero/storage/N9AL84MV/Pincus et al. - 2023 - Dilute polymer solutions under shear flow comprehensive qualitative analysis using a bead-spring ch.pdf:application/pdf},
+}
+
+@misc{kingma2017adammethodstochasticoptimization,
+      title={Adam: A Method for Stochastic Optimization}, 
+      author={Diederik P. Kingma and Jimmy Ba},
+      year={2017},
+      eprint={1412.6980},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1412.6980}, 
+}
+
+
+@article{liu_limited_1989,
+	title = {On the limited memory {BFGS} method for large scale optimization},
+	volume = {45},
+	issn = {1436-4646},
+	url = {https://doi.org/10.1007/BF01589116},
+	doi = {10.1007/BF01589116},
+	abstract = {We study the numerical performance of a limited memory quasi-Newton method for large scale optimization, which we call the L-BFGS method. We compare its performance with that of the method developed by Buckley and LeNir (1985), which combines cycles of BFGS steps and conjugate direction steps. Our numerical tests indicate that the L-BFGS method is faster than the method of Buckley and LeNir, and is better able to use additional storage to accelerate convergence. We show that the L-BFGS method can be greatly accelerated by means of a simple scaling. We then compare the L-BFGS method with the partitioned quasi-Newton method of Griewank and Toint (1982a). The results show that, for some problems, the partitioned quasi-Newton method is clearly superior to the L-BFGS method. However we find that for other problems the L-BFGS method is very competitive due to its low iteration cost. We also study the convergence properties of the L-BFGS method, and prove global convergence on uniformly convex problems.},
+	number = {1},
+	journal = {Mathematical Programming},
+	author = {Liu, Dong C. and Nocedal, Jorge},
+	month = aug,
+	year = {1989},
+	pages = {503--528},
+}
+
+
+@article{perry_arena_2023,
+	title = {Arena: {Rapid} and {Accurate} {Reconstruction} of {Full} {Atomic} {RNA} {Structures} {From} {Coarse}-grained {Models}},
+	volume = {435},
+	issn = {0022-2836},
+	shorttitle = {Arena},
+	url = {https://www.sciencedirect.com/science/article/pii/S0022283623003091},
+	doi = {10.1016/j.jmb.2023.168210},
+	abstract = {RNA tertiary structures from experiments or computational predictions often contain missing atoms, which prevent analyses requiring full atomic structures. Current programs for RNA reconstruction can be slow, inaccurate, and/or require specific atoms to be present in the input. We present Arena (Atomic Reconstruction of RNA), which reconstructs a full atomic RNA structure from residues that can have as few as one atom. Arena first fills in missing atoms and then iteratively refines their placement to reduce nonideal geometries. We benchmarked Arena on a dataset of 361 RNA structures, where Arena achieves high accuracy and speed compared to other structure reconstruction programs. For example, Arena was used to reconstruct full atomic structures from a single phosphorus atom per nucleotide to, on average, within 3.63 Å RMSD of the experimental structure, while virtually removing all clashes and running in {\textless}3 s, which is 353× and 46× faster than state-of-the-art programs PDBFixer and C2A, respectively. The Arena source code is available at https://github.com/pylelab/Arena and the webserver at https://zhanggroup.org/Arena/.},
+	number = {18},
+	urldate = {2026-03-31},
+	journal = {Journal of Molecular Biology},
+	author = {Perry, Zion R. and Pyle, Anna Marie and Zhang, Chengxin},
+	month = sep,
+	year = {2023},
+	keywords = {coarse-grained structure, full atomic reconstruction, RNA structure prediction, RNA tertiary structure, structure refinement},
+	pages = {168210},
+	file = {ScienceDirect Full Text PDF:/home/erwann/Zotero/storage/XCDPHJBL/Perry et al. - 2023 - Arena Rapid and Accurate Reconstruction of Full Atomic RNA Structures From Coarse-grained Models.pdf:application/pdf;ScienceDirect Snapshot:/home/erwann/Zotero/storage/BV56PW2X/S0022283623003091.html:text/html},
+}
+
+
+@misc{openmm,
+	title = {{OpenMM}},
+	url = {https://openmm.org/},
+	urldate = {2026-05-17},
+	file = {OpenMM:/home/erwann/Zotero/storage/Y8LBR5DN/openmm.org.html:text/html},
+}
+
+@article{amber14,
+author = {Case, David and V.B., Babin and Betz, RM and Cai, Qin and Cerutti, DS and Cheatham, Thomas and Darden, Thomas and Duke, Robert and Gohlke, H},
+year = {2014},
+month = {01},
+pages = {},
+title = {Amber 14}
+}
+
+
 @article{berman2000pdb,
   author       = {Berman, H. M. and Westbrook, J. and Feng, Z. and Gilliland, G. and Bhat, T. N. and Weissig, H. and Shindyalov, I. N. and Bourne, P. E.},
   title        = {The Protein Data Bank},

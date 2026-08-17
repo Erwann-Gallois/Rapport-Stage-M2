@@ -1,0 +1,74 @@
+flowchart TD
+    %% Styling for academic look
+    classDef startEnd fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef process fill:#ffffff,stroke:#333,stroke-width:1px;
+    classDef decision fill:#f0f8ff,stroke:#333,stroke-width:1px;
+    classDef gpuBlock fill:#e6ffe6,stroke:#2ca02c,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef globalBlock fill:#fff0e6,stroke:#ff7f0e,stroke-width:2px;
+
+    %% Nodes
+    Start([Initialize coordinates, Base Noise & Best Score]):::startEnd
+
+    CheckGlobal{Noise > Min Threshold\nAND\nGlobal Patience OK?}:::decision
+
+    %% GPU Block
+    subgraph GPU_Execution [High-Performance GPU Block : N Steps without CPU Sync]
+        direction TB
+        GPU_Start[Reset Gradients]:::process
+        Calc_Energy[Compute Total Potential Energy]:::process
+        Backprop[Backpropagation]:::process
+        Clip[Clip Gradients norm to 5.0]:::process
+        Adam[Adam Optimizer Step]:::process
+        Loop_N_Steps{Completed N steps?}:::decision
+
+        GPU_Start --> Calc_Energy --> Backprop --> Clip --> Adam --> Loop_N_Steps
+        Loop_N_Steps -- No --> GPU_Start
+    end
+
+    Sync[Synchronize & Transfer Energy to CPU]:::process
+
+    CheckLocalDelta{Energy decrease\n> min_delta?}:::decision
+    ResetLocalPatience[Reset Local Patience]:::process
+    IncLocalPatience[Increment Local Patience]:::process
+    CheckLocalPatience{Local Patience\nexceeded?}:::decision
+
+    %% Basin Hopping Block
+    subgraph Basin_Hopping [Global Basin-Hopping Evaluation]
+        direction TB
+        CheckBest{Current Phase Best <\nGlobal Best?}:::decision
+        UpdateBest[Update Global Best & Reset Global Patience]:::process
+        IncGlobalPatience[Increment Global Patience]:::process
+        Cooling[Multiply Noise by Cooling Factor]:::process
+        Shake[Apply Random Geometric Perturbation to Best Coordinates]:::process
+
+        CheckBest -- Yes --> UpdateBest
+        CheckBest -- No --> IncGlobalPatience
+        UpdateBest --> Cooling
+        IncGlobalPatience --> Cooling
+        Cooling --> Shake
+    end
+
+    End([Return Global Best Conformation]):::startEnd
+
+    %% Connections
+    Start --> CheckGlobal
+    CheckGlobal -- Yes --> GPU_Execution
+    CheckGlobal -- No --> End
+
+    Loop_N_Steps -- Yes --> Sync
+    Sync --> CheckLocalDelta
+
+    CheckLocalDelta -- Yes --> ResetLocalPatience
+    CheckLocalDelta -- No --> IncLocalPatience
+
+    ResetLocalPatience --> CheckLocalPatience
+    IncLocalPatience --> CheckLocalPatience
+
+    CheckLocalPatience -- No --> GPU_Execution
+    CheckLocalPatience -- Yes --> Basin_Hopping
+
+    Shake --> CheckGlobal
+
+    %% Apply Subgraph Styling
+    class GPU_Execution gpuBlock;
+    class Basin_Hopping globalBlock;
