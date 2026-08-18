@@ -135,6 +135,32 @@
     \field{urlyear}{2026}
   \endentry
 
+  \entry{breaker2012riboswitches}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=BRR}{%
+         family={Breaker},
+         familyi={B\bibinitperiod},
+         given={Ronald\bibnamedelima R.},
+         giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BRR1}
+    \strng{fullhash}{BRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1101/cshperspect.a003566
+    \endverb
+    \field{number}{2}
+    \field{pages}{a003566}
+    \field{title}{Riboswitches and the RNA World}
+    \field{volume}{4}
+    \field{journaltitle}{Cold Spring Harbor Perspectives in Biology}
+    \field{year}{2012}
+  \endentry
+
   \entry{rcsb2025pdb}{article}{}{}
     \name{author}{51}{}{%
       {{hash=BS}{%
@@ -597,6 +623,38 @@
     \field{sortinithash}{C}
     \field{title}{Amber 14}
     \field{month}{01}
+    \field{year}{2014}
+  \endentry
+
+  \entry{cech2014noncoding}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CTR}{%
+         family={Cech},
+         familyi={C\bibinitperiod},
+         given={Thomas\bibnamedelima R.},
+         giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SJA}{%
+         family={Steitz},
+         familyi={S\bibinitperiod},
+         given={Joan\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTRSJA1}
+    \strng{fullhash}{CTRSJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1016/j.cell.2014.03.008
+    \endverb
+    \field{number}{1}
+    \field{pages}{77\bibrangedash 94}
+    \field{title}{The Noncoding RNA Revolution—Trashing Old Rules to Forge New Ones}
+    \field{volume}{157}
+    \field{journaltitle}{Cell}
     \field{year}{2014}
   \endentry
 
