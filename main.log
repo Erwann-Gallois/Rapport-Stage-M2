@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.16)  18 AUG 2026 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.20)  18 AUG 2026 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,7 +578,7 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \bibhang=\skip78
 \blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language7
+\blx@langwohyphens=\language3
 \c@mincomprange=\count380
 \c@maxcomprange=\count381
 \c@mincompwidth=\count382
@@ -1065,12 +1065,12 @@ Package biblatex Warning: BibTeX reported the following issues
 )
 Package biblatex Info: Reference section=0 on input line 95.
 Package biblatex Info: Reference segment=0 on input line 95.
-<img/LOGO-UNICAEN_V-2.1-N.png, id=131, 259.2084pt x 146.2263pt>
+<img/LOGO-UNICAEN_V-2.1-N.png, id=135, 259.2084pt x 146.2263pt>
 File: img/LOGO-UNICAEN_V-2.1-N.png Graphic file (type png)
 <use img/LOGO-UNICAEN_V-2.1-N.png>
 Package pdftex.def Info: img/LOGO-UNICAEN_V-2.1-N.png  used on input line 103.
 (pdftex.def)             Requested size: 136.57462pt x 77.04662pt.
-<img/logo_ibiscsaclay_bleu_324ptx89pt.png, id=133, 306.14375pt x 89.33376pt>
+<img/logo_ibiscsaclay_bleu_324ptx89pt.png, id=137, 306.14375pt x 89.33376pt>
 File: img/logo_ibiscsaclay_bleu_324ptx89pt.png Graphic file (type png)
 <use img/logo_ibiscsaclay_bleu_324ptx89pt.png>
 Package pdftex.def Info: img/logo_ibiscsaclay_bleu_324ptx89pt.png  used on input line 129.
@@ -1096,7 +1096,7 @@ Overfull \hbox (5.60175pt too wide) in paragraph at lines 170--171
 []\T1/cmr/m/n/10.95 AROBAS : Al-go-rithme, Recherche Op-er-a-tionnelle, Bio-informatique et Ap-pren-tis-sage Statis-
  []
 
-<img/Organigramme_IBISC-02042026.jpg, id=190, 722.7pt x 542.025pt>
+<img/Organigramme_IBISC-02042026.jpg, id=195, 722.7pt x 542.025pt>
 File: img/Organigramme_IBISC-02042026.jpg Graphic file (type jpg)
 <use img/Organigramme_IBISC-02042026.jpg>
 Package pdftex.def Info: img/Organigramme_IBISC-02042026.jpg  used on input line 177.
@@ -1107,12 +1107,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.185 \newpage
                [1{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./img/Organigramme_IBISC-02042026.jpg>]
-<img/protein-synthesis.jpg, id=204, 449.68pt x 421.575pt>
+<img/protein-synthesis.jpg, id=211, 449.68pt x 421.575pt>
 File: img/protein-synthesis.jpg Graphic file (type jpg)
 <use img/protein-synthesis.jpg>
 Package pdftex.def Info: img/protein-synthesis.jpg  used on input line 201.
 (pdftex.def)             Requested size: 182.09486pt x 170.7112pt.
-<img/1d-structure.jpg, id=208, 869.2475pt x 867.24pt>
+<img/1d-structure.jpg, id=218, 869.2475pt x 867.24pt>
 File: img/1d-structure.jpg Graphic file (type jpg)
 <use img/1d-structure.jpg>
 Package pdftex.def Info: img/1d-structure.jpg  used on input line 215.
@@ -1122,23 +1122,23 @@ Package pdftex.def Info: img/1d-structure.jpg  used on input line 215.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2 <./img/protein-synthesis.jpg>]
-<img/2d-structure.png, id=228, 1027.84pt x 578.16pt>
+<img/2d-structure.png, id=238, 1027.84pt x 578.16pt>
 File: img/2d-structure.png Graphic file (type png)
 <use img/2d-structure.png>
 Package pdftex.def Info: img/2d-structure.png  used on input line 225.
 (pdftex.def)             Requested size: 182.09486pt x 102.42342pt.
  [3 <./img/1d-structure.jpg> <./img/2d-structure.png>]
-<img/3DIQ-1D.png, id=245, 1086.0575pt x 287.0725pt>
+<img/3DIQ-1D.png, id=255, 1086.0575pt x 287.0725pt>
 File: img/3DIQ-1D.png Graphic file (type png)
 <use img/3DIQ-1D.png>
 Package pdftex.def Info: img/3DIQ-1D.png  used on input line 244.
 (pdftex.def)             Requested size: 204.85846pt x 54.14572pt.
-<img/3DIQ-2D.jpg, id=246, 1059.83955pt x 667.41345pt>
+<img/3DIQ-2D.jpg, id=256, 1059.83955pt x 667.41345pt>
 File: img/3DIQ-2D.jpg Graphic file (type jpg)
 <use img/3DIQ-2D.jpg>
 Package pdftex.def Info: img/3DIQ-2D.jpg  used on input line 249.
 (pdftex.def)             Requested size: 204.85846pt x 128.9994pt.
-<img/3DIQ-3D.png, id=247, 892.33376pt x 507.8975pt>
+<img/3DIQ-3D.png, id=257, 892.33376pt x 507.8975pt>
 File: img/3DIQ-3D.png Graphic file (type png)
 <use img/3DIQ-3D.png>
 Package pdftex.def Info: img/3DIQ-3D.png  used on input line 254.
@@ -1148,35 +1148,41 @@ Overfull \hbox (2.42162pt too wide) in paragraph at lines 243--258
 [][] []
  []
 
-[4 <./img/3DIQ-1D.png> <./img/3DIQ-2D.jpg> <./img/3DIQ-3D.png>] [5] [6]
-<img/example-pdb.png, id=286, 1660.2025pt x 142.5325pt>
+[4 <./img/3DIQ-1D.png> <./img/3DIQ-2D.jpg> <./img/3DIQ-3D.png>] [5] [6] [7]
+<img/example-pdb.png, id=342, 1660.2025pt x 142.5325pt>
 File: img/example-pdb.png Graphic file (type png)
 <use img/example-pdb.png>
-Package pdftex.def Info: img/example-pdb.png  used on input line 334.
+Package pdftex.def Info: img/example-pdb.png  used on input line 355.
 (pdftex.def)             Requested size: 455.24411pt x 39.08237pt.
 
 
-LaTeX Warning: \verb may be unreliable inside tabularx on input line 361.
+LaTeX Warning: \verb may be unreliable inside tabularx on input line 382.
 
-[7 <./img/example-pdb.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+[8 <./img/example-pdb.png>] [9] [10]
+<diagrams/local_optim.png, id=413, 3606.47375pt x 1544.77126pt>
+File: diagrams/local_optim.png Graphic file (type png)
+<use diagrams/local_optim.png>
+Package pdftex.def Info: diagrams/local_optim.png  used on input line 470.
+(pdftex.def)             Requested size: 455.24411pt x 194.98163pt.
+ [11 <./diagrams/local_optim.png>]
+<diagrams/global_optim.png, id=429, 3099.58pt x 725.71124pt>
+File: diagrams/global_optim.png Graphic file (type png)
+<use diagrams/global_optim.png>
+Package pdftex.def Info: diagrams/global_optim.png  used on input line 485.
+(pdftex.def)             Requested size: 409.71692pt x 95.9182pt.
+<diagrams/complete_pipeline.png, id=434, 3163.82pt x 1375.1375pt>
+File: diagrams/complete_pipeline.png Graphic file (type png)
+<use diagrams/complete_pipeline.png>
+Package pdftex.def Info: diagrams/complete_pipeline.png  used on input line 502.
+(pdftex.def)             Requested size: 455.24411pt x 197.86858pt.
 
- []
 
-[8] [9]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 447.
-
-<diagrams/optimization-pipeline.pdf, id=353, 894.22081pt x 2229.28856pt>
-File: diagrams/optimization-pipeline.pdf Graphic file (type pdf)
-<use diagrams/optimization-pipeline.pdf>
-Package pdftex.def Info: diagrams/optimization-pipeline.pdf  used on input line 449.
-(pdftex.def)             Requested size: 225.51949pt x 562.2286pt.
-[10] [11 <./diagrams/optimization-pipeline.pdf>] [12] [13] [14] [15]
+[12 <./diagrams/global_optim.png>] [13 <./diagrams/complete_pipeline.png>] [14] [15]
 
 Package glossaries Info: Preparing to sort glossary `main' (total number of
-(glossaries)             referenced entries: 9)
+(glossaries)             referenced entries: 13)
 
 [16]
 
@@ -1188,7 +1194,17 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-[17]
+
+Overfull \hbox (3.21028pt too wide) in paragraph at lines 556--556
+[]\T1/cmr/m/n/10.95 José Almeida Cruz et al. ``RNA-Puzzles: A CASP-like Eval-u-a-tion of RNA Three-dimensional
+ []
+
+
+Overfull \hbox (14.12085pt too wide) in paragraph at lines 556--556
+[]\T1/cmr/m/n/10.95 Magdalena A. Jonikas et al. ``Coarse-grained mod-el-ing of large RNA molecules with knowledge-
+ []
+
+[17] [18]
 
 Package biblatex Warning: Split bibliography detected.
 (biblatex)                Many simple split bibliography setups with
@@ -1198,7 +1214,7 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-[18] (./main.lof
+[19] (./main.lof
 Overfull \hbox (0.21132pt too wide) in paragraph at lines 3--3
  [][] [][][]\T1/cmr/m/n/10.95 A di-a-gram il-lus-trat-ing the 1D-structure of RNA and nu-cleotid com-po-si-tion. Source 
  []
@@ -1211,7 +1227,7 @@ Overfull \hbox (0.21132pt too wide) in paragraph at lines 3--3
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [19] 
+ [20] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1219,24 +1235,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 25DF8DFEDA57048EB122FCE3C430CBB0;5120.
+(rerunfilecheck)             Checksum: 0AC0CDE3D30BA95F1C07D0426A08CB7F;5248.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41045 strings out of 469445
- 826552 string characters out of 5468707
- 1664910 words of memory out of 5000000
- 69073 multiletter control sequences out of 15000+600000
+ 41299 strings out of 469515
+ 833439 string characters out of 5470807
+ 1668579 words of memory out of 5000000
+ 69282 multiletter control sequences out of 15000+600000
  643082 words of font info for 71 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 98i,12n,108p,2541b,1640s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 14 hyphenation exceptions out of 8191
+ 98i,12n,108p,2541b,1703s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (22 pages, 1471291 bytes).
+Output written on main.pdf (23 pages, 1864221 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 533 compressed objects within 6 object streams
- 101 named destinations out of 1000 (max. 500000)
- 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 638 compressed objects within 7 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

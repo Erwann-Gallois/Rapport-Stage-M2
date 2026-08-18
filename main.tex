@@ -189,17 +189,17 @@ The goal of this chapter is to give insights on preliminary notions that are imp
 
 \subsection{Central Dogma}
 
-Every cells of every living being, excluding virus and a few exceptions, has \acrfull{dna}. This molecule contains the genetic information. It holds all information for an organism. However the DNA alone cannot do anything, it needs to be express in proteins. This process is called the central dogma of molecular biology \cite{crick_central_1970}.
-For that, the cell perform two steps : 
+Every cells of every living being, excluding virus and a few exceptions, has \acrfull{dna}. This molecule contains the genetic information. It holds all information for an organism. However the \acrshort{dna} alone cannot do anything, it needs to be express in proteins. This process is called the central dogma of molecular biology \cite{crick_central_1970}.
+For that, the cell perform two steps: 
 \begin{enumerate}
-    \item Transcription : This steps copy a part of DNA and transcribes it into a intermediate molecule called \acrfull{rna}, or more precisely messenger RNA (mRNA). The transcription is performed inside the nucleus.
+    \item Transcription : This steps copy a part of \acrshort{dna} and transcribes it into a intermediate molecule called \acrfull{rna}, or more precisely messenger RNA (mRNA). The transcription is performed inside the nucleus.
     \item Translation : The RNA obtained in the previous step are now used to make a protein. The translation is performed outside of the nucleus.
 \end{enumerate}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.4\textwidth]{img/protein-synthesis.jpg}
-    \caption{A diagram illustrating the processes of DNA transcription into RNA and RNA translation into proteins. Source : \cite{duke_apep_dna}}
+    \caption{A diagram illustrating the processes of \acrshort{dna} transcription into RNA and RNA translation into proteins. Source : \cite{duke_apep_dna}}
     \label{fig:protein-synthesis}
 \end{figure}
 
@@ -207,7 +207,7 @@ Recently, researchers have discovered that RNA serves more than just an intermed
 
 \subsection{RNA molecule}
 
-The RNA is single-stranded, unlike DNA which is double-stranded, and it's a polymer of nucleotids. The linear arrangement of these nucleotides defines it's primary structure (1D structure) or it's raw sequence. 
+The RNA is single-stranded, unlike \acrshort{dna} which is double-stranded, and it's a polymer of nucleotids. The linear arrangement of these nucleotides defines it's primary structure (1D structure) or it's raw sequence. 
 A nucleotide is composed by three components (Fig. \ref{fig:1d-structure}) : a nucleobase, a ribose sugar and a phosphate group. Unlike phosphate group and ribose sugar who is common for all nucleotides, the nucleobase determine the type of nucleotide. For the RNA, there are four types of nucleobases : Guanine (G), Adenine (A), Cytosine (C) and Uracil (U). 
 
 \begin{figure}[h!]
@@ -268,7 +268,28 @@ So to know the folding and the function of a RNA we need to know the 1D structur
 
 \acrfull{rna} have a central and versatile role in cells. In addition  of messenger RNA, who are coding RNA, there are also non-coding RNA, such as transfer RNAs, ribosomal RNAs, micro RNAs. These non-coding RNA  regulates gene expression at transcriptional, post-transcriptional and translation level. Also, they catalyzes biochemical reactions, guides chemical modification of other RNAs \cite{cech2014noncoding, breaker2012riboswitches}. 
 
-Crucially, the biological function of these molecule are not only dictated by it's sequence but especially from the tertiary structure into which they fold. As with proteins, structure determines function. For example, the ligand-binding pocket of a riboswitch or the recognition surfaces that mediate RNA-protein and RNA-small-molecule interactions all depend on precise tertiary structure. This structure-function association have a growing interest in RNA as a  therapeutic target 
+Crucially, the biological function of these molecule are not only dictated by it's sequence but especially from the tertiary structure into which they fold. As with proteins, structure determines function. For example, the ligand-binding pocket of a riboswitch or the recognition surfaces that mediate RNA-protein and RNA-small-molecule interactions all depend on precise tertiary structure. This structure-function association have a growing interest in RNA as a therapeutic target. 
+
+For example, a riboswitch is cis-acting RNA elements that fold into a specific 3D pocket capable of binding a small molecule to trigger a conformational rearrangement of the RNA that switches downstream gene expression on or off, without any protein required \cite{warner2018principles}. Moreover, the FMN riboswitch can detect the intracellular levels of flavin monocleotide and when bound can regulate the \textit{ribB} gene. This gene is required for the vitamin B2 biosynthesis in bacterium. This regulation permits to the bacterium to shut down this costly pathway once enough vitamin B2 is availabled. 
+
+Due to this regulator switch depends entirely on the riboswitch folding correctly into it's 3D structure, it, theoretically, can be design to be a drug and force the premature repression of the pathway. The repression can lead to a depletion of vitamin B2. Then this depletion will lead to downstream of FAD. These two molecules are essential for a bacterial growth. So without these two, this will lead to arrest bacterial proliferation and produce measurable antibacterial activity in vivo \cite{howe2015ribocil}.
+
+Despite this importance, experimental determination of RNA 3D structures by X-ray crystallography, nuclear magnetic resonance spectroscopy, and cryo-electron microscopy remains laborious. Because RNAs are very flexable, also because there are highly charged and have flexible backbone \cite{wang2023trrosettarna}. The consequence is only around 6,000 RNA structures are deposited in the \acrlong{pdb}, far fewer than the roughly 190,000 deposited protein structures \cite{wang2023trrosettarna}. This structural gap has made computational prediction of RNA tertiary structure from sequence a pressing goal.
+
+At first, computational RNA 3D structure prediction relied on two broad families of methods. Template-based approaches build models by reusing homologous fragments or full structures already present in the \acrlong{pdb}. Unfortunately, they fail for novel folds lacking known homologs. However, \textit{de novo} methods attempt to fold RNA from first principles: fragment-assembly approaches. For example, Rosetta's FARFAR2 assemble short structural fragments and refine them against an all-atom energy function \cite{watkins2020farfar2}. Besides there are also coarse-grained physics- and knowledge-based simulation methods, such as SimRNA sample conformational space, using Monte Carlo methods guided by a statistical potential \cite{boniecki2016simrna}. These approaches have been evaluated since 2011 through the community-wide, blind RNA-Puzzles experiment \cite{cruz2012rnapuzzles}. Their main limitations are the high computational cost of adequately sampling conformational space, a limitation of nucleotide number by a few hundred, and persistent inaccuracy in reproducing non-canonical base pairs and tertiary contacts.
+
+The conceptual foundation for the deep-learning paradigm in structure prediction was laid by AlphaFold1, DeepMind's entry at CASP13 (2018). It have outperformed competing groups largely on the strength of a single algorithmic idea \cite{senior2020alphafold1}. Instead than assembling and screening large libraries of candidate fragments as prior methods did, AlphaFold1 trained a deep residual convolutional neural network to predict, from multiple sequence alignment-derived features, a probability distribution over the distance between every pair of residues and over the protein's backbone torsion angles. These predicted distributions were then combined into a single smooth, differentiable potential describing the whole protein chain. Then the 3D structure was obtained by directly minimizing this potential through gradient descent by using the same backpropagation machinery used to train the network. This meant that folding was no longer treated as a discrete search over sampled conformations, but as a continuous optimization problem solvable by following the gradient of a learned energy landscape toward its minimum, a strategy that proved both more accurate and computationally cheaper than actual methods at this time.
+The 2021 successor, AlphaFold2 have achieved near-experimental accuracy in protein structure prediction \cite{jumper2021alphafold}. Thanks to AlphaFold1 and AlphaFold2 by proving that deep learning can be efficient for protein prediction, researchers decide too apply this technique into RNA. 
+
+A first generation of RNA methods inspired by AlphaFold1, a neural network predicts geometric restraints from multiple sequence alignments,have emerged after the realease of it. For example DeepFoldRNA \cite{pearce2022deepfoldrna} folds RNA by applying the L-BFGS gradient descent algorithm directly to a potential built from its predicted geometric restraints, or trRosettaRNA \cite{wang2023trrosettarna} follows a closely related restraint-then-refine strategy. In the same way, DRfold \cite{li2023drfold} pushes this idea further by integrating end-to-end learning of local reference frames with deep geometric potentials within a single differentiable pipeline. 
+
+AlphaFold2 inspired also other model by predicting atomic coordinates directly from sequence. Notably, RhoFold+ \cite{shen2024rhofold} combines an RNA language model pre-trained on over 23 million non-coding RNA sequences with a folding module. But also, NuFold \cite{kagaya2025nufold} who adapts the AlphaFold2 architecture with a flexible nucleobase-center representation, or RoseTTAFoldNA \cite{baek2024rosettafoldna} who extends the three-track RoseTTAFold architecture to nucleic acids and protein–nucleic acid complexes, and, most recently, AlphaFold3 \cite{abramson2024alphafold3} employs a diffusion-based architecture capable of jointly predicting proteins, nucleic acids, and small molecules.
+
+Despite these advances, deep learning has not yet delivered for RNA the same progress than it produced for proteins. At CASP15, the first CASP round to formally assess RNA structure prediction, the top-ranked groups relied on knowledge-based energy potentials and manual conformational sampling rather than deep learning, and predictions from deep-learning approaches were found to be significantly less accurate than these expert, physics-based methods \cite{das2023casp15}. This pattern persisted at CASP16, where the assessors reported no notable increase in nucleic acid modeling accuracy from deep learning \cite{kretsch2025casp16}. Systematic benchmarking corroborates these findings: while machine-learning methods generally outperform fragment-assembly methods, both categories perform poorly on RNAs lacking detectable homologs and on non-canonical base-pairing interactions, which remain a shared point across all current methods \cite{bahai2024benchmarking}. The principal obstacles underlying these limitations are the scarcity of experimental RNA structures available for training relative to proteins, the frequent shallowness or absence of multiple sequence alignments for many RNA families, and the difficulty of capturing long-range tertiary motifs and conformational flexibility.
+
+It is within this rapidly evolving but still maturing context, one in which deep learning has substantially accelerated and improved automated RNA structure prediction without yet matching the accuracy achieved for proteins, that the present work is situated.
+
+Instead of training a new neural network, because its still fundamentally constrained by the number of experimental RNA structures, this internship explores an alternative route. Indeed, we will directly optimizing a physically plausible RNA conformation against a knowledge-based statistical potential through gradient descent, like for the AlphaFold1's idea. The central obstacle to this approach is that statistical potentials are tabulated, discontinuous functions and are therefore not directly compatible with gradient-based methods. We overcome this problem by interpolating the potential using Catmull-Rom splines. We also used a coarse-grained bead-spring representation of the RNA, with bonded and steric energy terms, to accelerate calculation. The resulting objective function is minimized with a hybrid optimization strategy that pairs local exploration via the Adam algorithm with a basin-hopping-inspired global search, so as to escape the numerous local minima introduced by the interpolated potential.
 
 % ==========================================
 % Data and Dataset
@@ -390,13 +411,23 @@ In this internship, we compared four different statistical potential. There are 
     \item \acrfull{cgrnasp} \cite{tan_cgrnasp_2023} : It's using the same approach as rsRNASP but changes the representation using only few atoms, less than 10 atoms, to represents all the nucleotides. 
 \end{itemize}
 
-We will used this different statistical potential in the objective function. 
+\subsection{Representation}
+
+To represents the RNA, we used a bead-springs representation or coarsed-gained representation, that means to represent the nucleotids we used only one atom and every atoms are connected by a spring.  This representation is more faster than a full-atom representation but less precise. But with this representation, we need to decide which atom, from the nucleotide, we will used. To resolve this problem, we selectionned three atom : 
+\begin{itemize}
+    \item C3' : We selected this atom because it's fixation point of the phosphate group. It's the topology equivalent of the alpha carbon for the protein. This atom is centered on the backbone sugar-phosphate. The C3' sequence provides an extremely smooth geometric representation of the RNA chain. It's privilaged choice used by model like NAST \cite{jonikas_coarse-grained_2009} who using also the single-atom representation.
+    \item C4' : With this atom, the representation retains a very precise spatial memory of the local conformation of the cycle. Moreover, the inter-C4' distance mathematically better reflect the local curvature constraints of the phosphodiester chain than C3' does. 
+    \item C1' : The C1' represent the glycosidique bond. This bond connects the ribose backbone to the nucleobase. Also, distance between two opposed C1' is symetrical, invariant and predicatable in a Watson-Crick pairing. Unlike C3' and C4', who are atom references, with the C1' we can see if the optimization algorithm can maximize the accuracy of secondary and tertiary matches by minimizing the energy. 
+\end{itemize}
+
 
 \subsection{Objective function}
 
 The objective function will be used in a gradient descending optimisation. So it's need to be continuous and derivable. But, as we see before a knowledge based potential it's not derivable and continuous. Indeed it's only a matrix with energy depending on the distance and two atoms. So to bypass ths problem, we used a Catmull-Rom interpolation. It's a mathematical geometric modeling technique used to create a smooth cubic curve, that passes trought the point from the matrix of the potential. The fundamental property of this model lies in the automatic calculation of the tangent at each points $P_i$, which is defined to be strictly collinear with the vector connecting the adjacent points $P_{i-1}$ and $P_{i+1}$. Thanks to this property, the curve we obtained is continuous and derivable, and can be used in a gradient descending.
 
-To represents the RNA, we used a bead-springs representation or coarsed-gained representation, that means to represent the nucleotids we used only one atoms and every atoms are connected by a spring.  This representation is more faster than a full-atom representation but less precise. \\
+To represents the RNA, we used a bead-springs representation or coarsed-gained representation, that means to represent the nucleotids we used only one atom and every atoms are connected by a spring.  This representation is more faster than a full-atom representation but less precise. But with this representation, we need to decide which atom, from the nucleotide, we will used. To resolve this problem, we selectionned three atom : 
+
+
 
 \begin{equation}
     w_1 * \text{Potential Statistical} +  w_2 * (k * \sum_{1}^{n-1}(l_0 - r)^2) + w_2  * WCA
@@ -416,7 +447,7 @@ So the objective function (see Equation \ref{eq:bead-springs}) have three terms.
 
 The second one is the Fraenkel potential, it's used to regulate the springs compression and it's a constant so it's doesn't influence the continuous and derivability of the function. Indeed this term, have four constant, the $n$ is the number of nucleotids. Then, the $l_0$ is equilibrium length, it's where the springs have no force, no energy. Next, the $r$ is the instentaneous distance between two beads. Finally, the $k$, it's the stiffness constant, defines the diffuculty to compress or strecth the springs. 
 
-The last one, it's the Week-Chandler-Anderson (WCA) potential (see Equation \ref{eq:wca}), this potential is a trunked version of the Lennard-Jones potential \cite{lennard-jones_cohesion_1931}. We include this term to avoid steric clash. Indeed this terms is only active when two beads are too close. This function is important because we doesn't influence the knowledge-based potential. To achieve this goal, there are three constant, the $r$, it's the euclidienne distance between two atoms. Then, the $r_{min}$, it's the minimal distance where the potential energy is minimal. And the $\epsilon$ represent the depth of the energy well of the original potential. The term $+1$ ensures that the energy vanishes continuously at $r =r_{min}$. 
+The last one, it's the \acrfull{wca} potential (see Equation \ref{eq:wca}), this potential is a trunked version of the Lennard-Jones potential \cite{lennard-jones_cohesion_1931}. We include this term to avoid steric clash. Indeed this terms is only active when two beads are too close. This function is important because we doesn't influence the knowledge-based potential. To achieve this goal, there are three constant, the $r$, it's the euclidienne distance between two atoms. Then, the $r_{min}$, it's the minimal distance where the potential energy is minimal. And the $\epsilon$ represent the depth of the energy well of the original potential. The term $+1$ ensures that the energy vanishes continuously at $r =r_{min}$. 
 
 Thanks to the interpolation and the others terms, the objective function can ensure that no physical laws are being violated. So the results can be used to other application. Since a present you the objectivefunction, i will now present you my algorithm. 
 
@@ -426,51 +457,63 @@ The goal of the optimization algorithm is to find minimizing the objective funct
 
 \subsubsection{Local exploration}
 
-For the local exploration we used the Adam optimization algorithm \cite{kingma2017adammethodstochasticoptimization}, unlike the AlphaFold 1, who used the L-BFGS optimization algorithm \cite{liu_limited_1989}. In fact, in our case, we start from a linear structure and we try to folding it. But the L-BFGS converge fast to the first local minimum, however a knowledge-based potential have a lot of minimum local due to the interpolation. Also Adam doesn't make assumptions about curvature, on the contrary the L-BFGS who constructs its approximation of the Hessian based on the history of gradient differences. Therefore, we used the Adam optimization to resolve our problem. 
+For the local exploration (see Fig.\ref{fig:local-optim}) we used the Adam optimization algorithm \cite{kingma2017adammethodstochasticoptimization}, unlike the AlphaFold 1, who used the \acrfull{lbfgs} optimization algorithm \cite{liu_limited_1989}. In fact, in our case, we start from a linear structure and we try to folding it. But the L-BFGS converge fast to the first local minimum, however a knowledge-based potential have a lot of minimum local due to the interpolation. Also Adam doesn't make assumptions about curvature, on the contrary the L-BFGS who constructs its approximation of the Hessian based on the history of gradient differences. Therefore, we used the Adam optimization to resolve our problem. 
 
 At each iteration, the algorithm calculates the total energy of the system and performs a backpropagation to obtain the energy gradients with respect to the spatial coordinates of the atoms. These gradients are the physical forces acting on the molecule. We have also add a numerical stability to avoid a explosion of the molecule when we have a steric clash during the foldin, by adding a gradient clapping mechanism, capping the gradient norm at a maximum value. 
 
-To not have a endless loop, we have a two security. The first one is a maximum of cycle, and the second one, is a \textit{local patience}. If the energy decrease between steps falls below a minimum tolerance threshold, then we add $+1$ to a counter until the algorithm reach the \textit{local patience}, and stop early the local exploration, at the end we have a phase score.  
+To not have a endless loop, we have a two security. The first one is a maximum of cycle, and the second one, is a \textit{local patience}. If the energy decrease between steps falls below a minimum tolerance threshold, then we add $+1$ to a counter until the algorithm reach the \textit{local patience}, and stop early the local exploration, at the end we have a phase score. 
+
+The last problem of this local optimization is the data transfers between the \acrfull{cpu} and the \acrfull{gpu} who slow down the optimization. To mitigate this, the algorithm groups execution of local optimization steps into blocks. During a execution of a block, every calculation are performed on GPU. The retrieval of energy values to the CPU only occurs at the end of the block. This technique helps to avoid a bottlenecks between the GPU and CPU. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/local_optim.png}
+    \caption{Local optimization phase (Adam gradient descent).}
+    \label{fig:local-optim}
+\end{figure}
 
 \subsubsection{Global exploration}
 
-As mentioned above, the statistical potential interpolation have a lot of local minima, and a gradient descending alone have tendency to be trapped in a local minima. To overcome this problem, we added a global optimization loop. 
+As mentioned above, the statistical potential interpolation have a lot of local minima, and a gradient descending alone have tendency to be trapped in a local minima. To overcome this problem, we added a global optimization loop (see Fig. \ref{fig:global-optim}). 
 
 When the local exploration has converged, the algorithm compared the phase score with the best historical score. It stores the best conformation, then applies a random geometric pertubation to the 3D coordinates. This noise ejects the structure from it's current local minimum. After that the noisy structure is send to a new local optimization phase. To not lose maybe a good structure, the amplitude of the pertubation decreases over the cycles according to a cooling factor. 
 
-The global exploration terminates based on two criteria : either the noise amplitude reach a minimum threshold or the algorithm is no longer able to find a conformation with a global energy lower than the established record after several successive pertubation cycles, the \textit{global patience}. 
+The global exploration terminates based on two criteria : either the noise amplitude reach a minimum threshold or the algorithm is no longer able to find a conformation with a global energy lower than the established record after several successive pertubation cycles, the \textit{global patience}.  
 
-The last problem of this algorithm is the data transfers between the Central Processing Unit (CPU) and the Graphics Processing Unit (GPU) who slow down the optimization. To mitigate this, the algorithm groups execution of local optimization steps into blocks. During a execution of a block, every calculation are performed on GPU. The retrieval of energy values to the CPU only occurs at the end of the block. This technique helps to avoid a bottlenecks between the GPU and CPU. 
-
-To comprehend more clearly ours algorithm, you can see the diagram pipeline in the figure \ref{fig:optimization-pipeline}. 
-
-\begin{figure}[]
+\begin{figure}[h!]
     \centering
-    \includegraphics[height=0.80\textheight]{diagrams/optimization-pipeline.pdf}
-    \caption{Overview of the combined local (Adam) and global (basin-hopping) optimization pipeline.}
-    \label{fig:optimization-pipeline}
+    \includegraphics[width=0.9\linewidth]{diagrams/global_optim.png}
+    \caption{Global optimization phase (basin-hopping perturbation).}
+    \label{fig:global-optim}
 \end{figure}
 
 \subsection{Complete Pipeline}
 
-Before the optimization phase, the coarse-gained model must be instantiated with starting spatial coordinates for its virtual beads. The molecule is generated as a simple linear chain, with adjacent beads separated by an equilibrium bond distance. This equilibrium bond distance was obtained from statistical analyse. We retrieved all RNA with a resolution inferior at 1.0 \r{A}  from the PDB and we extract every inter-distance from one atom particulary (eg : C3' or C4')  and we used the mean.  With this phase, the strucutre is a linear, considering neutral, and can be used at a starting point for the optimization phase. 
+In addition of the optimization algoritm, there are some steps before and after it to prepare the inputs and the outputs of the optimization (see Fig. \ref{fig:complete-pipeline}). Before the optimization phase, the coarse-gained model must be instantiated with starting spatial coordinates for its virtual beads. The molecule is generated as a simple linear chain, with adjacent beads separated by an equilibrium bond distance. This equilibrium bond distance was obtained from statistical analyse. We retrieved all RNA with a resolution inferior at 1.0 \r{A}  from the PDB and we extract every inter-distance from one atom particulary (eg : C3' or C4')  and we used the mean.  With this phase, the strucutre is a linear, considering neutral, and can be used at a starting point for the optimization phase. 
 
-After the optimization phase, we obtain a PDB file with only the coordinate of the reference atom. To passing to a coarse-gained representation to a full-atom representation, we passed the strucuture into a software ARENA \cite{perry_arena_2023}. The software will maps ideal  nucleobase and sugar-phosphate templates onto the optimized strucure obtained. 
+After the optimization phase, we obtain a PDB file with only the coordinate of the reference atom. To passing to a coarse-gained representation to a full-atom representation, we passed the strucuture into a software ARENA \cite{perry_arena_2023}. The software will maps ideal nucleobase and sugar-phosphate templates onto the optimized strucure obtained. 
 
-Finally after the full-atom reconstruction, we used to tools AMBER14\cite{amber14} force fiel within the OpenMM \cite{openmm} simulation framework to ensure strict thermodynamic realism and to resolve any residual steric clashes. 
+Finally after the full-atom reconstruction, we used to tools AMBER14 \cite{amber14} force fiel within the OpenMM \cite{openmm} simulation framework to ensure strict thermodynamic realism and to resolve any residual steric clashes. 
 
 At the end of this pipeline, the result is a highly refined, all-atom structural model and exported into standard structural biology formats.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/complete_pipeline.png}
+    \caption{Complete Pipeline of the all prediction algorithm.}
+    \label{fig:complete-pipeline}
+\end{figure}
+
+
 \subsection{Different Applications}
 
-Beyond the prediction of RNA three-dimensional structures, the proposed algorithmic framework  can be repurposed for dynamic structural analysis. Because the core optimization engine, driven by the Adam gradient descent, relies on a continuously differentiable objective function, the knowledge-based statistical potential can be substituted with a purely geometric metric, such as the \acrfull{rmsd} relative to a known experimental target. By minimizing this derivable distance metric instead of thermodynamic energy, the optimization algorithm will calculate gradients that guide the spatial coordinates toward the target state. Recording this stepwise convergence generates a continuous structural trajectory, effectively producing a computational \textit{movie} of the simulated folding pathway.
+Beyond the prediction of RNA three-dimensional structures, the proposed algorithmic framework can be repurposed for dynamic structural analysis. Because the core optimization engine, driven by the Adam gradient descent, relies on a continuously differentiable objective function, the knowledge-based statistical potential can be substituted with a purely geometric metric, such as the \acrfull{rmsd} relative to a known experimental target. By minimizing this derivable distance metric instead of thermodynamic energy, the optimization algorithm will calculate gradients that guide the spatial coordinates toward the target state. Recording this stepwise convergence generates a continuous structural trajectory, effectively producing a computational \textit{movie} of the simulated folding pathway.
 
-Furthermore, this methodology can be extended to investigate complex RNA conformational dynamics. Instead of  initializing the optimization algorithm from a linear chain, the coarse-grained model can be seeded with the coordinates of a natively folded state, while setting a different known conformation of the exact same RNA as the RMSD target. So the optimization algorithm will produce the structural transition between the two topologies. Consequently, the framework can be utilized to simulate and observe conformational switches
+Furthermore, this methodology can be extended to investigate complex RNA conformational dynamics. Instead of initializing the optimization algorithm from a linear chain, the coarse-grained model can be seeded with the coordinates of a natively folded state, while setting a different known conformation of the exact same RNA as the RMSD target. So the optimization algorithm will produce the structural transition between the two topologies. Consequently, the framework can be utilized to simulate and observe conformational switches
 
 % ==========================================
 % Results
 % ==========================================
-\newpage
 \section{Results}
 \subsection{Interpolation results}
 \subsection{Comparaison between original and predicted structures}

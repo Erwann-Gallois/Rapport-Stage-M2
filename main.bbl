@@ -17,6 +17,64 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
+  \entry{abramson2024alphafold3}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{6}{}{%
+      {{hash=AJ}{%
+         family={Abramson},
+         familyi={A\bibinitperiod},
+         given={Josh},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Adler},
+         familyi={A\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dunger},
+         familyi={D\bibinitperiod},
+         given={Jack},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Green},
+         familyi={G\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pritzel},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AJ+1}
+    \strng{fullhash}{AJAJDJERGTPA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1038/s41586-024-07487-w
+    \endverb
+    \field{number}{8016}
+    \field{pages}{493\bibrangedash 500}
+    \field{title}{Accurate Structure Prediction of Biomolecular Interactions with AlphaFold 3}
+    \field{volume}{630}
+    \field{journaltitle}{Nature}
+    \field{year}{2024}
+  \endentry
+
   \entry{duke_apep_dna}{online}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -40,6 +98,106 @@
     \field{urlday}{21}
     \field{urlmonth}{07}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{baek2024rosettafoldna}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=BM}{%
+         family={Baek},
+         familyi={B\bibinitperiod},
+         given={Minkyung},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={McHugh},
+         familyi={M\bibinitperiod},
+         given={Ryan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AI}{%
+         family={Anishchenko},
+         familyi={A\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Hanlun},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Baker},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={DiMaio},
+         familyi={D\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMMRAIJHBDDF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1038/s41592-023-02086-5
+    \endverb
+    \field{number}{1}
+    \field{pages}{117\bibrangedash 121}
+    \field{title}{Accurate Prediction of Protein--Nucleic Acid Complexes Using RoseTTAFoldNA}
+    \field{volume}{21}
+    \field{journaltitle}{Nature Methods}
+    \field{year}{2024}
+  \endentry
+
+  \entry{bahai2024benchmarking}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=BA}{%
+         family={Bahai},
+         familyi={B\bibinitperiod},
+         given={Akash},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KCK}{%
+         family={Kwoh},
+         familyi={K\bibinitperiod},
+         given={Chee\bibnamedelima Keong},
+         giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mu},
+         familyi={M\bibinitperiod},
+         given={Yuguang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BAKCKMYLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1371/journal.pcbi.1012715
+    \endverb
+    \field{number}{12}
+    \field{pages}{e1012715}
+    \field{title}{Systematic Benchmarking of Deep-Learning Methods for Tertiary RNA Structure Prediction}
+    \field{volume}{20}
+    \field{journaltitle}{PLOS Computational Biology}
+    \field{year}{2024}
   \endentry
 
   \entry{berman2000pdb}{article}{}{}
@@ -133,6 +291,74 @@
     \field{urlday}{22}
     \field{urlmonth}{07}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{boniecki2016simrna}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=BMJ}{%
+         family={Boniecki},
+         familyi={B\bibinitperiod},
+         given={Michal\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lach},
+         familyi={L\bibinitperiod},
+         given={Grzegorz},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DWK}{%
+         family={Dawson},
+         familyi={D\bibinitperiod},
+         given={Wayne\bibnamedelima K.},
+         giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Tomala},
+         familyi={T\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lukasz},
+         familyi={L\bibinitperiod},
+         given={Pawel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Soltysinski},
+         familyi={S\bibinitperiod},
+         given={Tomasz},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RKM}{%
+         family={Rother},
+         familyi={R\bibinitperiod},
+         given={Kristian\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Bujnicki},
+         familyi={B\bibinitperiod},
+         given={Janusz\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMJ+1}
+    \strng{fullhash}{BMJLGDWKTKLPSTRKMBJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1093/nar/gkv1479
+    \endverb
+    \field{number}{7}
+    \field{pages}{e63}
+    \field{title}{SimRNA: A Coarse-Grained Method for RNA Folding Simulations and 3D Structure Prediction}
+    \field{volume}{44}
+    \field{journaltitle}{Nucleic Acids Research}
+    \field{year}{2016}
   \endentry
 
   \entry{breaker2012riboswitches}{article}{}{}
@@ -692,6 +918,122 @@
     \field{year}{1970}
   \endentry
 
+  \entry{cruz2012rnapuzzles}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{6}{}{%
+      {{hash=CJA}{%
+         family={Cruz},
+         familyi={C\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima Almeida},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BMF}{%
+         family={Blanchet},
+         familyi={B\bibinitperiod},
+         given={Marc-Fr{\'e}d{\'e}rick},
+         giveni={M\bibinithyphendelim F\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Boniecki},
+         familyi={B\bibinitperiod},
+         given={Michal},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Bujnicki},
+         familyi={B\bibinitperiod},
+         given={Janusz\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CSJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Shi-Jie},
+         giveni={S\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJA+1}
+    \strng{fullhash}{CJABMFBMBJMCSJCS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1261/rna.031054.111
+    \endverb
+    \field{number}{4}
+    \field{pages}{610\bibrangedash 625}
+    \field{title}{RNA-Puzzles: A CASP-like Evaluation of RNA Three-dimensional Structure Prediction}
+    \field{volume}{18}
+    \field{journaltitle}{RNA}
+    \field{year}{2012}
+  \endentry
+
+  \entry{das2023casp15}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{6}{}{%
+      {{hash=DR}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Rhiju},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KRC}{%
+         family={Kretsch},
+         familyi={K\bibinitperiod},
+         given={Ramya\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SAJ}{%
+         family={Simpkin},
+         familyi={S\bibinitperiod},
+         given={Adam\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mulvaney},
+         familyi={M\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Pham},
+         familyi={P\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rangan},
+         familyi={R\bibinitperiod},
+         given={Ramya},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DR+1}
+    \strng{fullhash}{DRKRCSAJMTPPRR+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1002/prot.26602
+    \endverb
+    \field{number}{12}
+    \field{pages}{1747\bibrangedash 1770}
+    \field{title}{Assessment of Three-Dimensional RNA Structure Prediction in CASP15}
+    \field{volume}{91}
+    \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+    \field{year}{2023}
+  \endentry
+
   \entry{deng_x-ray_2001}{article}{}{}
     \name{author}{3}{}{%
       {{hash=DJ}{%
@@ -798,6 +1140,220 @@
     \field{urlyear}{2026}
   \endentry
 
+  \entry{howe2015ribocil}{article}{}{}
+    \name{author}{32}{}{%
+      {{hash=HJA}{%
+         family={Howe},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FTO}{%
+         family={Fischmann},
+         familyi={F\bibinitperiod},
+         given={Thierry\bibnamedelima O.},
+         giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=BCJ}{%
+         family={Balibar},
+         familyi={B\bibinitperiod},
+         given={Carl\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=XL}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GAM}{%
+         family={Galgoci},
+         familyi={G\bibinitperiod},
+         given={Andrew\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MJC}{%
+         family={Malinverni},
+         familyi={M\bibinitperiod},
+         given={Juliana\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mayhood},
+         familyi={M\bibinitperiod},
+         given={Todd},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Villafania},
+         familyi={V\bibinitperiod},
+         given={Artjohn},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nahvi},
+         familyi={N\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Murgolo},
+         familyi={M\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BCM}{%
+         family={Barbieri},
+         familyi={B\bibinitperiod},
+         given={Christopher\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MPA}{%
+         family={Mann},
+         familyi={M\bibinitperiod},
+         given={Paul\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Carr},
+         familyi={C\bibinitperiod},
+         given={Donald},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=XE}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Ellen},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ZP}{%
+         family={Zuck},
+         familyi={Z\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Riley},
+         familyi={R\bibinitperiod},
+         given={Danielle},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PRE}{%
+         family={Painter},
+         familyi={P\bibinitperiod},
+         given={Ronald\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WSS}{%
+         family={Walker},
+         familyi={W\bibinitperiod},
+         given={Susan\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sherborne},
+         familyi={S\bibinitperiod},
+         given={Brad},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=dJR}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Jesus},
+         familyi={J\bibinitperiod},
+         given={Reynalda},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Weidong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PMA}{%
+         family={Plotkin},
+         familyi={P\bibinitperiod},
+         given={Marc\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Jin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rindgen},
+         familyi={R\bibinitperiod},
+         given={Diane},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cummings},
+         familyi={C\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GCG}{%
+         family={Garlisi},
+         familyi={G\bibinitperiod},
+         given={Charles\bibnamedelima G.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Rumin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SPR}{%
+         family={Sheth},
+         familyi={S\bibinitperiod},
+         given={Payal\bibnamedelima R.},
+         giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GCJ}{%
+         family={Gill},
+         familyi={G\bibinitperiod},
+         given={Charles\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Haifeng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Roemer},
+         familyi={R\bibinitperiod},
+         given={Terry},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJA+1}
+    \strng{fullhash}{HJAWHFTOBCJXLGAMMJCMTVANAMNBCMMPACDXEZPRDPREWSSSBJRdPWPMAWJRDCJGCGZRSPRGCJTHRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1038/nature15542
+    \endverb
+    \field{number}{7575}
+    \field{pages}{672\bibrangedash 677}
+    \field{title}{Selective Small-Molecule Inhibition of an RNA Structural Element}
+    \field{volume}{526}
+    \field{journaltitle}{Nature}
+    \field{year}{2015}
+  \endentry
+
   \entry{organigram}{online}{}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -816,6 +1372,210 @@
     \verb https://www.ibisc.univ-evry.fr/wp-content/uploads/2026/04/Organigramm
     \verb e_IBISC-02042026.jpg
     \endverb
+  \endentry
+
+  \entry{jonikas_coarse-grained_2009}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=JMA}{%
+         family={Jonikas},
+         familyi={J\bibinitperiod},
+         given={Magdalena\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RRJ}{%
+         family={Radmer},
+         familyi={R\bibinitperiod},
+         given={Randall\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Laederach},
+         familyi={L\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Rhiju},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pearlman},
+         familyi={P\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Herschlag},
+         familyi={H\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ARB}{%
+         family={Altman},
+         familyi={A\bibinitperiod},
+         given={Russ\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {Cold Spring Harbor Lab}%
+    }
+    \keyw{3D RNA structure prediction, coarse-grained modeling, knowledge-based energy function, RNA structure}
+    \strng{namehash}{JMA+1}
+    \strng{fullhash}{JMARRJLADRPSHDARB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    Understanding the function of complex RNA molecules depends critically on understanding their structure. However, creating three-dimensional (3D) structural models of RNA remains a significant challenge. We present a protocol (the nucleic acid simulation tool [NAST]) for RNA modeling that uses an RNA-specific knowledge-based potential in a coarse-grained molecular dynamics engine to generate plausible 3D structures. We demonstrate NAST's capabilities by using only secondary structure and tertiary contact predictions to generate, cluster, and rank structures. Representative structures in the best ranking clusters averaged 8.0 ± 0.3 Å and 16.3 ± 1.0 Å RMSD for the yeast phenylalanine tRNA and the P4-P6 domain of the Tetrahymena thermophila group I intron, respectively. The coarse-grained resolution allows us to model large molecules such as the 158-residue P4-P6 or the 388-residue T. thermophila group I intron. One advantage of NAST is the ability to rank clusters of structurally similar decoys based on their compatibility with experimental data. We successfully used ideal small-angle X-ray scattering data and both ideal and experimental solvent accessibility data to select the best cluster of structures for both tRNA and P4-P6. Finally, we used NAST to build in missing loops in the crystal structures of the Azoarcus and Twort ribozymes, and to incorporate crystallographic data into the Michel–Westhof model of the T. thermophila group I intron, creating an integrated model of the entire molecule. Our software package is freely available at https://simtk.org/home/nast.%
+    }
+    \verb{doi}
+    \verb 10.1261/rna.1270809
+    \endverb
+    \field{issn}{1355-8382, 1469-9001}
+    \field{number}{2}
+    \field{pages}{189\bibrangedash 199}
+    \field{title}{Coarse-grained modeling of large {RNA} molecules with knowledge-based potentials and structural filters}
+    \verb{url}
+    \verb http://rnajournal.cshlp.org/content/15/2/189
+    \endverb
+    \field{volume}{15}
+    \verb{file}
+    \verb Full Text PDF:/home/erwann/Zotero/storage/X3VQYD9X/Jonikas et al. - 2
+    \verb 009 - Coarse-grained modeling of large RNA molecules with knowledge-b
+    \verb ased potentials and structural filter.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{RNA}
+    \field{month}{01}
+    \field{year}{2009}
+    \field{urlday}{31}
+    \field{urlmonth}{03}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{jumper2021alphafold}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{6}{}{%
+      {{hash=JJ}{%
+         family={Jumper},
+         familyi={J\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pritzel},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Green},
+         familyi={G\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Figurnov},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RO}{%
+         family={Ronneberger},
+         familyi={R\bibinitperiod},
+         given={Olaf},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJ+1}
+    \strng{fullhash}{JJERPAGTFMRO+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \verb{doi}
+    \verb 10.1038/s41586-021-03819-2
+    \endverb
+    \field{number}{7873}
+    \field{pages}{583\bibrangedash 589}
+    \field{title}{Highly Accurate Protein Structure Prediction with AlphaFold}
+    \field{volume}{596}
+    \field{journaltitle}{Nature}
+    \field{year}{2021}
+  \endentry
+
+  \entry{kagaya2025nufold}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=KY}{%
+         family={Kagaya},
+         familyi={K\bibinitperiod},
+         given={Yuki},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zicong},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=IN}{%
+         family={Ibtehaz},
+         familyi={I\bibinitperiod},
+         given={Nabil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nakamura},
+         familyi={N\bibinitperiod},
+         given={Tsukasa},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Daisuke},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kihara},
+         familyi={K\bibinitperiod},
+         given={Daisuke},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KY+1}
+    \strng{fullhash}{KYZZINWXNTHDKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1038/s41467-025-56261-7
+    \endverb
+    \field{pages}{881}
+    \field{title}{NuFold: End-to-End Approach for RNA Tertiary Structure Prediction with Flexible Nucleobase Center Representation}
+    \field{volume}{16}
+    \field{journaltitle}{Nature Communications}
+    \field{year}{2025}
   \endentry
 
   \entry{kingma2017adammethodstochasticoptimization}{misc}{}{}
@@ -851,6 +1611,32 @@
     \field{year}{2017}
   \endentry
 
+  \entry{kretsch2025casp16}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=KRC}{%
+         family={Kretsch},
+         familyi={K\bibinitperiod},
+         given={Ramya\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KRC+1}
+    \strng{fullhash}{KRC+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1101/2025.05.06.652459
+    \endverb
+    \field{note}{Preprint}
+    \field{title}{Assessment of Nucleic Acid Structure Prediction in CASP16}
+    \field{journaltitle}{bioRxiv}
+    \field{year}{2025}
+  \endentry
+
   \entry{lennard-jones_cohesion_1931}{article}{}{}
     \name{author}{1}{}{%
       {{hash=LJJE}{%
@@ -879,6 +1665,61 @@
     \field{journaltitle}{Proceedings of the Physical Society}
     \field{month}{09}
     \field{year}{1931}
+  \endentry
+
+  \entry{li2023drfold}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Chengxin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Chenjie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Pearce},
+         familyi={P\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FPL}{%
+         family={Freddolino},
+         familyi={F\bibinitperiod},
+         given={Peter\bibnamedelima L.},
+         giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYZCFCPRFPLZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1038/s41467-023-41303-9
+    \endverb
+    \field{pages}{5745}
+    \field{title}{Integrating End-to-End Learning with Deep Geometrical Potentials for Ab Initio RNA Structure Prediction}
+    \field{volume}{14}
+    \field{journaltitle}{Nature Communications}
+    \field{year}{2023}
   \endentry
 
   \entry{liu_limited_1989}{article}{}{}
@@ -1026,6 +1867,42 @@
     \field{urlyear}{2026}
   \endentry
 
+  \entry{pearce2022deepfoldrna}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=PR}{%
+         family={Pearce},
+         familyi={P\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=OGS}{%
+         family={Omenn},
+         familyi={O\bibinitperiod},
+         given={Gilbert\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PROGSZY1}
+    \strng{fullhash}{PROGSZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1101/2022.05.15.491755
+    \endverb
+    \field{note}{Preprint}
+    \field{title}{De Novo RNA Tertiary Structure Prediction at Atomic Resolution Using Geometric Potentials from Deep Learning}
+    \field{journaltitle}{bioRxiv}
+    \field{year}{2022}
+  \endentry
+
   \entry{perry_arena_2023}{article}{}{}
     \name{author}{3}{}{%
       {{hash=PZR}{%
@@ -1082,6 +1959,122 @@
     \field{urlday}{31}
     \field{urlmonth}{03}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{senior2020alphafold1}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{6}{}{%
+      {{hash=SAW}{%
+         family={Senior},
+         familyi={S\bibinitperiod},
+         given={Andrew\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jumper},
+         familyi={J\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kirkpatrick},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Sifre},
+         familyi={S\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Green},
+         familyi={G\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAW+1}
+    \strng{fullhash}{SAWERJJKJSLGT+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1038/s41586-019-1923-7
+    \endverb
+    \field{number}{7792}
+    \field{pages}{706\bibrangedash 710}
+    \field{title}{Improved Protein Structure Prediction Using Potentials from Deep Learning}
+    \field{volume}{577}
+    \field{journaltitle}{Nature}
+    \field{year}{2020}
+  \endentry
+
+  \entry{shen2024rhofold}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{6}{}{%
+      {{hash=ST}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HZ}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Zhihang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Siqi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Di},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jiuming},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STHZSSLDWFWJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1038/s41592-024-02487-0
+    \endverb
+    \field{number}{12}
+    \field{pages}{2287\bibrangedash 2298}
+    \field{title}{Accurate RNA 3D Structure Prediction Using a Language Model-Based Deep Learning Approach}
+    \field{volume}{21}
+    \field{journaltitle}{Nature Methods}
+    \field{year}{2024}
   \endentry
 
   \entry{sippl_calculation_1990}{article}{}{}
@@ -1242,6 +2235,161 @@
     \field{journaltitle}{Biophysical Journal}
     \field{month}{01}
     \field{year}{2022}
+  \endentry
+
+  \entry{wang2023trrosettarna}{article}{}{}
+    \name{author}{10}{}{%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wenkai},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Chenjie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Rong},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Ziyi},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Ye},
+         familyi={Y\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DZ}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={Zhenling},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Fan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PZ}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Zhiyong},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jianyi},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WW+1}
+    \strng{fullhash}{WWFCHRWZYLDZWHZFPZYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1038/s41467-023-42528-4
+    \endverb
+    \field{pages}{7266}
+    \field{title}{trRosettaRNA: Automated Prediction of RNA 3D Structure with Transformer Network}
+    \field{volume}{14}
+    \field{journaltitle}{Nature Communications}
+    \field{year}{2023}
+  \endentry
+
+  \entry{warner2018principles}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=WKD}{%
+         family={Warner},
+         familyi={W\bibinitperiod},
+         given={Kenneth\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HCE}{%
+         family={Hajdin},
+         familyi={H\bibinitperiod},
+         given={Christine\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WKM}{%
+         family={Weeks},
+         familyi={W\bibinitperiod},
+         given={Kevin\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WKDHCEWKM1}
+    \strng{fullhash}{WKDHCEWKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1038/nrd.2018.93
+    \endverb
+    \field{number}{8}
+    \field{pages}{547\bibrangedash 558}
+    \field{title}{Principles for Targeting RNA with Drug-like Small Molecules}
+    \field{volume}{17}
+    \field{journaltitle}{Nature Reviews Drug Discovery}
+    \field{year}{2018}
+  \endentry
+
+  \entry{watkins2020farfar2}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=WAM}{%
+         family={Watkins},
+         familyi={W\bibinitperiod},
+         given={Andrew\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rangan},
+         familyi={R\bibinitperiod},
+         given={Ramya},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Rhiju},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WAMRRDR1}
+    \strng{fullhash}{WAMRRDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1016/j.str.2020.05.011
+    \endverb
+    \field{number}{8}
+    \field{pages}{963\bibrangedash 976.e6}
+    \field{title}{FARFAR2: Improved De Novo Rosetta Prediction of Complex Global RNA Folds}
+    \field{volume}{28}
+    \field{journaltitle}{Structure}
+    \field{year}{2020}
   \endentry
 
   \entry{zhang_all-atom_2020}{article}{}{}

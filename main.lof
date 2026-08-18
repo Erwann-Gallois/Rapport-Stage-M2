@@ -1,7 +1,9 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces IBISC's organigram. Source : \blx@tocontentsinit {0}\cite {organigram}}}{1}{figure.caption.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces A diagram illustrating the processes of DNA transcription into RNA and RNA translation into proteins. Source : \blx@tocontentsinit {0}\cite {duke_apep_dna}}}{2}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces A diagram illustrating the processes of \acrshort {dna} transcription into RNA and RNA translation into proteins. Source : \blx@tocontentsinit {0}\cite {duke_apep_dna}}}{2}{figure.caption.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces A diagram illustrating the 1D-structure of RNA and nucleotid composition. Source : \blx@tocontentsinit {0}\cite {bocsci_rna_bases}}}{3}{figure.caption.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces A diagram illustrating different structural motifs . Source : \blx@tocontentsinit {0}\cite {eclipse-strucure}}}{3}{figure.caption.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces The three different level of representation for the same RNA (PDB ID : 3DIQ)}}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Line 808 from the pdb file from the pdb id 1J8G \blx@tocontentsinit {0}\cite {deng_x-ray_2001}}}{7}{figure.caption.8}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Overview of the combined local (Adam) and global (basin-hopping) optimization pipeline.}}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Line 808 from the pdb file from the pdb id 1J8G \blx@tocontentsinit {0}\cite {deng_x-ray_2001}}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Local optimization phase (Adam gradient descent).}}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Global optimization phase (basin-hopping perturbation).}}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Complete Pipeline of the all prediction algorithm.}}{13}{figure.caption.12}%
