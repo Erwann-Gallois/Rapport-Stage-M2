@@ -740,6 +740,26 @@
     \field{urlyear}{2026}
   \endentry
 
+  \entry{organigram}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{IBISC}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Organigram}
+    \verb{url}
+    \verb https://www.ibisc.univ-evry.fr/wp-content/uploads/2026/04/Organigramm
+    \verb e_IBISC-02042026.jpg
+    \endverb
+  \endentry
+
   \entry{kingma2017adammethodstochasticoptimization}{misc}{}{}
     \name{author}{2}{}{%
       {{hash=KDP}{%
