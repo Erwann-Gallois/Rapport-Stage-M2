@@ -4,6 +4,9 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces A diagram illustrating different structural motifs . Source : \blx@tocontentsinit {0}\cite {eclipse-strucure}}}{3}{figure.caption.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces The three different level of representation for the same RNA (PDB ID : 3DIQ)}}{4}{figure.caption.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Line 808 from the pdb file from the pdb id 1J8G \blx@tocontentsinit {0}\cite {deng_x-ray_2001}}}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Local optimization phase (Adam gradient descent).}}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Global optimization phase (basin-hopping perturbation).}}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Complete Pipeline of the all prediction algorithm.}}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces The original and predicted structures of a transfer RNA from \textit {Azoarcus sp. BH72} (PDB ID : 9X6B) \blx@tocontentsinit {0}\cite {hong_pre-splicing_2026}. (a) The original structure. (b) the final stucture of the folding using RMSD and C1'. (c) the final stucture of the folding using RMSD and C4'. (d) the final stucture of the folding using RMSD and C3'}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Line chart representing the objective function evolution by epochs for each representation of the transfer RNA from \textit {Azoarcus sp. BH72} (PDB ID : 9X6B) \blx@tocontentsinit {0}\cite {hong_pre-splicing_2026}}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Screenshots of the ARDA website presenting the folding path of the transfer RNA from \textit {Azoarcus sp. BH72} (PDB ID : 9X6B) \blx@tocontentsinit {0}\cite {hong_pre-splicing_2026}, Source : \blx@tocontentsinit {0}\cite {arda-example}}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Local optimization phase (Adam gradient descent).}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Global optimization phase (basin-hopping perturbation).}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Complete Pipeline of the all prediction algorithm.}}{22}{figure.caption.15}%

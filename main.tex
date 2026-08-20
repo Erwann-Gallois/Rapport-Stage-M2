@@ -18,6 +18,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{subcaption}
+\usepackage{pdflscape}
 % biblio
 \usepackage[
 backend=bibtex,
@@ -108,7 +109,7 @@ sorting=nty
         \Huge{\textbf{Internship Report}}\\ 
 
         \vspace{0.5cm}
-        \LARGE{Prediction of RNA 3D structure using gradient-descending and knowledge-based scoring function}
+        \LARGE{Prediction of RNA 3D structure using gradient-descending and knowledge-based potential}
           
         \vspace{2 cm}
         % \Large{\GroupName}
@@ -396,6 +397,7 @@ A PDB file uses fixed-width columns, so a parser needs to know exactly the speci
 % ==========================================
 \newpage
 \section{Materials and Methods}
+\label{sec:materials-methods}
 \subsection{Knowledge based potential}
 
 A knowledge based potential or statistical potential is a empirical scoring function. Indeed, she comes from a statistical analyses from 3D structures coming from the PDB. Unlike the physical potential, who based on fundamental laws of molecular mecanisms, a knowledge based score function is based on Bolzmann inversion principle. It posits that the frequency with which a given structural feature occurs in nature reflects its free-energy state, a theoretical approach initially formalised for macromolecules in the work of Miyazawa and Jernigan \cite{Miyazawa1985EstimationOE} and Sippl \cite{sippl_calculation_1990}.
@@ -413,7 +415,15 @@ In this internship, we compared four different statistical potential. There are 
 
 \subsection{Representation}
 
-To represents the RNA, we used a bead-springs representation or coarsed-gained representation, that means to represent the nucleotids we used only one atom and every atoms are connected by a spring.  This representation is more faster than a full-atom representation but less precise. But with this representation, we need to decide which atom, from the nucleotide, we will used. To resolve this problem, we selectionned three atom : 
+Predicting the tertiary RNA structure depends also on how we represent the molecule. There are different structural representations : 
+
+\begin{itemize}
+    \item All-Atom Representation : This repsentation use all atom from the RNA molecule, sometimes even hydrogen atom. This approach provides the most accurate physicochemical description of the molecule. Unfortunately, this representation have also a high computational cost because of the sheer number of degrees of freedom \cite{sponer_rna_2018}, so it's not used for the large RNA molecule. 
+    \item Multi-beads Models : This representation use between 3 to 7 atoms to modeling the RNA. Unlike the all-atom representation, these models balanced structural detail and computational speed. Some predicting model have used these model, for example SimRNA \cite{10.1093/nar/gkv1479} used a 3-bead model, one for the sugar ring, a another for the phosphate group and one for the nucleobase. Also, HiRE-RNA \cite{10.1021/jp102497y} and oxRNA \cite{10.1063/1.4881424} used a 5 to 7 beads to differentiate the Watson-Crick interacting edges from the Hoogsteen edges, they have also capture finer topological details. 
+    \item Single-beads Models : This representation used only one atom to modeling the all nucleotide. This approach sacrifices explicit local structural nuances but it's smoothing the thermodynamic energy landscape. One prediction model used this representation, NAST \cite{jonikas_coarse-grained_2009}, and it's very efficient for exploring global topological arrangements and simulating large-scale folding pathways.
+\end{itemize}
+
+To represents the RNA, we used a single-beads representation, because of it's lower computational cost and for exploring more easily the global topological arrangements. But with this representation, we need to decide which atom, from the nucleotide, we will used. To resolve this problem, we selectionned three atom : 
 \begin{itemize}
     \item C3' : We selected this atom because it's fixation point of the phosphate group. It's the topology equivalent of the alpha carbon for the protein. This atom is centered on the backbone sugar-phosphate. The C3' sequence provides an extremely smooth geometric representation of the RNA chain. It's privilaged choice used by model like NAST \cite{jonikas_coarse-grained_2009} who using also the single-atom representation.
     \item C4' : With this atom, the representation retains a very precise spatial memory of the local conformation of the cycle. Moreover, the inter-C4' distance mathematically better reflect the local curvature constraints of the phosphodiester chain than C3' does. 
@@ -424,10 +434,6 @@ To represents the RNA, we used a bead-springs representation or coarsed-gained r
 \subsection{Objective function}
 
 The objective function will be used in a gradient descending optimisation. So it's need to be continuous and derivable. But, as we see before a knowledge based potential it's not derivable and continuous. Indeed it's only a matrix with energy depending on the distance and two atoms. So to bypass ths problem, we used a Catmull-Rom interpolation. It's a mathematical geometric modeling technique used to create a smooth cubic curve, that passes trought the point from the matrix of the potential. The fundamental property of this model lies in the automatic calculation of the tangent at each points $P_i$, which is defined to be strictly collinear with the vector connecting the adjacent points $P_{i-1}$ and $P_{i+1}$. Thanks to this property, the curve we obtained is continuous and derivable, and can be used in a gradient descending.
-
-To represents the RNA, we used a bead-springs representation or coarsed-gained representation, that means to represent the nucleotids we used only one atom and every atoms are connected by a spring.  This representation is more faster than a full-atom representation but less precise. But with this representation, we need to decide which atom, from the nucleotide, we will used. To resolve this problem, we selectionned three atom : 
-
-
 
 \begin{equation}
     w_1 * \text{Potential Statistical} +  w_2 * (k * \sum_{1}^{n-1}(l_0 - r)^2) + w_2  * WCA
@@ -449,7 +455,7 @@ The second one is the Fraenkel potential, it's used to regulate the springs comp
 
 The last one, it's the \acrfull{wca} potential (see Equation \ref{eq:wca}), this potential is a trunked version of the Lennard-Jones potential \cite{lennard-jones_cohesion_1931}. We include this term to avoid steric clash. Indeed this terms is only active when two beads are too close. This function is important because we doesn't influence the knowledge-based potential. To achieve this goal, there are three constant, the $r$, it's the euclidienne distance between two atoms. Then, the $r_{min}$, it's the minimal distance where the potential energy is minimal. And the $\epsilon$ represent the depth of the energy well of the original potential. The term $+1$ ensures that the energy vanishes continuously at $r =r_{min}$. 
 
-Thanks to the interpolation and the others terms, the objective function can ensure that no physical laws are being violated. So the results can be used to other application. Since a present you the objectivefunction, i will now present you my algorithm. 
+Thanks to the interpolation and the others terms, the objective function can ensure that no physical laws are being violated. So the results can be used to other application. Since a present you the objective function, i will now present you my algorithm. 
 
 \subsection{Optimization algorithm}
 
@@ -457,53 +463,31 @@ The goal of the optimization algorithm is to find minimizing the objective funct
 
 \subsubsection{Local exploration}
 
-For the local exploration (see Fig.\ref{fig:local-optim}) we used the Adam optimization algorithm \cite{kingma2017adammethodstochasticoptimization}, unlike the AlphaFold 1, who used the \acrfull{lbfgs} optimization algorithm \cite{liu_limited_1989}. In fact, in our case, we start from a linear structure and we try to folding it. But the L-BFGS converge fast to the first local minimum, however a knowledge-based potential have a lot of minimum local due to the interpolation. Also Adam doesn't make assumptions about curvature, on the contrary the L-BFGS who constructs its approximation of the Hessian based on the history of gradient differences. Therefore, we used the Adam optimization to resolve our problem. 
+For the local exploration (see Fig.~\ref{fig:local-optim}, Appendix) we used the Adam optimization algorithm \cite{kingma2017adammethodstochasticoptimization}, unlike the AlphaFold 1, who used the \acrfull{lbfgs} optimization algorithm \cite{liu_limited_1989}. In fact, in our case, we start from a linear structure and we try to folding it. But the L-BFGS converge fast to the first local minimum, however a knowledge-based potential have a lot of minimum local due to the interpolation. Also Adam doesn't make assumptions about curvature, on the contrary the L-BFGS who constructs its approximation of the Hessian based on the history of gradient differences. Therefore, we used the Adam optimization to resolve our problem. 
 
 At each iteration, the algorithm calculates the total energy of the system and performs a backpropagation to obtain the energy gradients with respect to the spatial coordinates of the atoms. These gradients are the physical forces acting on the molecule. We have also add a numerical stability to avoid a explosion of the molecule when we have a steric clash during the foldin, by adding a gradient clapping mechanism, capping the gradient norm at a maximum value. 
 
 To not have a endless loop, we have a two security. The first one is a maximum of cycle, and the second one, is a \textit{local patience}. If the energy decrease between steps falls below a minimum tolerance threshold, then we add $+1$ to a counter until the algorithm reach the \textit{local patience}, and stop early the local exploration, at the end we have a phase score. 
 
-The last problem of this local optimization is the data transfers between the \acrfull{cpu} and the \acrfull{gpu} who slow down the optimization. To mitigate this, the algorithm groups execution of local optimization steps into blocks. During a execution of a block, every calculation are performed on GPU. The retrieval of energy values to the CPU only occurs at the end of the block. This technique helps to avoid a bottlenecks between the GPU and CPU. 
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{diagrams/local_optim.png}
-    \caption{Local optimization phase (Adam gradient descent).}
-    \label{fig:local-optim}
-\end{figure}
+The last problem of this local optimization is the data transfers between the \acrfull{cpu} and the \acrfull{gpu} who slow down the optimization. To mitigate this, the algorithm groups execution of local optimization steps into blocks. During a execution of a block, every calculation are performed on GPU. The retrieval of energy values to the CPU only occurs at the end of the block. This technique helps to avoid a bottlenecks between the GPU and CPU.
 
 \subsubsection{Global exploration}
 
-As mentioned above, the statistical potential interpolation have a lot of local minima, and a gradient descending alone have tendency to be trapped in a local minima. To overcome this problem, we added a global optimization loop (see Fig. \ref{fig:global-optim}). 
+As mentioned above, the statistical potential interpolation have a lot of local minima, and a gradient descending alone have tendency to be trapped in a local minima. To overcome this problem, we added a global optimization loop (see Fig.~\ref{fig:global-optim}, Appendix).
 
-When the local exploration has converged, the algorithm compared the phase score with the best historical score. It stores the best conformation, then applies a random geometric pertubation to the 3D coordinates. This noise ejects the structure from it's current local minimum. After that the noisy structure is send to a new local optimization phase. To not lose maybe a good structure, the amplitude of the pertubation decreases over the cycles according to a cooling factor. 
+When the local exploration has converged, the algorithm compared the phase score with the best historical score. It stores the best conformation, then applies a random geometric pertubation to the 3D coordinates. This noise ejects the structure from it's current local minimum. After that the noisy structure is send to a new local optimization phase. To not lose maybe a good structure, the amplitude of the pertubation decreases over the cycles according to a cooling factor.
 
-The global exploration terminates based on two criteria : either the noise amplitude reach a minimum threshold or the algorithm is no longer able to find a conformation with a global energy lower than the established record after several successive pertubation cycles, the \textit{global patience}.  
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.9\linewidth]{diagrams/global_optim.png}
-    \caption{Global optimization phase (basin-hopping perturbation).}
-    \label{fig:global-optim}
-\end{figure}
+The global exploration terminates based on two criteria : either the noise amplitude reach a minimum threshold or the algorithm is no longer able to find a conformation with a global energy lower than the established record after several successive pertubation cycles, the \textit{global patience}.
 
 \subsection{Complete Pipeline}
 
-In addition of the optimization algoritm, there are some steps before and after it to prepare the inputs and the outputs of the optimization (see Fig. \ref{fig:complete-pipeline}). Before the optimization phase, the coarse-gained model must be instantiated with starting spatial coordinates for its virtual beads. The molecule is generated as a simple linear chain, with adjacent beads separated by an equilibrium bond distance. This equilibrium bond distance was obtained from statistical analyse. We retrieved all RNA with a resolution inferior at 1.0 \r{A}  from the PDB and we extract every inter-distance from one atom particulary (eg : C3' or C4')  and we used the mean.  With this phase, the strucutre is a linear, considering neutral, and can be used at a starting point for the optimization phase. 
+In addition of the optimization algoritm, there are some steps before and after it to prepare the inputs and the outputs of the optimization (see Fig.~\ref{fig:complete-pipeline}, Appendix~\ref{app:supplementary}). Before the optimization phase, the coarse-gained model must be instantiated with starting spatial coordinates for its virtual beads. The molecule is generated as a simple linear chain, with adjacent beads separated by an equilibrium bond distance. This equilibrium bond distance was obtained from statistical analyse. We retrieved all RNA with a resolution inferior at 1.0 \r{A}  from the PDB and we extract every inter-distance from each atom we selectionned and we used the mean. With this phase, the strucutre is a linear, considering neutral, and can be used at a starting point for the optimization phase. 
 
 After the optimization phase, we obtain a PDB file with only the coordinate of the reference atom. To passing to a coarse-gained representation to a full-atom representation, we passed the strucuture into a software ARENA \cite{perry_arena_2023}. The software will maps ideal nucleobase and sugar-phosphate templates onto the optimized strucure obtained. 
 
 Finally after the full-atom reconstruction, we used to tools AMBER14 \cite{amber14} force fiel within the OpenMM \cite{openmm} simulation framework to ensure strict thermodynamic realism and to resolve any residual steric clashes. 
 
 At the end of this pipeline, the result is a highly refined, all-atom structural model and exported into standard structural biology formats.
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\linewidth]{diagrams/complete_pipeline.png}
-    \caption{Complete Pipeline of the all prediction algorithm.}
-    \label{fig:complete-pipeline}
-\end{figure}
-
 
 \subsection{Different Applications}
 
@@ -514,18 +498,94 @@ Furthermore, this methodology can be extended to investigate complex RNA conform
 % ==========================================
 % Results
 % ==========================================
+\newpage
 \section{Results}
-\subsection{Interpolation results}
-\subsection{Comparaison between original and predicted structures}
-\subsection{Comparatives tables}
-\subsection{Line chart of score function for folding trajectory}
+\subsection{Folding trajectory}
+\begin{figure}[h!]
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/original_structure.png} 
+\caption{Original Structure}
+\label{fig:original-structure}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/predicted_structure_C1.png}
+\caption{Predicted Structure using C1' representation. Score final : 2.3959}
+\label{fig:predicted-structure-C1}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/predicted_structure_C4.png} 
+\caption{Predicted Structure using C4' representation. Score final : 0.4232}
+\label{fig:predicted-structure-C4}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/predicted_structure_C3.png} 
+\caption{Predicted Structure using C3' representation. Score final : 3.9621}
+\label{fig:predicted-structure-C3}
+\end{subfigure}
+\caption{The original and predicted structures of a transfer RNA from \textit{Azoarcus sp. BH72} (PDB ID : 9X6B) \cite{hong_pre-splicing_2026}. (a) The original structure. (b) the final stucture of the folding using RMSD and C1'. (c) the final stucture of the folding using RMSD and C4'. (d) the final stucture of the folding using RMSD and C3'}
+\label{fig:comparaison-structure-folding}
+\end{figure}
+
+The predicted structure using metrics instead of a knowledge-based potential seems more precise and more accurate compared to the original structure (see Fig \ref{fig:original-structure}). Even if, all predicted structure seems to be the same, we can distingued, with the C4' representation (see Fig. \ref{fig:predicted-structure-C4}), a helice on RNA like on the original. This observation can be verified also by its final score, who its more lower than the other representation, and with the RMSD more lower it's the number, more the structure are close. 
+
+At first, using a metric instead of a knowledge-based potential was to make a control on the optimization algorithm, to know if the algorithm can work to approch the original structure, and can reduce the energy. As we can see on the figure \ref{fig:score-comparaison-folding}, our algorithm reduce pretty quickly the energy. The C1' representation reduce faster than the others but the C4' representation arrived to have a better energy with roughly the same number of epochs. We can see also that even if we put noise, every 10 000 epochs, the algorithm arrived to minimizing the score. This results is encouraging because this proves that our optimization methods can 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{img/score_comparison.png}
+    \caption{Line chart representing the objective function evolution by epochs for each representation of the transfer RNA from \textit{Azoarcus sp. BH72} (PDB ID : 9X6B) \cite{hong_pre-splicing_2026}}
+    \label{fig:score-comparaison-folding}
+\end{figure}
+
 \subsection{Internet platform for RNA folding}
+
+With the discovery of making good folding path. We retrieved all RNA with a resolution under 3.0 \r{A} inside the PDB and we used them for making all folding path of each RNA. Thanks to, three other interns, who arrived after me, we build a website \cite{arda}, name ARDA for Archive of RNA Dynamics and Analysis, to show all the database of folding path. On this website, we can see also some information about the algorithm like the representation methods used, the version, or processing time (see Fig. \ref{fig:info-section}). Also, we can see multiples informations about the folding path. For example, we put a animation of each PDB file to make a folding movie. We also put a line chart to see how each atoms perfoms to reduce the score (see Fig. \ref{fig:line-chart}). Finally we put a contact maps (see Fig. \ref{fig:contact-maps}), its a squared matrix that indicates if a nucleotide are in contact. To know if there are in contact, we calculate the distance between atom, if there are inferior of a threshold than there is contact else there is no contact. This graph permit to capturates the tertiary topology, this means each nucleotide are closely in space. In our case, we used the frequency of contact during the construction of the folding path. 
+
+\begin{figure}[h!]
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/info-arda.png} 
+\caption{Section about algorithm's information on the ARDA site}
+\label{fig:info-section}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/line-chart-arda.png}
+\caption{Line chart section representing the objective function evolution by epochs for each atoms on the ARDA site}
+\label{fig:line-chart}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth]{img/contact-maps-arda.png}
+\caption{Contact maps section on the ARDA}
+\label{fig:contact-maps}
+\end{subfigure}
+
+\caption{Screenshots of the ARDA website presenting the folding path of the transfer RNA from \textit{Azoarcus sp. BH72} (PDB ID : 9X6B) \cite{hong_pre-splicing_2026}, Source : \cite{arda-example}}
+\label{fig:image2}
+\end{figure}
+
+
+\subsection{Test Set}
+
+To make a benchmark of our optimization algorithm, we used three different test set. The first one is RNA-Puzzles \cite{b56a52a4a212429e973b1fcd72be4f04}. It's a collaborative test set from the community. There is multiple type of RNA such as multi-stranded structures, ribozymes, riboswitches. There is 24 pdb file but with multiple chain inside some of them, there is 35 RNAs with sequence between 10 to 188 nucleotides. The second one is a collaboration between RNA-Puzzles and CASP teams led to the CASP15 \cite{https://doi.org/10.1002/prot.26602} dataset. Its contains 14 RNAs with sequence between 28 to 720 nucleotides. This test-set will tell us if our algorithm can predict long-RNA. The final test set is constructed one from RNAsolo \cite{10.1093/bioinformatics/btac386}. We selected RNA with a resolution below 4 \r{A} and removed the structure identity higher than 80\%. This results with 29 RNA molecule with a sequence between 40 to 298 nucleotides. 
+
+\subsection{Evaluation metrics}
+
+To evaluate and conclude on the performance of our model, we selected 6 different metrics : 
+\begin{itemize}
+    \item \acrfull{rmsd} : This metric is sensible on the local difference. It superimpose the predicted structure on the reference one and compute the root mean square of the distance between each equivalent atom. The lower the RMSD, the closer the predicted structure is to the reference, with 0 meaning a perfect match. Because the errors are squared before being averaged, this metric is very sensible to outliers, a single badly predicted region can inflate the whole score even if the rest of the structure is well predicted.
+    \item \acrfull{mae} : This metric is close to the RMSD but it use the absolute difference instead of the squared one, and average it. This makes it less sensible to outliers than the RMSD, a bad local region will not dominate the score as much. Like the RMSD, a lower value indicates a better prediction, and 0 is a perfect match.
+    \item \acrfull{inf} \cite{PMID:19710185}: This metric used RNA key interaction to evaluate more precisely. It evaluate three interaction : the Watson-Crick base pairs, the non-Watson-Crick base pairs and the base stacking. For each type, it compare the interaction found in the predicted structure to the ones of the reference, using a precision/recall type of formula, to know if the key interaction are conserved. The INF is between 0 and 1, the closer to 1, the more the RNA key interaction are correctly predicted.
+    \item TM-score \cite{https://doi.org/10.1002/prot.20264, 10.1093/bioinformatics/btz282} : This metric evaluate the global fold similarity between the predicted and the reference structure, independently of the sequence length. It use a scoring function that give less weight to the large distance error, so it is less sensible than the RMSD to a locally misfolded region. The TM-score is between 0 and 1, 1 being a perfect match. A score above 0.45 is generally consider as indicating that the two structures share the same global fold.
+    \item lDDT \cite{10.1093/bioinformatics/btt473} : This metric evaluate the local geometry of the structure, without needing a global superposition. For each atom, it look at its neighborhood and check if the distances to the surrounding atoms are conserved between the predicted and the reference structure, within different tolerance thresholds. The lDDT is between 0 and 100, the higher the better. Because it does not rely on a global alignment, it is less sensible to domain movement or flexible region than the RMSD or the TM-score.
+    \item GDT-TS \cite{https://doi.org/10.1002/(SICI)1097-0134(1999)37:3+<22::AID-PROT5>3.0.CO;2-W}: This metric, after superimposing the two structures, compute the percentage of atoms that are within a given distance cutoff (usually 1, 2, 4 and 8 \r{A}) from their equivalent in the reference structure, and average these percentages. The GDT-TS is between 0 and 100, the higher the score, the more atoms are well predicted. 
+\end{itemize}
+
 % ==========================================
 % Discussion
 % ==========================================
 \newpage
 \section{Discussion and Perspectives}
 
+Despite the predicted part, doesn't work as espected, we find a model that can produce a complete folding path using metrics instead knowledge-based potential. This finding can be used to, theoretically, make a new model that will predicting the final 3D structure of a RNA but also the folding path of it. If this model can work, we would have a new way to predict RNA and have a new fields to comprehend how RNA folds, and maybe also find new drugs and comprehend also some illness. 
 
 % ==========================================
 % Conclusion
@@ -537,6 +597,45 @@ Furthermore, this methodology can be extended to investigate complex RNA conform
 % ==========================================
 % Annexe/Glossary
 % ==========================================
+
+\newpage
+\addcontentsline{toc}{section}{Supplementary material}
+\section*{Supplementary material}
+\label{app:supplementary}
+
+This appendix gathers supplementary material that supports the main text but is too detailed to include there directly.
+
+\subsection*{Pipeline diagrams}
+\label{app:pipeline-diagrams}
+
+The following pages present, in landscape orientation, the diagrams referenced in Section~\ref{sec:materials-methods} illustrating the local optimization phase, the global optimization phase, and the complete pipeline.
+
+\begin{landscape}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/local_optim.png}
+    \caption{Local optimization phase (Adam gradient descent).}
+    \label{fig:local-optim}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/global_optim.png}
+    \caption{Global optimization phase (basin-hopping perturbation).}
+    \label{fig:global-optim}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/complete_pipeline.png}
+    \caption{Complete Pipeline of the all prediction algorithm.}
+    \label{fig:complete-pipeline}
+\end{figure}
+\end{landscape}
 
 \newpage
 

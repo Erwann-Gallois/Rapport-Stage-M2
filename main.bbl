@@ -75,6 +75,56 @@
     \field{year}{2024}
   \endentry
 
+  \entry{10.1093/bioinformatics/btac386}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=AB}{%
+         family={Adamczyk},
+         familyi={A\bibinitperiod},
+         given={Bartosz},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Antczak},
+         familyi={A\bibinitperiod},
+         given={Maciej},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Szachniuk},
+         familyi={S\bibinitperiod},
+         given={Marta},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABAMSM1}
+    \strng{fullhash}{ABAMSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    The development of algorithms dedicated to RNA three-dimensional (3D) structures contributes to the demand for training, testing and benchmarking data. A reliable source of such data derived from computational prediction is the RNA-Puzzles repository. In contrast, the largest resource with experimentally determined structures is the Protein Data Bank. However, files in this archive often contain other molecular data in addition to the RNA structure itself, which‚Äîto be used by RNA processing algorithms‚Äîshould be removed.RNAsolo is a self-updating database dedicated to RNA bioinformatics. It systematically collects experimentally determined RNA 3D structures stored in the PDB, cleans them from non-RNA chains, and groups them into equivalence classes. It allows users to download various subsets of data‚Äîclustered by resolution, source, data format, etc.‚Äîfor further processing and analysis with a single click.The repository is publicly available at https://rnasolo.cs.put.poznan.pl.%
+    }
+    \verb{doi}
+    \verb 10.1093/bioinformatics/btac386
+    \endverb
+    \verb{eprint}
+    \verb https://academic.oup.com/bioinformatics/article-pdf/38/14/3668/498843
+    \verb 95/btac386.pdf
+    \endverb
+    \field{issn}{1367-4803}
+    \field{number}{14}
+    \field{pages}{3668\bibrangedash 3670}
+    \field{title}{RNAsolo: a repository of cleaned PDB-derived RNA 3D structures}
+    \verb{url}
+    \verb https://doi.org/10.1093/bioinformatics/btac386
+    \endverb
+    \field{volume}{38}
+    \field{journaltitle}{Bioinformatics}
+    \field{month}{07}
+    \field{year}{2022}
+  \endentry
+
   \entry{duke_apep_dna}{online}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -98,6 +148,44 @@
     \field{urlday}{21}
     \field{urlmonth}{07}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{arda}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{ARDA}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{ARDA web site}
+    \verb{url}
+    \verb https://arda-bio.com/browse
+    \endverb
+  \endentry
+
+  \entry{arda-example}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{ARDA}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{ARDA web site}
+    \verb{url}
+    \verb https://arda-bio.com/sequence/406843
+    \endverb
   \endentry
 
   \entry{baek2024rosettafoldna}{article}{}{}
@@ -358,6 +446,86 @@
     \field{title}{SimRNA: A Coarse-Grained Method for RNA Folding Simulations and 3D Structure Prediction}
     \field{volume}{44}
     \field{journaltitle}{Nucleic Acids Research}
+    \field{year}{2016}
+  \endentry
+
+  \entry{10.1093/nar/gkv1479}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=BMJ}{%
+         family={Boniecki},
+         familyi={B\bibinitperiod},
+         given={Michal\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lach},
+         familyi={L\bibinitperiod},
+         given={Grzegorz},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DWK}{%
+         family={Dawson},
+         familyi={D\bibinitperiod},
+         given={Wayne\bibnamedelima K.},
+         giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Tomala},
+         familyi={T\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lukasz},
+         familyi={L\bibinitperiod},
+         given={Pawel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Soltysinski},
+         familyi={S\bibinitperiod},
+         given={Tomasz},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RKM}{%
+         family={Rother},
+         familyi={R\bibinitperiod},
+         given={Kristian\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Bujnicki},
+         familyi={B\bibinitperiod},
+         given={Janusz\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMJ+1}
+    \strng{fullhash}{BMJLGDWKTKLPSTRKMBJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    RNA molecules play fundamental roles in cellular processes. Their function and interactions with other biomolecules are dependent on the ability to form complex three-dimensional (3D) structures. However, experimental determination of RNA 3D structures is laborious and challenging, and therefore, the majority of known RNAs remain structurally uncharacterized. Here, we present SimRNA: a new method for computational RNA 3D structure prediction, which uses a coarse-grained representation, relies on the Monte Carlo method for sampling the conformational space, and employs a statistical potential to approximate the energy and identify conformations that correspond to biologically relevant structures. SimRNA can fold RNA molecules using only sequence information, and, on established test sequences, it recapitulates secondary structure with high accuracy, including correct prediction of pseudoknots. For modeling of complex 3D structures, it can use additional restraints, derived from experimental or computational analyses, including information about secondary structure and/or long-range contacts. SimRNA also can be used to analyze conformational landscapes and identify potential alternative structures.%
+    }
+    \verb{doi}
+    \verb 10.1093/nar/gkv1479
+    \endverb
+    \verb{eprint}
+    \verb https://academic.oup.com/nar/article-pdf/44/7/e63/17438019/gkv1479.pd
+    \verb f
+    \endverb
+    \field{issn}{0305-1048}
+    \field{number}{7}
+    \field{pages}{e63\bibrangedash e63}
+    \field{title}{SimRNA: a coarse-grained method for RNA folding simulations and 3D structure prediction}
+    \verb{url}
+    \verb https://doi.org/10.1093/nar/gkv1479
+    \endverb
+    \field{volume}{44}
+    \field{journaltitle}{Nucleic Acids Research}
+    \field{month}{04}
     \field{year}{2016}
   \endentry
 
@@ -976,6 +1144,235 @@
     \field{year}{2012}
   \endentry
 
+  \entry{b56a52a4a212429e973b1fcd72be4f04}{article}{}{}
+    \name{author}{33}{}{%
+      {{hash=CJ}{%
+         family={Cruz},
+         familyi={C\bibinitperiod},
+         given={\{Jos{\'e} Almeida\}},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Blanchet},
+         familyi={B\bibinitperiod},
+         given={\{Marc Fr{\'e}d{\'e}rick\}},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Boniecki},
+         familyi={B\bibinitperiod},
+         given={Michal},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bujnicki},
+         familyi={B\bibinitperiod},
+         given={\{Janusz M.\}},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={\{Shi Jie\}},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Rhiju},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={Ding},
+         familyi={D\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Dokholyan},
+         familyi={D\bibinitperiod},
+         given={\{Nikolay V.\}},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Flores},
+         familyi={F\bibinitperiod},
+         given={\{Samuel Coulbourn\}},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HL}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Lili},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lavender},
+         familyi={L\bibinitperiod},
+         given={\{Christopher A.\}},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lisi},
+         familyi={L\bibinitperiod},
+         given={V{\'e}ronique},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Major},
+         familyi={M\bibinitperiod},
+         given={Fran{\c c}ois},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mikolajczak},
+         familyi={M\bibinitperiod},
+         given={Katarzyna},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={\{Dinshaw J.\}},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Philips},
+         familyi={P\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Puton},
+         familyi={P\bibinitperiod},
+         given={Tomasz},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Santalucia},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sijenyi},
+         familyi={S\bibinitperiod},
+         given={Fredrick},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hermann},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Rother},
+         familyi={R\bibinitperiod},
+         given={Kristian},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rother},
+         familyi={R\bibinitperiod},
+         given={Magdalena},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Serganov},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Skorupski},
+         familyi={S\bibinitperiod},
+         given={Marcin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Soltysinski},
+         familyi={S\bibinitperiod},
+         given={Tomasz},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sripakdeevong},
+         familyi={S\bibinitperiod},
+         given={Parin},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=TI}{%
+         family={Tuszynska},
+         familyi={T\bibinitperiod},
+         given={Irina},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Weeks},
+         familyi={W\bibinitperiod},
+         given={\{Kevin M.\}},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Waldsich},
+         familyi={W\bibinitperiod},
+         given={Christina},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wildauer},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={Leontis},
+         familyi={L\bibinitperiod},
+         given={\{Neocles B.\}},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WE}{%
+         family={Westhof},
+         familyi={W\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English (US)}%
+    }
+    \list{publisher}{1}{%
+      {Cold Spring Harbor Laboratory Press}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJBMBMBJCSCSDRDFDNFSHLLCLVMFMKPDPAPTSJSFHTRKRMSASMSTSPTIWKWCWMLNWE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    We report the results of a first, collective, blind experiment in RNA three-dimensional (3D) structure prediction, encompassing three prediction puzzles. The goals are to assess the leading edge of RNA structure prediction techniques; compare existing methods and tools; and evaluate their relative strengths, weaknesses, and limitations in terms of sequence length and structural complexity. The results should give potential users insight into the suitability of available methods for different applications and facilitate efforts in the RNA structure prediction community in ongoing efforts to improve prediction tools. We also report the creation of an automated evaluation pipeline to facilitate the analysis of future RNA structure prediction exercises. Published by Cold Spring Harbor Laboratory Press.%
+    }
+    \verb{doi}
+    \verb 10.1261/rna.031054.111
+    \endverb
+    \field{issn}{1355-8382}
+    \field{number}{4}
+    \field{pages}{610\bibrangedash 625}
+    \field{title}{RNA-Puzzles: A CASP-like evaluation of RNA three-dimensional structure prediction}
+    \field{volume}{18}
+    \field{journaltitle}{RNA}
+    \field{month}{04}
+    \field{year}{2012}
+  \endentry
+
   \entry{das2023casp15}{article}{}{}
     \true{moreauthor}
     \true{morelabelname}
@@ -1029,6 +1426,108 @@
     \field{number}{12}
     \field{pages}{1747\bibrangedash 1770}
     \field{title}{Assessment of Three-Dimensional RNA Structure Prediction in CASP15}
+    \field{volume}{91}
+    \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+    \field{year}{2023}
+  \endentry
+
+  \entry{https://doi.org/10.1002/prot.26602}{article}{}{}
+    \name{author}{12}{}{%
+      {{hash=DR}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Rhiju},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KRC}{%
+         family={Kretsch},
+         familyi={K\bibinitperiod},
+         given={Rachael\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SAJ}{%
+         family={Simpkin},
+         familyi={S\bibinitperiod},
+         given={Adam\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mulvaney},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Pham},
+         familyi={P\bibinitperiod},
+         given={Phillip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rangan},
+         familyi={R\bibinitperiod},
+         given={Ramya},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bu},
+         familyi={B\bibinitperiod},
+         given={Fan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KRM}{%
+         family={Keegan},
+         familyi={K\bibinitperiod},
+         given={Ronan\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Topf},
+         familyi={T\bibinitperiod},
+         given={Maya},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RDJ}{%
+         family={Rigden},
+         familyi={R\bibinitperiod},
+         given={Daniel\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MZ}{%
+         family={Miao},
+         familyi={M\bibinitperiod},
+         given={Zhichao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WE}{%
+         family={Westhof},
+         familyi={W\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{CASP15, conformational ensembles, cryogenic electron microscopy, deep learning, molecular replacement, ribonucleic acid, structure prediction}
+    \strng{namehash}{DR+1}
+    \strng{fullhash}{DRKRCSAJMTPPRRBFKRMTMRDJMZWE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Abstract The prediction of RNA three-dimensional structures remains an unsolved problem. Here, we report assessments of RNA structure predictions in CASP15, the first CASP exercise that involved RNA structure modeling. Forty-two predictor groups submitted models for at least one of twelve RNA-containing targets. These models were evaluated by the RNA-Puzzles organizers and, separately, by a CASP-recruited team using metrics (GDT, lDDT) and approaches (Z-score rankings) initially developed for assessment of proteins and generalized here for RNA assessment. The two assessments independently ranked the same predictor groups as first (AIchemy\_RNA2), second (Chen), and third (RNAPolis and GeneSilico, tied); predictions from deep learning approaches were significantly worse than these top ranked groups, which did not use deep learning. Further analyses based on direct comparison of predicted models to cryogenic electron microscopy (cryo-EM) maps and x-ray diffraction data support these rankings. With the exception of two RNA-protein complexes, models submitted by CASP15 groups correctly predicted the global fold of the RNA targets. Comparisons of CASP15 submissions to designed RNA nanostructures as well as molecular replacement trials highlight the potential utility of current RNA modeling approaches for RNA nanotechnology and structural biology, respectively. Nevertheless, challenges remain in modeling fine details such as noncanonical pairs, in ranking among submitted models, and in prediction of multiple structures resolved by cryo-EM or crystallography.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/prot.26602
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/prot.26602
+    \endverb
+    \field{number}{12}
+    \field{pages}{1747\bibrangedash 1770}
+    \field{title}{Assessment of three-dimensional RNA structure prediction in CASP15}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.26602
+    \endverb
     \field{volume}{91}
     \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
     \field{year}{2023}
@@ -1138,6 +1637,121 @@
     \field{urlday}{22}
     \field{urlmonth}{07}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{10.1093/bioinformatics/btz282}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=GS}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Sha},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Chengxin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GSZCZY1}
+    \strng{fullhash}{GSZCZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Comparison of RNA 3D structures can be used to infer functional relationship of RNA molecules. Most of the current RNA structure alignment programs are built on size-dependent scales, which complicate the interpretation of structure and functional relations. Meanwhile, the low speed prevents the programs from being applied to large-scale RNA structural database search.We developed an open-source algorithm, RNA-align, for RNA 3D structure alignment which has the structure similarity scaled by a size-independent and statistically interpretable scoring metric. Large-scale benchmark tests show that RNA-align significantly outperforms other state-of-the-art programs in both alignment accuracy and running speed. The major advantage of RNA-align lies at the quick convergence of the heuristic alignment iterations and the coarse-grained secondary structure assignment, both of which are crucial to the speed and accuracy of RNA structure alignments.https://zhanglab.ccmb.med.umich.edu/RNA-align/.Supplementary data are available at Bioinformatics online.%
+    }
+    \verb{doi}
+    \verb 10.1093/bioinformatics/btz282
+    \endverb
+    \verb{eprint}
+    \verb https://academic.oup.com/bioinformatics/article-pdf/35/21/4459/507216
+    \verb 39/bioinformatics_35_21_4459.pdf
+    \endverb
+    \field{issn}{1367-4803}
+    \field{number}{21}
+    \field{pages}{4459\bibrangedash 4461}
+    \field{title}{RNA-align: quick and accurate alignment of RNA 3D structures based on size-independent TM-scoreRNA}
+    \verb{url}
+    \verb https://doi.org/10.1093/bioinformatics/btz282
+    \endverb
+    \field{volume}{35}
+    \field{journaltitle}{Bioinformatics}
+    \field{month}{11}
+    \field{year}{2019}
+  \endentry
+
+  \entry{hong_pre-splicing_2026}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=HY}{%
+         family={Hong},
+         familyi={H\bibinitperiod},
+         given={Yibao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Jiashu},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xiaojing},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ji},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Shanshan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZK}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Kaiming},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Azoarcus, Cryoelectron Microscopy, Introns, Models, Molecular, Nucleic Acid Conformation, RNA Precursors, RNA Splicing, RNA, Catalytic, RNA, Circular, RNA, Transfer}
+    \strng{namehash}{HY+1}
+    \strng{fullhash}{HYLJZXLJLSZK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Group I introns are catalytic RNAs capable of self-splicing, yet structural insights into full-length precursor RNAs and post-splicing circularization have been limited. Here, we present cryo-EM structures of the Azoarcus pre-tRNAIle system across key catalytic stages, including the full-length precursor in Pre-1S conformations, the linear intron, and the circular introns, at 2.8-3.3‚Äâ√Ö resolution. These structures reveal a preformed P1 helix, register shifts during splicing, and a conformational flip of G37 that stabilizes the circularization site. Biochemical analyses confirm a two-step circularization mechanism, generating a secondary circular product via an alternative ligation site. Together, our results provide an atomic-level view of a group I intron system through splicing and circularization. This work uncovers structural principles governing RNA conformational dynamics, catalysis, and circular RNA formation, with broad implications for ribozyme engineering.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41467-026-70747-y
+    \endverb
+    \field{issn}{2041-1723}
+    \field{number}{1}
+    \field{pages}{4280}
+    \field{title}{Pre-splicing conformation and stepwise circularization of a group {I} intron in {Azoarcus} pre-{tRNA}}
+    \field{volume}{17}
+    \field{journaltitle}{Nature Communications}
+    \field{month}{03}
+    \field{year}{2026}
   \endentry
 
   \entry{howe2015ribocil}{article}{}{}
@@ -1762,6 +2376,62 @@
     \field{year}{1989}
   \endentry
 
+  \entry{10.1093/bioinformatics/btt473}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=MV}{%
+         family={Mariani},
+         familyi={M\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Biasini},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Barbato},
+         familyi={B\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Schwede},
+         familyi={S\bibinitperiod},
+         given={Torsten},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MV+1}
+    \strng{fullhash}{MVBMBAST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Motivation: The assessment of protein structure prediction techniques requires objective criteria to measure the similarity between a computational model and the experimentally determined reference structure. Conventional similarity measures based on a global superposition of carbon Œ± atoms are strongly influenced by domain motions and do not assess the accuracy of local atomic details in the model.Results: The Local Distance Difference Test (lDDT) is a superposition-free score that evaluates local distance differences of all atoms in a model, including validation of stereochemical plausibility. The reference can be a single structure, or an ensemble of equivalent structures. We demonstrate that lDDT is well suited to assess local model quality, even in the presence of domain movements, while maintaining good correlation with global measures. These properties make lDDT a robust tool for the automated assessment of structure prediction servers without manual intervention.Availability and implementation: Source code, binaries for Linux and MacOSX, and an interactive web server are available at http://swissmodel.expasy.org/lddtContact: ¬†torsten.schwede@unibas.chSupplementary information: Supplementary data are available at Bioinformatics online.%
+    }
+    \verb{doi}
+    \verb 10.1093/bioinformatics/btt473
+    \endverb
+    \verb{eprint}
+    \verb https://academic.oup.com/bioinformatics/article-pdf/29/21/2722/507467
+    \verb 41/bioinformatics_29_21_2722.pdf
+    \endverb
+    \field{issn}{1367-4803}
+    \field{number}{21}
+    \field{pages}{2722\bibrangedash 2728}
+    \field{title}{lDDT: a local superposition-free score for comparing protein structures and models using distance difference tests}
+    \verb{url}
+    \verb https://doi.org/10.1093/bioinformatics/btt473
+    \endverb
+    \field{volume}{29}
+    \field{journaltitle}{Bioinformatics}
+    \field{month}{11}
+    \field{year}{2013}
+  \endentry
+
   \entry{Miyazawa1985EstimationOE}{article}{}{}
     \name{author}{2}{}{%
       {{hash=MS}{%
@@ -1865,6 +2535,102 @@
     \field{urlday}{17}
     \field{urlmonth}{05}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{PMID:19710185}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=PM}{%
+         family={Parisien},
+         familyi={P\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CJA}{%
+         family={Cruz},
+         familyi={C\bibinitperiod},
+         given={Jos√©\bibnamedelima Almeida},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WE}{%
+         family={Westhof},
+         familyi={W\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Major},
+         familyi={M\bibinitperiod},
+         given={Fran√ßois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PM+1}
+    \strng{fullhash}{PMCJAWEMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    To benchmark progress made in RNA three-dimensional modeling and assess newly developed techniques, reliable and meaningful comparison metrics and associated tools are necessary. Generally, the average root-mean-square deviations (RMSDs) are quoted. However, RMSD can be misleading since errors are spread over the whole molecule and do not account for the specificity of RNA base interactions. Here, we introduce two new metrics that are particularly suitable to RNAs: the deformation index and deformation profile. The deformation index is calibrated by the interaction network fidelity, which considers base-base-stacking and base-base-pairing interactions within the target structure. The deformation profile highlights dissimilarities between structures at the nucleotide scale for both intradomain and interdomain interactions. Our results show that there is little correlation between RMSD and interaction network fidelity. The deformation profile is a tool that allows for rapid assessment of the origins of discrepancies.%
+    }
+    \verb{doi}
+    \verb 10.1261/rna.1700409
+    \endverb
+    \field{issn}{1355-8382}
+    \field{number}{10}
+    \field{pages}{1875‚Äî1885}
+    \field{title}{New metrics for comparing and assessing discrepancies between RNA 3D structures and models}
+    \verb{url}
+    \verb https://europepmc.org/articles/PMC2743038
+    \endverb
+    \field{volume}{15}
+    \field{journaltitle}{RNA (New York, N.Y.)}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{10.1021/jp102497y}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PS}{%
+         family={Pasquali},
+         familyi={P\bibinitperiod},
+         given={Samuela},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Derreumaux},
+         familyi={D\bibinitperiod},
+         given={Philippe},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PSDP1}
+    \strng{fullhash}{PSDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Although RNAs play many cellular functions, the gap between their sequences and 3D structures is increasing and our knowledge of RNA thermodynamics and long time scale dynamics is still limited at an atomic level of detail. In principle, all-atom molecular dynamics (MD) and replica exchange molecular dynamics (REMD) simulations can investigate these issues, but with current computer facilities, these simulations in explicit solvent have been limited to small RNAs and to short times. To move to larger systems, we can resort to coarse-graining. In this study, we present HiRE-RNA, a generic high resolution coarse-grained model for RNA, and report MD and REMD simulations on two RNAs of 22 and 36 nucleotides. Starting from unfolded structures, the 22-mer folds within 1.8 √Ö rmsd from the NMR structure, while the 36-mer folds within 4.6 √Ö rmsd. Current results suggest that further optimization of the HiRE-RNA force field should open the door to a relevant model for studying large RNAs, such as riboswitches, and for predicting 3D structures from secondary structure information.%
+    }
+    \verb{doi}
+    \verb 10.1021/jp102497y
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.acs.org/jpcbfk/article-pdf/114/37/11957/9725801/jp102497
+    \verb y.pdf
+    \endverb
+    \field{issn}{1520-6106}
+    \field{number}{37}
+    \field{pages}{11957\bibrangedash 11966}
+    \field{title}{HiRE-RNA: A High Resolution Coarse-Grained Energy Model for RNA}
+    \verb{url}
+    \verb https://doi.org/10.1021/jp102497y
+    \endverb
+    \field{volume}{114}
+    \field{journaltitle}{The Journal of Physical Chemistry B}
+    \field{month}{08}
+    \field{year}{2010}
   \endentry
 
   \entry{pearce2022deepfoldrna}{article}{}{}
@@ -2392,6 +3158,63 @@
     \field{year}{2020}
   \endentry
 
+  \entry{https://doi.org/10.1002/(SICI)1097-0134(1999)37:3+<22::AID-PROT5>3.0.CO;2-W}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=ZA}{%
+         family={Zemla},
+         familyi={Z\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=Vƒ}{%
+         family={Venclovas},
+         familyi={V\bibinitperiod},
+         given={ƒåeslovas},
+         giveni={ƒ\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Moult},
+         familyi={M\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FK}{%
+         family={Fidelis},
+         familyi={F\bibinitperiod},
+         given={Krzysztof},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{prediction evaluation, prediction assessment, comparative modeling, fold recognition, ab initio prediction}
+    \strng{namehash}{ZA+1}
+    \strng{fullhash}{ZAVƒMJFK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Abstract Livermore Prediction Center provides basic infrastructure for the CASP (Critical Assessment of Structure Prediction) experiments, including prediction processing and verification servers, a system of prediction evaluation tools, and interactive numerical and graphical displays. Here we outline the essentials of our approach, with discussion of the superposition procedures, definitions of basic measures, and descriptions of new methods developed to analyze predictions. Our primary focus is on the evaluation of threedimensional models and secondary structure predictions. To put the results of the three prediction experiments held to date on the same footing, the latest CASP3 evaluation criteria were retrospectively applied to both CASP1 and CASP2 predictions. Finally, we give an overview of our website (http://PredictionCenter.llnl.gov), which makes the target structures, predictions, and the evaluation system accessible to the community. Proteins Suppl 1999;3:22‚Äì29. Published 1999 Wiley-Liss, Inc.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/(SICI)1097-0134(1999)37:3+<22::AID-PROT5>3.0.
+    \verb CO;2-W
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-0134%2
+    \verb 81999%2937%3A3%2B%3C22%3A%3AAID-PROT5%3E3.0.CO%3B2-W
+    \endverb
+    \field{number}{S3}
+    \field{pages}{22\bibrangedash 29}
+    \field{title}{Processing and analysis of CASP3 protein structure predictions}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0134%2
+    \verb 81999%2937%3A3%2B%3C22%3A%3AAID-PROT5%3E3.0.CO%3B2-W
+    \endverb
+    \field{volume}{37}
+    \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+    \field{year}{1999}
+  \endentry
+
   \entry{zhang_all-atom_2020}{article}{}{}
     \name{author}{5}{}{%
       {{hash=ZT}{%
@@ -2465,6 +3288,216 @@
     \field{urlday}{09}
     \field{urlmonth}{03}
     \field{urlyear}{2026}
+  \endentry
+
+  \entry{https://doi.org/10.1002/prot.20264}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Skolnick},
+         familyi={S\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZYSJ1}
+    \strng{fullhash}{ZYSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Abstract We have developed a new scoring function, the template modeling score (TM-score), to assess the quality of protein structure templates and predicted full-length models by extending the approaches used in Global Distance Test (GDT)1 and MaxSub.2 First, a protein size-dependent scale is exploited to eliminate the inherent protein size dependence of the previous scores and appropriately account for random protein structure pairs. Second, rather than setting specific distance cutoffs and calculating only the fractions with errors below the cutoff, all residue pairs in alignment/modeling are evaluated in the proposed score. For comparison of various scoring functions, we have constructed a large-scale benchmark set of structure templates for 1489 small to medium size proteins using the threading program PROSPECTOR\_3 and built the full-length models using MODELLER and TASSER. The TM-score of the initial threading alignments, compared to the GDT and MaxSub scoring functions, shows a much stronger correlation to the quality of the final full-length models. The TM-score is further exploited as an assessment of all ‚Äònew fold‚Äô targets in the recent CASP5 experiment and shows a close coincidence with the results of human-expert visual assessment. These data suggest that the TM-score is a useful complement to the fully automated assessment of protein structure predictions. The executable program of TM-score is freely downloadable at http://bioinformatics.buffalo.edu/TM-score. Proteins 2004. ¬© 2004 Wiley-Liss, Inc.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/prot.20264
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/prot.20264
+    \endverb
+    \field{number}{4}
+    \field{pages}{702\bibrangedash 710}
+    \field{title}{Scoring function for automated assessment of protein structure template quality}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.20264
+    \endverb
+    \field{volume}{57}
+    \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+    \field{year}{2004}
+  \endentry
+
+  \entry{sponer_rna_2018}{article}{}{}
+    \name{author}{12}{}{%
+      {{hash=≈J}{%
+         family={≈†poner},
+         familyi={≈\bibinitperiod},
+         given={Ji≈ô√≠},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Bussi},
+         familyi={B\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Krepl},
+         familyi={K\bibinitperiod},
+         given={Miroslav},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Ban√°≈°},
+         familyi={B\bibinitperiod},
+         given={Pavel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bottaro},
+         familyi={B\bibinitperiod},
+         given={Sandro},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CRA}{%
+         family={Cunha},
+         familyi={C\bibinitperiod},
+         given={Richard\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GLA}{%
+         family={Gil-Ley},
+         familyi={G\bibinithyphendelim L\bibinitperiod},
+         given={Alejandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pinamonti},
+         familyi={P\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Poblete},
+         familyi={P\bibinitperiod},
+         given={Sim√≥n},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jureƒçka},
+         familyi={J\bibinitperiod},
+         given={Petr},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WNG}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Nils\bibnamedelima G.},
+         giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Otyepka},
+         familyi={O\bibinitperiod},
+         given={Michal},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{≈J+1}
+    \strng{fullhash}{≈JBGKMBPBSCRAGLAPGPSJPWNGOM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{≈}
+    \field{sortinithash}{≈}
+    \field{abstract}{%
+    With both catalytic and genetic functions, ribonucleic acid (RNA) is perhaps the most pluripotent chemical species in molecular biology, and its functions are intimately linked to its structure and dynamics. Computer simulations, and in particular atomistic molecular dynamics (MD), allow structural dynamics of biomolecular systems to be investigated with unprecedented temporal and spatial resolution. We here provide a comprehensive overview of the fast-developing field of MD simulations of RNA molecules. We begin with an in-depth, evaluatory coverage of the most fundamental methodological challenges that set the basis for the future development of the field, in particular, the current developments and inherent physical limitations of the atomistic force fields and the recent advances in a broad spectrum of enhanced sampling methods. We also survey the closely related field of coarse-grained modeling of RNA systems. After dealing with the methodological aspects, we provide an exhaustive overview of the available RNA simulation literature, ranging from studies of the smallest RNA oligonucleotides to investigations of the entire ribosome. Our review encompasses tetranucleotides, tetraloops, a number of small RNA motifs, A-helix RNA, kissing-loop complexes, the TAR RNA element, the decoding center and other important regions of the ribosome, as well as assorted others systems. Extended sections are devoted to RNA‚Äìion interactions, ribozymes, riboswitches, and protein/RNA complexes. Our overview is written for as broad of an audience as possible, aiming to provide a much-needed interdisciplinary bridge between computation and experiment, together with a perspective on the future of the field.%
+    }
+    \verb{doi}
+    \verb 10.1021/acs.chemrev.7b00427
+    \endverb
+    \field{issn}{0009-2665}
+    \field{number}{8}
+    \field{pages}{4177\bibrangedash 4338}
+    \field{shorttitle}{{RNA} {Structural} {Dynamics} {As} {Captured} by {Molecular} {Simulations}}
+    \field{title}{{RNA} {Structural} {Dynamics} {As} {Captured} by {Molecular} {Simulations}: {A} {Comprehensive} {Overview}}
+    \verb{url}
+    \verb https://doi.org/10.1021/acs.chemrev.7b00427
+    \endverb
+    \field{volume}{118}
+    \verb{file}
+    \verb Full Text PDF:/home/erwann/Zotero/storage/EB38CLWY/≈†poner et al. - 2
+    \verb 018 - RNA Structural Dynamics As Captured by Molecular Simulations A
+    \verb Comprehensive Overview.pdf:application/pdf;Snapshot:/home/erwann/Zote
+    \verb ro/storage/PV2LVP5F/acs.chemrev.html:text/html
+    \endverb
+    \field{journaltitle}{Chemical Reviews}
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
+
+  \entry{10.1063/1.4881424}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=≈P}{%
+         family={≈†ulc},
+         familyi={≈\bibinitperiod},
+         given={Petr},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Romano},
+         familyi={R\bibinitperiod},
+         given={Flavio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=OTE}{%
+         family={Ouldridge},
+         familyi={O\bibinitperiod},
+         given={Thomas\bibnamedelima E.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=DJPK}{%
+         family={Doye},
+         familyi={D\bibinitperiod},
+         given={Jonathan P.\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=LAA}{%
+         family={Louis},
+         familyi={L\bibinitperiod},
+         given={Ard\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{≈P+1}
+    \strng{fullhash}{≈PRFOTEDJPKLAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{≈}
+    \field{sortinithash}{≈}
+    \field{abstract}{%
+    We present a new, nucleotide-level model for RNA, oxRNA, based on the coarse-graining methodology recently developed for the oxDNA model of DNA. The model is designed to reproduce structural, mechanical, and thermodynamic properties of RNA, and the coarse-graining level aims to retain the relevant physics for RNA hybridization and the structure of single- and double-stranded RNA. In order to explore its strengths and weaknesses, we test the model in a range of nanotechnological and biological settings. Applications explored include the folding thermodynamics of a pseudoknot, the formation of a kissing loop complex, the structure of a hexagonal RNA nanoring, and the unzipping of a hairpin motif. We argue that the model can be used for efficient simulations of the structure of systems with thousands of base pairs, and for the assembly of systems of up to hundreds of base pairs. The source code implementing the model is released for public use.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4881424
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.4881424/154796
+    \verb 34/235102_1_online.pdf
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{23}
+    \field{pages}{235102}
+    \field{title}{A nucleotide-level coarse-grained model of RNA}
+    \verb{url}
+    \verb https://doi.org/10.1063/1.4881424
+    \endverb
+    \field{volume}{140}
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{06}
+    \field{year}{2014}
   \endentry
 \enddatalist
 \endinput
